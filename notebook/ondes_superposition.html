@@ -1,0 +1,879 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Superposition de deux ondes: Interférences et battements &#8212; Ondes</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/ondes/notebook/ondes_superposition.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Ondes stationnaires" href="ondes_stationnaires.html" />
+    <link rel="prev" title="Description des ondes" href="ondes_propagation.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Ondes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ondes.html">
+   Ondes
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ondes_propagation.html">
+   Description des ondes
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Superposition de deux ondes: Interférences et battements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ondes_stationnaires.html">
+   Ondes stationnaires
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/ondes_superposition.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/ondes_superposition.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/ondes_superposition.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#superposition-generalites">
+   Superposition: Généralités
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#position-du-probleme">
+     Position du problème
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#representation-de-fresnel">
+     Représentation de Fresnel
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#battements">
+   Battements
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ondes-asynchrones-proches-battements">
+     Ondes asynchrones proches: Battements
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#battements-acoustiques">
+     Battements acoustiques
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interferences">
+   Interférences
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interferences-position-du-probleme">
+     Interférences: Position du problème
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cas-extremes-interferences-constructives-et-destructives">
+     Cas extrêmes: Interférences constructives et destructives.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interferences-autres-grandeurs-caracteristiques">
+     Interférences: Autres grandeurs caractéristiques
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#notion-de-coherence">
+     Notion de cohérence
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interferences-realisation">
+     Interférences: Réalisation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interfrange">
+     Interfrange
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fentes-d-young">
+     Fentes d’Young
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fentes-d-young-perte-de-coherence-temporelle">
+     Fentes d’Young: Perte de cohérence temporelle
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fentes-d-young-interferences-a-l-infini">
+     Fentes d’Young: Interférences à l’infini
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercices-d-application">
+   Exercices d’application
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#battements-lumineux">
+     Battements lumineux
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bilan-sur-les-interferences">
+     Bilan sur les interférences
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#travaux-diriges">
+   Travaux dirigés
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#trous-d-young-representation-de-fresnel">
+     Trous d’Young. Représentation de Fresnel
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#doublet-du-sodium">
+     Doublet du sodium.
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="superposition-de-deux-ondes-interferences-et-battements">
+<h1>Superposition de deux ondes: Interférences et battements<a class="headerlink" href="#superposition-de-deux-ondes-interferences-et-battements" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="superposition-generalites">
+<h2>Superposition: Généralités<a class="headerlink" href="#superposition-generalites" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="position-du-probleme">
+<h3>Position du problème<a class="headerlink" href="#position-du-probleme" title="Permalink to this headline">¶</a></h3>
+<p>On considère deux sources <span class="math notranslate nohighlight">\(S_1\)</span> et <span class="math notranslate nohighlight">\(S_2\)</span> émettant chacune un signal physique se propageant dans le milieu environnant et représentée par la grandeur Y dont l’expression en un point M à un instant t sera notée <span class="math notranslate nohighlight">\(Y(M,t)\)</span>. On suppose que ces deux ondes sont sinusoïdales de fréquence <span class="math notranslate nohighlight">\(f_1\)</span> et <span class="math notranslate nohighlight">\(f_2\)</span>. On note:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(Y_1(M,t) = Y_{1m}\cos(\omega_1 t + \phi_{M,1})\)</span> pour l’onde issue de la source <span class="math notranslate nohighlight">\(S_1\)</span> (appelée onde 1).</p></li>
+<li><p><span class="math notranslate nohighlight">\(Y_1(M,t) = Y_{2m}\cos(\omega_2 t + \phi_{M,2})\)</span> pour l’onde issue de la source <span class="math notranslate nohighlight">\(S_2\)</span> (appelée onde 2).</p></li>
+</ul>
+<p>Pour fixer les idées au moyen d’expériences, les ondes considérées seront par la suite soit des ondes acoustiques, soit des ondes lumineuses. Néanmoins, et sauf précisions contraire, les études réalisées pourront être appliquées à tout type d’onde. On considérera aussi des trajets rectilignes de la lumière. On observera d’ailleurs les phénomènes d’interférences étudiés ensuite sur des ondes de surface.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">En pratique, les phases <span class="math notranslate nohighlight">\(\phi_{M,2}\)</span> et <span class="math notranslate nohighlight">\(\phi_{M,1}\)</span> se déduisent du trajet de l’onde entre la source et le point M.</p>
+</div>
+</details><p><em>Rappel : Déphasage</em><br />
+<em>On rappelle que le déphasage d’un signal sinusoïdal 2 sur un autre signal sinusoïdal 1 est la différence de phase:</em></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\Phi_{2/1}(M,t) &amp;= \varphi_{2}(M,t) - \varphi_{1}(M,t)\\
+&amp;= \left(\omega_2 - \omega_1\right)t + \phi_{M,2} - \phi_{M,1}
+\end{align*}\]</div>
+<div class="tip admonition">
+<p class="admonition-title">Définition : Ondes synchrones et cohérentes</p>
+<p>Deux ondes sont dites <strong>synchrones</strong>  si elles ont la même fréquence.</p>
+<p>Deux ondes sont dites <strong>cohérentes si elles ont la même fréquence ET que leur déphasage initiaux (aux sources) sont constants.</strong></p>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Pourquoi deux ondes synchrones peuvent ne pas être cohérentes ?</p>
+<p>Dans le cas des ondes électromagnétiques, l’émission n’est pas continue. La source émet un train d’onde puis arrête d’émettre puis recommence.</p>
+<p>Or la largeur des trains d’ondes et l’espace entre deux émissions sont aléatoires. Il vient que deux points sources, même synchrones vont avoir un déphasage qui va varier aléatoirement. Nous verrons que cela peut-être un problème d’autant que cette incohérence <strong>s’applique aussi entre deux points d’une même source lumineuse étendue</strong> . La seule source lumineuse qui possède une grande cohérence spatiale (tous ses points sources sont cohérents) est le LASER.</p>
+</div>
+<p><strong>Principe de superposition</strong><br />
+Pour les ondes étudiées ici, on pourra utiliser le principe de superposition, c’est-à-dire que l’expression de l’onde résultante au point M <span class="math notranslate nohighlight">\(y(M,t)\)</span> s’écrit comme la somme:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-72186c75-0db3-4860-8ed4-d3f38e5df56e">
+<span class="eqno">(7)<a class="headerlink" href="#equation-72186c75-0db3-4860-8ed4-d3f38e5df56e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+y(M,t) = Y_{1m}\cos(\omega_1 t + \phi_{M,1})+Y_{2m}\cos(\omega_2 t + \phi_{M,2})
+\end{equation}\]</div>
+</div>
+<div class="section" id="representation-de-fresnel">
+<h3>Représentation de Fresnel<a class="headerlink" href="#representation-de-fresnel" title="Permalink to this headline">¶</a></h3>
+<div class="note admonition">
+<p class="admonition-title">Attention :</p>
+<p>Le signal de issu de la superposition des deux ondes n’est a priori pas sinusoïdal. On ne peut lui donner une représentation complexe dans le plan complexe. Par contre, on peut remarquer que <span class="math notranslate nohighlight">\(Y(M,t)\)</span> peut se lire comme la somme de abcisses de chaque représentation.</p>
+<p>On peut utiliser cette observation pour étudier l’amplitude de variation du signal résultant <span class="math notranslate nohighlight">\(Y(M,t)\)</span>.</p>
+</div>
+<p><strong>Observation sur la représentation de Fresnel</strong></p>
+<div class="figure align-center" id="fig-298">
+<img alt="../_images/Signaux_fresnel_somme.jpg" src="../_images/Signaux_fresnel_somme.jpg" />
+</div>
+<ul class="simple">
+<li><p>si les deux ondes ont à un instant <span class="math notranslate nohighlight">\(t\)</span> un déphasage faible l’un par rapport à l’autre, l’onde résultante pourra avoir une forte amplitude à cet instant <span class="math notranslate nohighlight">\(t\)</span>.</p></li>
+<li><p>si les deux ondes ont à un instant <span class="math notranslate nohighlight">\(t\)</span> un déphasage proche de <span class="math notranslate nohighlight">\(\pi\)</span>, l’onde résultante sera nécessairement très faible. Elle peut même être d’amplitude plus faible que les deux ondes initiales, voire s’annuler complètement.</p></li>
+</ul>
+<p>On observe donc que deux ondes qui vont se superposer en un même point ne donneront pas nécessairement une onde d’amplitude plus importante. Le critère important est le déphasage entre les deux ondes.</p>
+<p>Néanmoins, rappelons que les fréquences mises en jeu peuvent être très rapides, on ne va donc pas forcément pouvoir observer les variations de déphasages. Si les deux ondes ne sont pas de mêmes fréquences, alors le déphasasge instantané entre les deux ondes va passer par toutes les valeurs possibles sur <span class="math notranslate nohighlight">\([0;2 \pi]\)</span> (cf. Simulation GEOGEBRA).</p>
+<p>On peut distinguer trois cas:</p>
+<ul class="simple">
+<li><p>Les ondes ne sont pas de mêmes fréquences on parle d’ondes asynchrones - (ou le déphasage entre les deux est aléatoire) et l’écart en fréquence est grand. Le déphasage entre les deux ondes varie très rapidement: on ne peut observer une telle variation. On réalise alors une moyenne des intensités observés. Tout se passe comme si l’intensité résultante observée était la somme des deux intensités. On retrouve le calcul énergétique réalisé pour l’éclairement moyen.</p></li>
+<li><p>Les ondes ne sont pas de mêmes fréquences (on parle d’ondes asynchrones) mais l’écart en fréquence est faible: le signal va apparaître comme presque sinusoïdal mais avec une ampitude variant dans le temps. On parle de <strong>battements</strong>  (cf. suite).</p></li>
+<li><p>Les ondes ont la même fréquence (et cohérentes). Le déphasage est alors constant. Comme on va le voir, l’onde résultante est alors sinusoïdale de même pulsation et son amplitude va dépendre du déphasage. On parle d’<strong>interférences</strong> .</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="battements">
+<h2>Battements<a class="headerlink" href="#battements" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ondes-asynchrones-proches-battements">
+<h3>Ondes asynchrones proches: Battements<a class="headerlink" href="#ondes-asynchrones-proches-battements" title="Permalink to this headline">¶</a></h3>
+<p><strong>Position du problème</strong><br />
+On considère deux diapasons identiques dont l’un est monté avec une petite masselotte qui modifie légèrement sa fréquence d’émission. On excite les deux diapasons et on écoute le son obtenus puis on l’enregistre au moyen d’un dispositif {micro+système d’acquisition}. On observe:</p>
+<p>Les variations d’amplitude sont lentes de sorte qu’on peut les sentir à l’oreille (cf. Simulation Audacity).</p>
+<p><strong>Modélisation</strong><br />
+On considère les deux ondes précédentes issues de deux sources <span class="math notranslate nohighlight">\(u_1\)</span> et <span class="math notranslate nohighlight">\(u_2\)</span> asynchrones de fréquences respectives <span class="math notranslate nohighlight">\(f_1\)</span> et <span class="math notranslate nohighlight">\(f_2\)</span>. On considère qu’il s’agit d’ondes sonores de fréquences très proches l’une de l’autre. On considère de plus pour simplifier que les deux ondes ont la même amplitude de pression: <span class="math notranslate nohighlight">\(u_0\)</span> et que le déphasage initial entre les deux sources est constant et nul.</p>
+</div>
+<div class="section" id="battements-acoustiques">
+<h3>Battements acoustiques<a class="headerlink" href="#battements-acoustiques" title="Permalink to this headline">¶</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>On considère le problème proposé précédemment.</p>
+<ol class="simple">
+<li><p>Exprimer la surpression ressentie en un point M.</p></li>
+<li><p>Montrer que celle-ci s’apparente à un signal sonore de fréquence <span class="math notranslate nohighlight">\(f_f\)</span> à préciser modulé en amplitude par un sinusoïde à la fréquence <span class="math notranslate nohighlight">\(f_m\)</span> à préciser. Représenter graphiquement l’amplitude correspondante.</p></li>
+<li><p>Exprimer l’intensité sonore perçue et montrer qu’elle varie aussi dans le temps.</p></li>
+<li><p>Donner la représentation de Fresnel des deux ondes et de l’onde résultante à différents instants. Retrouver le principe d’une modulation d’amplitude.</p></li>
+<li><p>(Simulation): On pourra chercher, au moyen de logiciels simulant des sons (Ex: Audacity) à partir de quelle fréquence l’on arrive plus à déceler la variation temporelle de l’intensité sonore (c’est un ordre de grandeur car il sera probablement différent pour chacun)</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="interferences">
+<h2>Interférences<a class="headerlink" href="#interferences" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="interferences-position-du-probleme">
+<h3>Interférences: Position du problème<a class="headerlink" href="#interferences-position-du-probleme" title="Permalink to this headline">¶</a></h3>
+<p>On considère deux sources lumineuses qui émettent chacune des ondes lumineuses <strong>cohérentes</strong> , c’est-à-dire de même fréquence <span class="math notranslate nohighlight">\(f_1=f_2=f\)</span> et dont le déphasage en un point donné est constant. On traitera pour simplifier le champ électrique comme une grandeur scalaire E. Les champs électriques des deux ondes s’écrivent:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-036b5bc0-beb5-4f8d-8906-eb39deaee86b">
+<span class="eqno">(8)<a class="headerlink" href="#equation-036b5bc0-beb5-4f8d-8906-eb39deaee86b" title="Permalink to this equation">¶</a></span>\[\begin{align}
+E_1(M) &amp;= E_{1m} \cos(2 \pi f t + \phi_{M,1})\\
+E_2(M) &amp;= E_{2m} \cos(2 \pi f t + \phi_{M,2})
+\end{align}\]</div>
+<p>Comme on va le montrer, on attend alors un déphasage constant et la représentation de Fresnel permet de montrer que l’amplitude résultante va dépendre du déphasage entre les deux ondes. On parlera d’interférences</p>
+<div class="figure align-center" id="fig-299">
+<img alt="../_images/Signaux_fresnel_somme.jpg" src="../_images/Signaux_fresnel_somme.jpg" />
+</div>
+<div class="attention admonition">
+<p class="admonition-title">Fondamental : Onde résultante sinusoïdale</p>
+<p>L’onde résultant de la superposition de deux ondes sinusoïdales cohérentes <strong>de même amplitude</strong> <strong><span class="math notranslate nohighlight">\(E_0\)</span></strong>  est aussi une onde sinusoïdales de même fréquence <span class="math notranslate nohighlight">\(f\)</span> et dont l’amplitude <span class="math notranslate nohighlight">\(E_{totalm}\)</span> dépend des amplitudes des ondes qui interfèrent ET du déphasage <span class="math notranslate nohighlight">\(\Phi_M = \phi_{M,2} - \phi_{M,1}\)</span> entre les deux ondes.</p>
+<p>Le champ électrique peut se mettre sous la forme:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-15d56d58-e3ed-410c-87c6-949ab84384c0">
+<span class="eqno">(9)<a class="headerlink" href="#equation-15d56d58-e3ed-410c-87c6-949ab84384c0" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+E_{total}(M,t) = A \cos(\Phi_M/2)\cos(2\pi f t +\varphi)
+\end{equation}\]</div>
+</div>
+<p><strong>Démonstration</strong><br />
+On sait que <span class="math notranslate nohighlight">\(E_{total}(M,t) = E_{m1} \cos(2\pi f t +\phi_{M,1})+ E_{m2} \cos(2\pi f t +\phi_{M,2})\)</span> par principe de superposition. On suppose de plus que <span class="math notranslate nohighlight">\(E_{m1} = E_{m2} = E_0\)</span>. En utilisant les formules de trigonométrie, il vient:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+E_{total}(M,t) &amp;= 2 E_0 (\cos(\frac{2\pi f t +\phi_{M,1}-(2\pi f t +\phi_{M,2})}{2})\cos(\frac{2\pi f t +\phi_{M,2}+(2\pi f t +\phi_{M,2})}{2}))\\
+ &amp;= 2 E_0 (\cos(\frac{\phi_{M,1}-\phi_{M,2}}{2})\cos(2\pi f t +\frac{\phi_{M,1}+\phi_{M,2}}{2}))
+\end{align*}\]</div>
+<p>On obtient l’expression demandée avec: <span class="math notranslate nohighlight">\(A = 2 E_0\)</span></p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Si les deux ondes n’ont pas la même amplitude, on observe aussi un phénomène d’interférences mais un peu plus atténué et l’étude est légèrement différente. On pourra retenir que les conclusions à venir sont les mêmes.</p>
+<p class="card-text">A défaut de démontrer mathématiquement la forme du champ résultant, on s’entraînera à déterminer les valeurs maximales et minimales du champ résultant au moyen de la représentation de Fresnel.</p>
+</div>
+</details></div>
+<div class="section" id="cas-extremes-interferences-constructives-et-destructives">
+<h3>Cas extrêmes: Interférences constructives et destructives.<a class="headerlink" href="#cas-extremes-interferences-constructives-et-destructives" title="Permalink to this headline">¶</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Fondamental : Cas extrêmes</p>
+<ul class="simple">
+<li><p>Pour <span class="math notranslate nohighlight">\(\Phi_M = 2 m \pi\)</span> avec <span class="math notranslate nohighlight">\(m \in  \mathbb{N}\)</span> la fonction cos est maximale et les amplitudes des deux ondes sont en phase. L’intensité lumineuse est alors maximale. On parle d’<strong>interférences constructives</strong> . Si l’on place un écran au point considéré, on observera un point très lumineux.</p></li>
+<li><p>Pour <span class="math notranslate nohighlight">\(\Phi_M = (2 m +1)\pi\)</span> avec <span class="math notranslate nohighlight">\(m \in  \mathbb{N}\)</span> la fonction cos est minimale et les amplitudes des deux ondes sont en opposition de phase. L’intensité lumineuse est alors minimale. On parle d’<strong>interférences destructives</strong> . Si l’on place un écran au point considéré, on observera un point sombre (ou plutôt on observe presque pas de lumière, voire aucune lumière).</p></li>
+</ul>
+<div class="figure align-center" id="fig-300">
+<img alt="../_images/Signaux_fresnel_somme.jpg" src="../_images/Signaux_fresnel_somme.jpg" />
+</div>
+</div>
+</div>
+<div class="section" id="interferences-autres-grandeurs-caracteristiques">
+<h3>Interférences: Autres grandeurs caractéristiques<a class="headerlink" href="#interferences-autres-grandeurs-caracteristiques" title="Permalink to this headline">¶</a></h3>
+<p>Plutôt que de calculer le déphasage, on calculer souvent d’autres termes associées pour savoir les positions d’interférences constructives et destructives.</p>
+<div class="tip admonition">
+<p class="admonition-title">Définition : Chemin optique</p>
+<p>On définit le chemin optique comme l’intégrale sur le chemin parcouru par la lumière: <span class="math notranslate nohighlight">\(S = \int n(M) ds(M)\)</span> où <span class="math notranslate nohighlight">\(n(M)\)</span> est l’indice de réfraction au point M et <span class="math notranslate nohighlight">\(ds(M)\)</span> la longueur du trajet parcouru par la lumière autour du point M.</p>
+</div>
+<div class="attention admonition">
+<p class="admonition-title">Fondamental : Chemin optique: cas d’un milieu homogène et isotrope</p>
+<p>Dans un milieu homogène est isotrope, le chemin optique sur un chemin SM devient <span class="math notranslate nohighlight">\(S = \frac{\lambda_0}{2 \pi} \Phi_{SM}\)</span> où <span class="math notranslate nohighlight">\(\Phi_{SM}\)</span> est le déphasage introduit par la propagation de l’onde entre S et M.</p>
+</div>
+<p><strong>Démonstration</strong><br />
+Le milieu étant homogène et isotrope, le trajet de la lumière est en ligne droite et <span class="math notranslate nohighlight">\(S = \frac{c}{v_{milieu}}SM = \frac{\lambda_0}{2 \pi}k SM = \frac{\lambda_0}{2 \pi} \Phi_{SM}\)</span></p>
+<div class="attention admonition">
+<p class="admonition-title">Fondamental : Différence de chemin optique</p>
+<p>On définit la différence de chemin optique entre deux rayons par…  la différence <span class="math notranslate nohighlight">\(\delta = S_2 - S_1\)</span>. Dans le cas d’un milieu homogène et isotrope, cette différence devient:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\delta &amp;= n(S_1 M - S_2M)\\
+&amp;= \frac{\lambda_0}{2 \pi} \Phi_M
+\end{align*}\]</div>
+<p>avec <span class="math notranslate nohighlight">\(\Phi_M\)</span> le déphasage de l’onde 2 sur l’onde 1 au point M.</p>
+</div>
+<div class="attention admonition">
+<p class="admonition-title">Fondamental : Intérêt</p>
+<p>La différence de chemin optique présente deux intérêts:</p>
+<ul class="simple">
+<li><p>son expression en fonction des distance parcourues par les rayons permet de le calculer simplement par des considérations géométriques.</p></li>
+<li><p>sa relation avec le déphasage montre qu’il va prendre des valeurs particulières pour les cas d’interférences constructives et destructives. En effet:</p></li>
+<li><p>Lors d’interférences constructives, la différence de chemin optique est un nombre entier de fois la longueur d’onde: <span class="math notranslate nohighlight">\(\delta = m \lambda_0\)</span></p></li>
+<li><p>Lors d’interférences destructives, la différence de chemin opqitue est un nombre demi-entier de fois la longueur d’onde <span class="math notranslate nohighlight">\(\delta = (m + \frac{1}{2}) \lambda_0\)</span></p></li>
+</ul>
+<p>On pourra donc se servir des considérations géométriques pour calculer la différence de chemin optique et de la relation avec le déphasage pour déterminer les conditions d’interférences constructives et destructives.</p>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Attention : Calcul de la différence de chemin optique en pratique</p>
+<p>En pratique, le milieu peut être homogène <strong>par morceau</strong> . Il conviendra donc de découper le trajet du rayon en plusieurs morceaux de manière à calculer la différence de chemin optique au moyen des outils présentés précédemment.</p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Définition : Ordre d’interférences</p>
+<p>On définit l’ordre d’interférence en un point M par la grandeur: <span class="math notranslate nohighlight">\(p = \frac{\delta}{\lambda_0}=\frac{\Phi_M}{2 \pi}\)</span></p>
+</div>
+<div class="attention admonition">
+<p class="admonition-title">Fondamental : Intérêt</p>
+<ul class="simple">
+<li><p>Lors d’interférences constructives, l’ordre d’interférence est un entier <span class="math notranslate nohighlight">\(m\)</span> avec <span class="math notranslate nohighlight">\(m \in \mathbb{B}\)</span> (à relier avec l’entier définit pour la différence de chemin optique)</p></li>
+<li><p>Lors d’interférences destructives, l’ordre d’interférence est un demi-entier <span class="math notranslate nohighlight">\(m+\frac{1}{2}\)</span> avec <span class="math notranslate nohighlight">\(m \in \mathbb{N}\)</span></p></li>
+</ul>
+<p>L’intérêt du nombre d’interférence est de pouvoir “compter” combien de fois se produisent des interférences constructives entre 2 points <span class="math notranslate nohighlight">\(M_1\)</span> et <span class="math notranslate nohighlight">\(M_2\)</span>. En effet, la propriété précédent montre qu’entre deux de l’espace où se produisent des interférences, si l’ordre d’interférences est monotone sur le déplacement de <span class="math notranslate nohighlight">\(M_1\)</span> à <span class="math notranslate nohighlight">\(M_2\)</span> alors la différence <span class="math notranslate nohighlight">\(p_2 - p_1\)</span> correspond, en valeur entière, au nombre de fois où l’on observera des interférences constructives.</p>
+<p>Un exemple sera donné par la suite sur les fentes d’Young pour comprendre son utilisation.</p>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text"><strong>Différence de marche</strong><br />
+On définit la différence de marche comme la différence <span class="math notranslate nohighlight">\(SM_2 - SM_1\)</span>. Cette différence de marche n’a d’intérêt que si le milieu est homogène d’indice égal à 1. Nous parlons de cette grandeur ici car elle pourra être rencontrée dans certains exercices.</p>
+</div>
+</details></div>
+<div class="section" id="notion-de-coherence">
+<h3>Notion de cohérence<a class="headerlink" href="#notion-de-coherence" title="Permalink to this headline">¶</a></h3>
+<p><em>Rappel : Ondes cohérentes</em><br />
+<em>On rappelle que les interférences ne se produisent QUE si les ondes sont cohérentes, c’est-à-dire de même fréquences et de déphasage constant.</em></p>
+<p>Lorsque deux ondes sont créées par deux émetteurs, elles sont en général incohérentes car:</p>
+<ul class="simple">
+<li><p><strong>Incohérence temporelle:</strong>  Souvent les fréquences émises par les deux émetteurs sont différents (on dit qu’elles ne sont pas isochrones ou pas synchrones).</p></li>
+<li><p><strong>Incohérence spatiale:</strong>  Même si les fréquences sont rigoureusement identiques, il faut savoir qu’une onde est souvent émise par intermittence, on parle de paquets d’onde. C’est toujours le cas pour des ondes lumineuses où ces paquets d’ondes correspondent à un paquet de photons (on retrouve ici un peu la nature duelle de la lumière: corpuscule et onde). Or ces petits paquets sont émis de manière aléatoire et donc différemment pour les deux sources: le déphasage initial entre les deux ondes varient de manière aléatoire: les ondes sont incohérentes.</p></li>
+</ul>
+<p>Si les deux ondes sont issues de la même source, elles peuvent (et sont souvent) incohérentes aussi car:</p>
+<ul class="simple">
+<li><p>une même source peut envoyer plusieurs longueurs d’ondes (ex: la lumière blanche): il y a incohérence temporelle.</p></li>
+<li><p>elle peut ne pas être ponctuelle mais étendue: on peut alors la considérer comme un ensemble de petite sources ponctuelles incohérentes entre elles dans la plupart des cas. Il y a incohérence spatiale.</p></li>
+</ul>
+<div class="attention admonition">
+<p class="admonition-title">Fondamental :</p>
+<p>Les détails de cette études seront précisées par la suite mais en général, une perte de cohérence (temporelle ou spatiale) entraîne un <strong>brouillage des interférences</strong> , c’est-à-dire que le contraste entre les zones claires (interférences constructives) et les zones sombres (interférences destructives) devient plus faible ce qui peut même entrainer la disparition complète des interférences.</p>
+</div>
+</div>
+<div class="section" id="interferences-realisation">
+<h3>Interférences: Réalisation<a class="headerlink" href="#interferences-realisation" title="Permalink to this headline">¶</a></h3>
+<p>Si l’on veut réaliser des interférences, il faut donc en général augmenter la cohérence temporelle ET spatiale des sources mises en jeu:</p>
+<ul class="simple">
+<li><p>on peut s’approcher d’une source cohérente temporellement en utilisant des filtres lumineux pour ne laisser passer qu’une petite bande de fréquence.</p></li>
+<li><p>on peut diaphragmer la source pour limiter sa taille et augmenter sa cohérence spatiale.</p></li>
+<li><p>On peut utiliser un LASER qui permet d’avoir une forte cohérence spatiale ET temporelle sans dispositif supplémentaire. Évidemment, cela restreint le choix des longueurs d’onde.</p></li>
+</ul>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Exemple : Division du front d’onde et division d’amplitude</p>
+<p>Si l’on veut créer deux ondes cohérentes, c’est-à-dire de même fréquence ET dont le retard de l’une sur l’autre est constant, le plus simple est donc de partir d’une seule onde issue d’un point source monochromatique (qu’on fabrique comme expliqué précédemment) et la séparer en deux. On utilise deux méthodes:</p>
+<ul class="simple">
+<li><p><strong>Division du front d’onde.</strong>  Principe: On prend une onde qui s’est étendue en se propageant et on prend deux points de cette onde qu’on retransforme en deux sources (en utilisant le phénomène de diffraction). Exemple: Les fentes d’Young (a) qui seront étudiées par la suite.</p></li>
+<li><p><strong>Division d’amplitude.</strong>  Principe: Quand une onde arrive sur une variation brutale de milieu, elle se sépare en deux: une partie est réfléchie (réflexion), l’autre est transmise (réfraction ou transmission). Pour les ondes électromagnétiques, on retrouve les lois de Snell-Descartes. On a ainsi créer deux ondes cohérentes (b)!</p></li>
+</ul>
+<div class="figure align-center" id="fig-301">
+<img alt="../_images/Signaux_division_ondes.jpg" src="../_images/Signaux_division_ondes.jpg" />
+</div>
+</div>
+</div>
+<div class="section" id="interfrange">
+<h3>Interfrange<a class="headerlink" href="#interfrange" title="Permalink to this headline">¶</a></h3>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Les grandeurs précédentes montre que les positions correspondant à des interférences constructives (ou destructives) vont former des formes géométriques (surface, franges, hyerpoloïde… ).</p>
+<p class="card-text">Dans le cas très fréquents des franges (droite de même ordre d’interférence sur un écran), on définit l’<strong>interfrange</strong>  comme la distance entre deux franges d’égales intensités.</p>
+<div class="figure align-center" id="fig-302">
+<img alt="../_images/Signaux_3_Interference.jpg" src="../_images/Signaux_3_Interference.jpg" />
+</div>
+<p class="card-text">Sur l’exemple ci-avant, on pourrait mesurer la distance entre deux franges brillantes: elle correspondrait à l’interfrange.</p>
+</div>
+</details></div>
+<div class="section" id="fentes-d-young">
+<h3>Fentes d’Young<a class="headerlink" href="#fentes-d-young" title="Permalink to this headline">¶</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>Un éclairage LASER cohérent et monochromatique de longueur d’onde <span class="math notranslate nohighlight">\(\lambda_0\)</span> éclaire un ensemble de deux fentes parallèles de longueur L et de largeur <span class="math notranslate nohighlight">\(\epsilon\)</span> distantes l’une de l’autre de <span class="math notranslate nohighlight">\(a\)</span>. On suppose que <span class="math notranslate nohighlight">\(L\gg a\)</span> et <span class="math notranslate nohighlight">\(a\gg \epsilon\)</span> de sorte qu’on peut assimiler les fentes à des fentes de longueur infinies et d’épaisseur nulle.</p>
+<p>On place un écran parallèle aux fentes à une distance D des fentes telle que <span class="math notranslate nohighlight">\(D&gt;&gt;a\)</span> et on visualise la figure lumineuse en une zone proche du centre de l’écran (défini en regard du centre de la double fente). La figure, appelée figure d’interférences obtenues, est données figure suivante (la courbe correspond au profil d’intensité mesuré grâce à un capteur CCD).</p>
+<div class="figure align-center" id="fig-303">
+<img alt="../_images/Signaux_young_schema.jpg" src="../_images/Signaux_young_schema.jpg" />
+</div>
+<p>La diffraction permet de considérer les deux fentes <span class="math notranslate nohighlight">\(S_1\)</span> et <span class="math notranslate nohighlight">\(S_2\)</span> comme de nouvelles sources (des sources secondaires) qui émettent dans (presque) toutes les directions. Les interférences ont lieu dans tout une zone d’espace: on parle d’interférences délocalisées.</p>
+<ol class="simple">
+<li><p>Déterminer la différence de chemin optique en un point M de coordonnées <span class="math notranslate nohighlight">\((x;0)\)</span> sur l’écran sans approximation puis simplifier l’expressoin obtenue pour <span class="math notranslate nohighlight">\(x\ll D\)</span>.</p></li>
+<li><p>En déduire l’ordre d’interférence et le déphasage entre les deux ondes dans le cadre de l’approximation <span class="math notranslate nohighlight">\(x\ll D\)</span>.</p></li>
+<li><p>Déterminer les positions où l’interférences est contructives, destructives. Commenter la forme des zones claires et sombres.</p></li>
+<li><p>Déterminer l’interfrange, distance entre deux franges d’égales intensité.</p></li>
+<li><p>Comparer les données aux observations expérimentales faites ci-dessous.</p></li>
+</ol>
+<div class="figure align-center" id="fig-304">
+<img alt="../_images/Signaux_3_Interference.jpg" src="../_images/Signaux_3_Interference.jpg" />
+</div>
+<p>Intérêt de l’ordre d’interéférences</p>
+<ol class="simple">
+<li><p>Exprimer l’ordre d’interférence au centre de la figure (appelé <span class="math notranslate nohighlight">\(O_1\)</span>). Correspond-il à une frange brillante ou sombre?</p></li>
+<li><p>Exprimer l’ordre d’interférence en un point M de l’écran situé à une abscisse x.</p></li>
+<li><p>Exprimer au moyen de l’interfrange le nombre de franges située entre <span class="math notranslate nohighlight">\(O_1\)</span> et M. Retrouver l’interprétation de l’interfrange.</p></li>
+</ol>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Démonstration<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text"><strong>Calcul de la différence de chemin optique</strong><br />
+Le chemin parcouru par le premier rayon est <span class="math notranslate nohighlight">\(SS_1 M\)</span> et le chemin parcouru par le second rayon est <span class="math notranslate nohighlight">\(SS_2 M\)</span>. Les portions <span class="math notranslate nohighlight">\(SS_1\)</span> et <span class="math notranslate nohighlight">\(SS_2\)</span> étant identique, la différence de marche (qui est aussi la différence de chemin optique puisque <span class="math notranslate nohighlight">\(n=1\)</span>) est la même. Il vient <span class="math notranslate nohighlight">\(\delta = S_2 M - S_1 M\)</span> soit:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\delta &amp;= \sqrt{{\left(\frac{a}{2}- x\right)}^2 + D^2} - \sqrt{{\left(\frac{a}{2}+ x\right)}^2 + D^2}\\
+&amp;= D\left(\sqrt{{\left(\frac{\frac{a}{2}- x}{D}\right)}^2 + 1} - \sqrt{{\left(\frac{\frac{a}{2}+ x}{D}\right)}^2 + 1}\right)\\
+&amp;\approx D\left({1 + \frac{1}{2}\left(\frac{\frac{a}{2}- x}{D}\right)}^2 - \left(1 + \frac{1}{2}{\left(\frac{\frac{a}{2}+ x}{D}\right)}^2 + 1\right)\right)\\
+&amp;\approx - \frac{ax}{D}
+\end{align*}\]</div>
+<p class="card-text"><strong>Déphasage et ordre d’interférence</strong></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\Phi &amp;= \frac{2 \pi \delta}{\lambda_0}\\
+&amp;\approx - \frac{2\pi ax}{D\lambda_0}\\
+p &amp;= \frac{\delta}{\lambda_0}\\
+&amp;=\frac{ax}{D\lambda_0}
+\end{align*}\]</div>
+<p class="card-text"><strong>Interférences constructives et destructives</strong><br />
+Les interférences constructives sont obtenues là où le déphasage est de la forme <span class="math notranslate nohighlight">\(2m\pi\)</span> avec <span class="math notranslate nohighlight">\(m \in \mathbb{Z}\)</span> et les interférences destructives sont obtenues là où le déphasage est de la forme <span class="math notranslate nohighlight">\((2m+1)\pi\)</span> avec <span class="math notranslate nohighlight">\(m \in \mathbb{Z}\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+&amp;- \frac{2\pi ax_{constructif}}{D\lambda_0} = 2m \pi \\
+&amp; \Longrightarrow x_{constructif} = \frac{D \lambda_0 m}{ a}\\
+&amp;- \frac{2\pi ax_{destructif}}{D\lambda_0} = (2m + 1) \pi \\
+&amp; \Longrightarrow x_{destructif} = \frac{D \lambda_0 (m + 1/2)}{ a}
+\end{align*}\]</div>
+<p class="card-text">Les zones claires et sombres correspondent à des zones où x est fixé mais la coordonnées transverses y est quelconque: les zones claires et sombres seront des franges.</p>
+<p class="card-text"><strong>Interfrange et interférométrie.</strong><br />
+L’interfrange est l’écart minimale entre deux franges d’égales intensités (brillantes par exemples) donc soit: <span class="math notranslate nohighlight">\(i = x_{m+1} - x_{m} = \frac{D\lambda_0}{a}\)</span>. On observe que l’interfrange (grandeur mesurable est d’<strong>autant plus grande que l’écart entre les fentes est petit</strong> : on peut donc remonter à une distance très petite en la transformation en une distance très grande, mesurable à notre échelle: c’est le grand intérêt de l’<strong>interférométrie</strong> .</p>
+<p class="card-text"><strong>Figure d’interférences</strong><br />
+On observe bien l’alternance de franges brillantes et sombres comme prévu.</p>
+<p class="card-text">Par contre, on observe une diminution de l’intensité quand on s’éloigne du bord qui n’est pas prévu par la théorie. Cela est du au phénomène de diffraction. Ce dernier élargie les faisceau au niveu des fentes permettant aux deux faisceaux de se rencontrer, <strong>d’interférer</strong> . Mais cet élargissement est limité à un cône et en dehors de ce cône, l’intensité chute diminuant l’intensité des raies observées. Cette diminution n’est pas brutale mais suit un profil similaire à celui observé pour la diffraction seule dans le chaptre précédent.</p>
+<p class="card-text"><strong>Ordre d’interférence</strong><br />
+Au centre, <span class="math notranslate nohighlight">\(p=0\)</span>, on observe une frange brillante.</p>
+<p class="card-text">En un point d’abscisse x, l’ordre d’interférence est <span class="math notranslate nohighlight">\(p = \frac{ ax}{D\lambda_0}\)</span></p>
+<p class="card-text">Entre O et M, le nombre de franges brillantes est <span class="math notranslate nohighlight">\(\frac{x}{i}= \frac{ax}{D\lambda_0} = p\)</span>: on retrouve le fait que la différence d’ordre d’interférence entre deux points correspond au nombre de franges brillantes visible (attention, il faut que l’ordre d’interférence soit monotone entre les deux points).</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text"><strong>Notation complexe</strong><br />
+Dans le cas d’ondes cohérentes, on travaille avec un ensemble d’ondes de même fréquence dont la somme est une onde sinusoïdale de même fréquence. On dispose alors de deux outils très puissants pour étudier les interférences:</p>
+<ul class="simple">
+<li><p class="card-text">la représentation de Fresnel</p></li>
+<li><p class="card-text">la représentation complexe des grandeurs sinusoïdales</p></li>
+</ul>
+<p class="card-text">Un exercice sera proposé sur ces méthodes et un devoir libre permet de voir comme ces outils permettent de généraliser l’étude précédente à la superposition de N ondes (<span class="math notranslate nohighlight">\(N &gt; 2\)</span>).</p>
+</div>
+</details></div>
+</details></div>
+<div class="section" id="fentes-d-young-perte-de-coherence-temporelle">
+<h3>Fentes d’Young: Perte de cohérence temporelle<a class="headerlink" href="#fentes-d-young-perte-de-coherence-temporelle" title="Permalink to this headline">¶</a></h3>
+<p><strong>La taille de l’interfrange varie en fonction de la longueur d’onde/</strong>  Si on superpose deux couleurs (en envoyant une lumière qui n’est pas monochromatique), leur figure d’interférence va simplement se superposer (<strong>ce sont deux ondes qui n’ont pas la même longueur d’onde donc il ne se produit pas d’interférences: on somme les intensités</strong> ).</p>
+<p>Il se passe la même chose avec la lumière blanche: on observe une superposition continue de figure d’interférences décalées qui produisent un phénomène d’irisation. L’image est plus flou à cause des superposition: on parle de <strong>décohérence temporelle</strong> .</p>
+<div class="figure align-center" id="fig-305">
+<img alt="../_images/Signaux_3_Coherence.jpg" src="../_images/Signaux_3_Coherence.jpg" />
+</div>
+</div>
+<div class="section" id="fentes-d-young-interferences-a-l-infini">
+<h3>Fentes d’Young: Interférences à l’infini<a class="headerlink" href="#fentes-d-young-interferences-a-l-infini" title="Permalink to this headline">¶</a></h3>
+<p>Il est très fréquent qu’on s’intéresse à une figure d’interférence à l’infini. Nous allons voir comme la traiter puis comment traiter sa projection.</p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>On considère toujours le dispositif des fentes d’Young mais on supprime l’écran et on s’intéresse à la figure d’interférences observées à l’infini (celle qu’observerait un oeil emmétrope au repos se plaçant à la place de l’écran - attention en pratique, il ne faut pas le faire si c’est un LASER !).</p>
+<ol class="simple">
+<li><p>Quelle grandeur va alors caractériser un point de l’image à l’infini ?</p></li>
+<li><p>En utilisant le théorème de Malus et le principe de retour inverse, montrer que la différence de chemin optique se limite à la distance entre <span class="math notranslate nohighlight">\(S_2\)</span> et le projeté de <span class="math notranslate nohighlight">\(S_1\)</span> sur le rayon 2. En déduire la différence de chemin optique.</p></li>
+<li><p>Exprimer alors les conditions d’intérférence constructives et destructives.</p></li>
+<li><p>Comment faire pour observer la figure d’interférences à l’infini…  sur un écran. Déduire alors les conditions d’interférences constructives et l’interfrange sur l’écran.</p></li>
+</ol>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Démonstration<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text"><strong>Image à l’infini</strong><br />
+Un point-image à l’infini est caractérisé par l’angle (noté <span class="math notranslate nohighlight">\(\theta_S\)</span> ici) que fait le faisceau de rayon parallèle qui point vers le points avec l’axe optique (ici la médiane aux deux fentes).</p>
+<div class="figure align-center" id="fig-306">
+<img alt="../_images/Signaux_young_infini.jpg" src="../_images/Signaux_young_infini.jpg" />
+</div>
+<p class="card-text">Deux rayons issus des fentes et interférant en un point repérant par un angle <span class="math notranslate nohighlight">\(\theta\)</span> seront donc deux rayons parallèles passant par <span class="math notranslate nohighlight">\(S_1\)</span> et <span class="math notranslate nohighlight">\(S_2\)</span> et faisant un angle <span class="math notranslate nohighlight">\(\theta\)</span> avec l’axe optique (comme représenté ci-avant).</p>
+<p class="card-text">Si l’on considère deux rayons issus du point image et se dirigeant vers les fentes, le théorème de Malus assure que les front d’onde sont perpendiculaire donc le déphasage entre deux plans perpendiculaire aux rayons est nul. Il reste que le déphasage entre les deux rayons quand il arrive aux fentes se résume au retard à la propagation associé au petit chemin supplémentaire parcouru par le rayon 2 pour aller du projeté de <span class="math notranslate nohighlight">\(S_1\)</span> sur le rayon 2 (point noté H sur le même front d’onde que <span class="math notranslate nohighlight">\(S_1\)</span>) jusqu’au point <span class="math notranslate nohighlight">\(S_2\)</span>.</p>
+<p class="card-text">Par principe de retour inverse, la lumière emprunte le même chemin pour aller des fentes au point objet et le déphasage entre les deux rayons sera le même que dans l’autre sens. Il vient que la différence de chemin optique sera <span class="math notranslate nohighlight">\(nS_2 H = S_2 H = a \sin \theta_S\)</span>.</p>
+<p class="card-text">On en déduit la condition d’interférence constructive: <span class="math notranslate nohighlight">\(a \sin \theta_S = m \lambda_0\)</span> avec <span class="math notranslate nohighlight">\(m \in \mathbb{Z}\)</span>.</p>
+<p class="card-text">On déterminera de la même manière la condition d’interférence destructive.</p>
+<p class="card-text">Pour observer la figure d’interférence à l’infini sur un écran, il faut la <strong>projeter au moyen d’une lentille</strong> . On place l’écran dans le plan focal de la lentille qui est alors conjugué avec un objet à l’infini soit la figure d’interférence à l’infini.</p>
+</div>
+</details><div class="note admonition">
+<p class="admonition-title">Attention : Utilisation d’une lentille</p>
+<p>Comme on peut le voir sur l’exemple ci-dessous, les rayons sont déviés par la lentille mais <strong>on ne peut pas utiliser une somme par morceau des trajets car la schématisation de Gauss ne modélise pas l’épaisseur de la lentille</strong> . Il faut utiliser une autre méthode:</p>
+<ol class="simple">
+<li><p>On déterminer l’antécédent de l’écran par la lentille (en général, c’est l’infini)</p></li>
+<li><p>On détermine la figure d’interférence dans le plan de l’antécédent</p></li>
+<li><p>On relie les caractéristique d’un point de l’antécédent à celui d’un point sur l’écran.</p></li>
+</ol>
+<div class="figure align-center" id="fig-307">
+<img alt="../_images/Signaux_Correction_Lentilles.jpg" src="../_images/Signaux_Correction_Lentilles.jpg" />
+</div>
+</div>
+<p><strong>Interférences dans le plan focal de la lentille</strong><br />
+On a placé l’écran de sorte qu’il soit conjugué avec le plan objet à l’infini donc la figure d’interférence sur l’écran est conjugué à celle à l’infini sans la lentille.</p>
+<p>On a déjà déterminer les caractéristiques de la figure d’interférence à l’infini.</p>
+<p>Pour un point M situé à une distance x de l’axe optique, on peut construire les rayons incidents (faisceau de rayons parallèles) en utilisant les règles habituelles: ici on trace un rayon sortant passe par M et le centre optique vient d’un rayon non dévié. Les deux rayons incident passant par les sources et ressortant par M doivent être parallèles à ce rayon, d’où la construction.</p>
+<p>Il vient que l’angle que fait le faisceau incident avec l’axe optique est <span class="math notranslate nohighlight">\(\theta \approx \tan \theta = \frac{x}{f'}\)</span> (on utilise les conditions de Gauss pour réaliser un stigmatisme).</p>
+<p>Dans les conditions d’interférences constructives, on a la relation <span class="math notranslate nohighlight">\(\theta \approx \sin \theta = m \frac{\lambda_0}{a}\)</span> soit une condition d’interférence constructive sur l’écran: <span class="math notranslate nohighlight">\(x =\frac{mf' \lambda_0}{a}\)</span>.</p>
+<p>L’interfrange est donc <span class="math notranslate nohighlight">\(i = \frac{f' \lambda_0}{a}\)</span>.</p>
+<div class="figure align-center" id="fig-308">
+<img alt="../_images/lentille.png" src="../_images/lentille.png" />
+</div>
+</div>
+</div>
+<div class="section" id="exercices-d-application">
+<h2>Exercices d’application<a class="headerlink" href="#exercices-d-application" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="battements-lumineux">
+<h3>Battements lumineux<a class="headerlink" href="#battements-lumineux" title="Permalink to this headline">¶</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>En comparant des ordres de grandeurs adaptés, montrer qu’on ne peut observer un phénomène de “battements lumineux”.</p>
+</div>
+</div>
+<div class="section" id="bilan-sur-les-interferences">
+<h3>Bilan sur les interférences<a class="headerlink" href="#bilan-sur-les-interferences" title="Permalink to this headline">¶</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>Reproduire dans un tableau le bilan des grandeurs caractéristiques qu’on peut calculer pour étudier une figure d’interférences et donner les valeurs possibles qu’elles peuvent prendre pour des cas d’interférences constructives et des cas d’interférences destructives.</p>
+</div>
+</div>
+</div>
+<div class="section" id="travaux-diriges">
+<h2>Travaux dirigés<a class="headerlink" href="#travaux-diriges" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="trous-d-young-representation-de-fresnel">
+<h3>Trous d’Young. Représentation de Fresnel<a class="headerlink" href="#trous-d-young-representation-de-fresnel" title="Permalink to this headline">¶</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>On considère une source de lumière monochromatique de longueur d’onde <span class="math notranslate nohighlight">\(\lambda\)</span>, ponctuelle située au point S et émettant dans le vide. A une distance <span class="math notranslate nohighlight">\(D_1\)</span> de S, on place une plaque opaque percé de 2 trous <span class="math notranslate nohighlight">\(S_1\)</span> et <span class="math notranslate nohighlight">\(S_2\)</span> distants de a. On suppose que ces deux trous sont de taille <span class="math notranslate nohighlight">\(\epsilon\)</span> très faibles. On note O le milieu des deux trous et Ox l’axe normale au plan. Dans un premier temps, la source S est située sur l’axe Ox. On note Oy l’axe passant par les deux trous et Oz l’axe perpendiculaire dans le plan de la plaque.</p>
+<ol class="simple">
+<li><p>Quelle phénomène justifie qu’à la sortie des trous, on puisse considérer l’existence d’un faisceau élargi. Rappeler alors la relation (approximative) entre l’ouverture angulaire du faisceau et la taille du trou.</p></li>
+<li><p>Faire un schéma du dispositif en représentant les faisceaux sortant des deux trous. Justifier qu’on puisse observer des interférences entre deux ondes lumineuses dans un zone qu’on précisera.</p></li>
+<li><p>Dans l’hypothèse d’un trou infiniment petit, que devient cette hypothèse? Quel problème pratique pose l’utilisation d’un trou top petit? On supposera ce problème non limitant dans l’étude faite ici et on supposera <span class="math notranslate nohighlight">\(\epsilon=0\)</span> dans toute la suite du problème de sorte que l’on puisse les assimiler à deux sources nouvelles sources ponctuelles secondaires.</p></li>
+<li><p>On place un écran parallèle à la plaque à une distance <span class="math notranslate nohighlight">\(D_2\)</span> de la plaque et on suppose <span class="math notranslate nohighlight">\(D_2\gg a\)</span>. Sur l’écran, on repère la position d’un point à ses coordonnées <span class="math notranslate nohighlight">\((y,z)\)</span> par rapport au centre A, intersection de l’écran et de l’axe Ox.  On s’intéresse à l’éclairement en un point M de coordonnées <span class="math notranslate nohighlight">\((y_M,0)\)</span>. On suppose <span class="math notranslate nohighlight">\(D_2\gg y_M\)</span> et on donne <span class="math notranslate nohighlight">\(\sqrt{1+e}\approx 1+ \frac{e}{2}\)</span> si <span class="math notranslate nohighlight">\(e\ll 1\)</span>.</p></li>
+<li><p>On considère l’onde passant par le trou <span class="math notranslate nohighlight">\(S_1\)</span>.</p>
+<ol class="simple">
+<li><p>Exprimer la distance <span class="math notranslate nohighlight">\(SS_1 M\)</span> parcouru par l’onde.</p></li>
+<li><p>En déduire l’amplitude du champ électrique (au sens <span class="math notranslate nohighlight">\(E(x,t)\)</span> - abus de langage - associé à cette onde au point M (on prendre S comme origine des phases et on traitera le champ électrique comme une grandeur scalaire).</p></li>
+<li><p>Montrer que l’on peut introduire une grandeur <span class="math notranslate nohighlight">\(e\)</span> exprimée en fonction de <span class="math notranslate nohighlight">\(D_2\)</span>, a et <span class="math notranslate nohighlight">\(y_M\)</span> très petite devant 1 et permettant d’utiliser l’approximation donnée dans l’énoncé. Simplifier alors l’expression de l’amplitude (au sens <span class="math notranslate nohighlight">\(E(x,t)\)</span>).</p></li>
+</ol>
+</li>
+<li><p>Répondre aux questions précédentes pour l’onde passant par le trou <span class="math notranslate nohighlight">\(S_2\)</span>.</p></li>
+<li><p>Soit les points <span class="math notranslate nohighlight">\(M_1(\frac{D_2 \lambda}{2a};0)\)</span> et <span class="math notranslate nohighlight">\(M_1(\frac{D_2 \lambda}{a};0)\)</span> et les phases à l’origine des rayons passant par le trou <span class="math notranslate nohighlight">\(S_1\)</span> aux points A, <span class="math notranslate nohighlight">\(M_1\)</span> et <span class="math notranslate nohighlight">\(M_2\)</span>: <span class="math notranslate nohighlight">\(\phi_A\)</span>, <span class="math notranslate nohighlight">\(\phi_1\)</span> et <span class="math notranslate nohighlight">\(\phi_2\)</span> (on les supposera toutes incluses dans <span class="math notranslate nohighlight">\([0;\pi/2]\)</span>).</p>
+<ol class="simple">
+<li><p>Donner la représentation de Fresnel de <span class="math notranslate nohighlight">\(E(x,t)\)</span> du rayon passant par le trou <span class="math notranslate nohighlight">\(S_1\)</span> aux points A, <span class="math notranslate nohighlight">\(M_1\)</span> et <span class="math notranslate nohighlight">\(M_2\)</span></p></li>
+<li><p>Faire de même pour l’amplitude du rayon passant par le trou <span class="math notranslate nohighlight">\(S_2\)</span> aux mêmes points.</p></li>
+<li><p>Déduire graphiquement l’amplitude de l’onde résultante pour les positions de x proposée.</p></li>
+</ol>
+</li>
+<li><p>Déterminer par le calcul l’amplitude complexe de l’onde résultante en un point de coordonnées <span class="math notranslate nohighlight">\((y_M;0)\)</span> puis son amplitude réelle. Déterminer alors les positions des franges brillantes et des franges sombres ainsi que l’interfrange.</p></li>
+<li><p>On déplace la source S d’une distance d dans la direction Oy. On suppose les résultats précédents toujours vrais, déterminer le nombre de franges brillantes que l’on voit défiler au point <span class="math notranslate nohighlight">\(A(0;0)\)</span> sur l’écran pendant l’opération.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="doublet-du-sodium">
+<h3>Doublet du sodium.<a class="headerlink" href="#doublet-du-sodium" title="Permalink to this headline">¶</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>On considère l’expérience des trous d’Young présentées dans l’exercice précédent. On se place dans le même cadre d’approximation de sorte que pour une lumière monochromatique de longueur d’onde <span class="math notranslate nohighlight">\(\lambda\)</span>, on obtiendra les mêmes résultats. Pour un point M de l’écran, le champ électrique s’écrit:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-eb212935-79a2-44ae-9e16-3f281358c07e">
+<span class="eqno">(10)<a class="headerlink" href="#equation-eb212935-79a2-44ae-9e16-3f281358c07e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+E(M,t) = 2 E_{1m} \cos(\frac{\pi a y_M}{\lambda D_2}) \cos(\omega t - \Phi_M)
+\end{equation}\]</div>
+<p>avec <span class="math notranslate nohighlight">\(\Phi_M\)</span> un terme de phase inutile ici.</p>
+<p>Un capteur de lumière (capteur CCD) parcourt à une vitesse <span class="math notranslate nohighlight">\(v\)</span> l’axe Ay de l’écran et fournit une tension <span class="math notranslate nohighlight">\(U(t)\)</span> proportionnelle à l’éclairement <span class="math notranslate nohighlight">\(I\)</span> où il se trouve.</p>
+<ol class="simple">
+<li><p>Déterminer l’expression de <span class="math notranslate nohighlight">\(U(t)\)</span>. En déduire le spectre de Fourier de <span class="math notranslate nohighlight">\(U(t)\)</span>. Justifier que la détermination expérimentale du spectre permet de remonter à la longueur d’onde de la lumière incidente.</p></li>
+<li><p>On remplace la source monochromatique par une lampe spectrale au sodium émettant deux longueurs d’onde <span class="math notranslate nohighlight">\(\lambda_1=\frac{2 \pi}{k_1}\)</span> et <span class="math notranslate nohighlight">\(\lambda_2 = \frac{2 \pi}{k_2}\)</span> (on pose <span class="math notranslate nohighlight">\(\lambda_2&lt;\lambda_1\)</span>). On note <span class="math notranslate nohighlight">\(k_m=\frac{k_1+k_2}{2}\)</span> et <span class="math notranslate nohighlight">\(\Delta k = \frac{k_2 - k_1}{2}\)</span>.
+1.Pourquoi peut-on calculer l’éclairement causé par chaque longueur d’onde indépendamment? En déduire l’éclairement total <span class="math notranslate nohighlight">\(I_T(x)\)</span> puis la tension mesurée <span class="math notranslate nohighlight">\(U_T(t)\)</span>.</p>
+<ol class="simple">
+<li><p>Montrer que <span class="math notranslate nohighlight">\(U_T(t)\)</span> se décompose en une somme de deux sinusoïdes dont on déterminera les fréquences. Représenter graphiquement <span class="math notranslate nohighlight">\(U_T(t)\)</span> et son spectre.</p></li>
+<li><p>Justifier que la détermination du spectre de <span class="math notranslate nohighlight">\(U_T(t)\)</span> permet de remonter aux deux longueurs d’onde <span class="math notranslate nohighlight">\(\lambda_1\)</span> et <span class="math notranslate nohighlight">\(\lambda_2\)</span>.</p></li>
+<li><p>Montrer aussi que l’étude graphique de l’évolution temporelle de <span class="math notranslate nohighlight">\(U_T(t)\)</span> permettrait de déterminer <span class="math notranslate nohighlight">\(k_m\)</span> et <span class="math notranslate nohighlight">\(\Delta k\)</span> et donc les deux longueurs d’onde, préciser clairement la méthode.</p></li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="ondes_propagation.html" title="previous page">Description des ondes</a>
+    <a class='right-next' id="next-link" href="ondes_stationnaires.html" title="next page">Ondes stationnaires</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
