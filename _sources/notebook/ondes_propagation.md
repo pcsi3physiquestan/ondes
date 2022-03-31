@@ -17,8 +17,7 @@ kernelspec:
 
 ## Définition générale
 
-````{admonition} Définition : Onde
-:class: tip
+````{important} __Définition : Onde__
 
 Une onde est la propagation d'une perturbation produisant sur son passage une variation réversible des propriétés physiques locales du milieu.
 
@@ -47,8 +46,7 @@ On décrit la propagation d'une onde par l'expression des grandeurs physiques as
 On remarque que ces grandeurs dépendent du temps ET de l'espace car l'onde se propage dans...  l'espace. Certaines peuvent être vectorielles (vitesses, champ électrique... ).
 ````
 
-````{admonition} Définition : Ondes longitudinales et transversales
-:class: tip
+````{important} __Définition : Ondes longitudinales et transversales__
 
 Une onde se propage localement dans une direction. La perturbation locale est associée à une grandeur qui varie en général aussi avec une direction spatiale. On distingue:
 
@@ -69,15 +67,13 @@ __Mise en situation__
 Supposons une onde se propageant suivant un axe Ox avec une célérité v __dans le sens des x croissants__ . Elle est caractérisée par une grandeur y dont on note l'expression en un point M à un instant t $y(x,t)$ où x est l'abscisse du point M.
 
 
-````{admonition} Définition : Retard d'une onde
-:class: tip
+````{important} __Définition : Retard d'une onde__
 
 Pour aller d'un point A de coordonnées $x_A$ à un point B de coordonnées $x_B$, l'onde met un temps $\Delta t = \frac{x_B - x_A}{v}$ qu'on appelle __retard à la propagation__ .
 
 ````
 
-````{admonition} Fondamental : Expression mathématique pour une onde progressive
-:class: attention
+````{important} __Fondamental : Expression mathématique pour une onde progressive__
 
 L'expression de y au point B de coordonnées $x_B$ et notée $y(x_B,t)$ est la même que l'expression de y au point A mais __retardée__  du temps $\Delta t$ correspondant au retard à la propagation entre A et B:
 
@@ -101,13 +97,13 @@ Dans les cas étudiées (onde plane), l'onde ne se déforme pas de sorte que la 
 y(x,t) = g(t - \frac{x}{v})
 \end{equation}
 
-````{admonition} Fondamental : Forme mathématique d'une onde (2)
-:class: attention
+````{important} __Fondamental : Forme mathématique d'une onde (2)__
 
 La forme spatiale de l'onde à un instant $t_2$ $y(x,t_2)$ correspond à la forme spatiale de l'onde à un instant $t_1$ où l'expression y en chaque point est "décalé" d'une distance $v t_1$:
 
 \begin{equation}
 y(x,t_2) = y(x - v (t_2 - t_1), t_1)
+\end{equation}
 ````
 
 
@@ -123,8 +119,9 @@ Dans les cas étudiées (onde plane), l'onde ne se déforme pas de sorte que la 
 y(x,t) = h(x - v t)
 \end{equation}
 
-````{admonition} Attention : Ondes progressive et régressive
-:class: note
+````{attention}
+__Ondes progressive et régressive__
+
 
 On suppose ici que l'onde se propage dans le sens des x __positifs__ . Si l'onde se propage dans le sens des x négatifs, il faut opposés les signes des retards. Un exercice d'application propose de le démontrer.
 
@@ -146,8 +143,7 @@ On en vient alors à étudier les caractéristiques des ondes dont la forme sera
 Dans toute cette étude, on supposera qu'il existe une source au point O d'où l'onde est issue. L'origine des retards sera prise au point O. On traitera le cas d'une onde se propageant suivant l'axe Ox dans le sens des x croissants. L'étude pourra se généraliser à une propagation dans le sens des x décroissants.
 ````
 
-````{admonition} Définition : Ondes progressive harmonique (OPH)
-:class: tip
+````{important} __Définition : Ondes progressive harmonique (OPH)__
 
 Une onde sinusoïdale est une onde dont la forme est un sinusoïde $g(t) = g_m \cos(\omega t)$. Une onde progressive sur un axe Ox suivant les x croissants aura pour amplitude:
 
@@ -162,8 +158,7 @@ y(x,t) = g_m \cos(\omega t + \omega \frac{x}{v}) = g_m \cos(\omega t + kx)
 
 ````
 
-````{admonition} Définition : Caractéristiques d'une OPH
-:class: tip
+````{important} __Définition : Caractéristiques d'une OPH__
 
 * __Pulsation/Fréquence/Période temporelle:__  $\omega; f= \frac{\omega}{2 \pi}; T = \frac{2 \pi}{\omega}$
 * __La longueur d'onde (ou période spatiale)__  $\lambda$ est la distance minimale qui sépare deux positions où la perturbation est la même à chaque instant.
@@ -172,8 +167,7 @@ y(x,t) = g_m \cos(\omega t + \omega \frac{x}{v}) = g_m \cos(\omega t + kx)
 
 ````
 
-````{admonition} Fondamental : Relation temps-espace
-:class: attention
+````{important} __Fondamental : Relation temps-espace__
 
 Pour une onde sinusoïdale de célérité $c$ et de fréquence f. On a la relation: $\lambda f = v_{onde}$
 
@@ -377,15 +371,13 @@ Dans toute l'étude réalisée précédemment, nous avons parlé de source émet
 En réalité, toute source lumineuse possède une taille non nulle (on parle de source étendue). Cela complique le traitement complet car l'onde résultante émise par un point peut être supposée sphérique, pas l'onde émise par un corps de géométrie quelconque aura peu de chance d'être sphérique. Heureusement, nous verrons par la suite que l'onde résultante de l'émission de l'ensemble de la source lumineuse suit un principe de superposition du champ électrique de l'onde. En clair, on peut sommer les champs émis par chaque «morceau» de source, d'où l'idée simple de décomposer la source en une multitude de point lumineux d'extension quasi nulle.
 
 
-````{admonition} Définition : Point source lumineux
-:class: tip
+````{important} __Définition : Point source lumineux__
 
 Un point source lumineux est un point émettant une onde lumineuse dans une ou plusieurs direction. On lui associe en général un cône d'émission (qui peut-être toute la sphère) ainsi qu'un spectre d'émission.
 
 ````
 
-````{admonition} Définition : Point source monochromatique
-:class: tip
+````{important} __Définition : Point source monochromatique__
 
 Un point source monochromatique est un point source émettant une lumière monochromatique.
 
@@ -395,8 +387,7 @@ Un point source monochromatique est un point source émettant une lumière monoc
 La majorité des sources lumineuses peuvent être décomposées en une multitude de points sources lumineux indépendants, c'est-à-dire dont l'émission est indépendante les unes des autres. Si le spectre d'émission des points d'une même source est normalement le même, il est en général fréquent que le déphasage entre ces points sources soit aléatoires et variables. Nous verrons que cela joue un rôle dans les processus d'interférences vu au prochain chapitre.
 
 
-````{admonition} Attention : 
-:class: note
+````{attention}
 
 Le modèle de point source lumineux est un modèle théorique qui ne peut-être rigoureusement réalisé lors d'une expérience (on rappelle l'argument d'énergie nulle). Il s'agit d'un modèle très pratique pour décrire une source étendue. On peut néanmoins s'approcher du modèle du point lumineux en utilisant un diaphragme très petit. La seule limite pratique est alors les besoins en luminosité de l'expérience.
 
@@ -404,8 +395,7 @@ Le modèle de point source lumineux est un modèle théorique qui ne peut-être 
 
 ### Front d'onde: Définition
 
-````{admonition} Définition : Surface d'onde
-:class: tip
+````{important} __Définition : Surface d'onde__
 
 Une surface d'onde (où front d'onde) est l'ensemble des points possédant la même phase (le même retard sur la source de l'onde).
 
@@ -419,14 +409,12 @@ Sur le graphique précédent, on a représenté en traits pleins les surfaces d'
 
 ````
 
-````{admonition} Fondamental : Théorème de Malus (Admis)
-:class: attention
+````{important} __Fondamental : Théorème de Malus (Admis)__
 
 Lorsque le phénomène de diffraction peut-être négligé (cf. suite), le trajet d'une onde matérialisée par le trajet de l'énergie suivant des "rayons" est perpendiculaire au surface d'onde (cf. la figure précédente).
 ````
 
-````{admonition} Définition : Types d'ondes
-:class: tip
+````{important} __Définition : Types d'ondes__
 
 __Cas d'une onde plane:__  l'amplitude ne dépend pas de la position transverse à la propagation. On étudie souvent ce type d'onde car elle est simple mais les ondes créées en général sont plutôt circulaires ou sphériques (et encore... ).
 

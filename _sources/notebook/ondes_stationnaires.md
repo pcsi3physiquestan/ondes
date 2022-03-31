@@ -19,15 +19,13 @@ kernelspec:
 
 ### Présentation
 
-````{admonition} Définition : Onde stationnaire
-:class: tip
+````{important} __Définition : Onde stationnaire__
 
 Une onde stationnaire est le phénomène résultant de la propagation simultanée dans des sens opposés de plusieurs ondes de même fréquence et de même amplitude, dans le même milieu physique, qui forme une figure dont certains éléments sont fixes dans le temps.
 
 ````
 
-````{admonition} Fondamental : Expression mathématique
-:class: attention
+````{important} __Fondamental : Expression mathématique__
 
 Une onde stationnaire peut s'écrire sous la forme:
 
@@ -46,8 +44,7 @@ Par extension, on appelle parfois onde stationnaire la superposition de plusieur
 Par le suite, on traitera souvent l'expression proposées avec des phases à l'origine nulle. Pour l'origine des temps, cela ne pose aucun problème puisqu'on peut la choisir. Pour l'origine des positions, il faudra faire attention car on peut se retrouver quelque fois avec des phases à l'origine spatiale non nulle.
 
 
-````{admonition} Fondamental : Analyse. Noeuds et ventre.
-:class: attention
+````{important} __Fondamental : Analyse. Noeuds et ventre.__
 
 Le terme __stationnaire__  est associé au fait que le temps et l'espace sont maintenant séparé dans deux fonctions. Il n'y a ainsi plus de propagation (cf. Animation ci-après).
 
@@ -66,8 +63,7 @@ Le caractère stationnaire implique que les noeuds et les ventres sont __fixes._
 
 ### Superposition et réflexion totale
 
-````{admonition} Fondamental : Superposition
-:class: attention
+````{important} __Fondamental : Superposition__
 
 On rappelle qu'une onde stationnaire est la superposition de deux ondes l'une progressive et l'autre régressive __de même amplitude et de même fréquence__  (cf. ANIMATION ci-après).
 
@@ -89,8 +85,7 @@ Nous allons expliquer par la suite pourquoi on a mis un signe "-" déphasage de 
 On peut tout à fait réaliser le même genre de calcul avec un signe "+" ou en écrivant les expressions des ondes avec des sinus mais attention, __l'expression de l'onde stationnaire obtenue va alors changer__ .
 ````
 
-````{admonition} Fondamental : Superposition et réflexion totale
-:class: attention
+````{important} __Fondamental : Superposition et réflexion totale__
 
 La manière la plus simple de réaliser une onde stationnaire et de __réfléchir parfaitement__  l'onde progressive (incidente). Dans ces conditions, l'onde réfléchie (régressive) aura la même amplitude.
 
@@ -105,8 +100,7 @@ Une réflexion totale impose en général un __noeud__ pour l'onde stationnaire 
 
 ````
 
-````{admonition} Attention : 
-:class: note
+````{attention}
 
 L'argument "réflexion parfaite" ne suffit pas pour justifier l'existence d'une onde stationnaire. Il faut utilise la nullité de la grandeur associée pour le démontrer. Nous allons voir la méthode sur l'exemple de la corde.
 
@@ -139,8 +133,7 @@ Une onde transporte de l'énergie. Or au point A, il n'y a pas de mouvement, don
 y(x,t) = A \cos \left(\omega t - kx\right) + B \cos \left(\omega t + kx + \varphi\right)
 \end{equation}
 
-```{admonition} Attention : 
-:class: note
+```{attention}
 
 On n'écrit pas tout de suite que les amplitudes sont égales, il va falloir le prouver.
 
@@ -238,8 +231,7 @@ On peut montrer à l'aide des équations du système (cf. deuxième année) qu'u
 Nous allons maintenant utiliser la deuxième condition aux limites. Celle-ci est fondamental puisqu'elle conduit à la __quantification des modes propres__ .
 
 
-````{admonition} Fondamental : Modes propres de la corde de Melde
-:class: attention
+````{important} __Fondamental : Modes propres de la corde de Melde__
 
 Pour qu'une onde sinusoïdale de fréquence f puisse exister dans une corde de longueur L où la vitesse de propagation des ondes mécanique est $v_{onde}$, il faut que $f=n \frac{v_{onde}}{2L}$ soit une longueur d'onde: $\lambda=\frac{2L}{n}$ avec $n \in \mathbb{N}$.
 

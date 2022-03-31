@@ -42,8 +42,7 @@ _On rappelle que le déphasage d'un signal sinusoïdal 2 sur un autre signal sin
 &= \left(\omega_2 - \omega_1\right)t + \phi_{M,2} - \phi_{M,1}
 \end{align*}
 
-````{admonition} Définition : Ondes synchrones et cohérentes
-:class: tip
+````{important} __Définition : Ondes synchrones et cohérentes__
 
 Deux ondes sont dites __synchrones__  si elles ont la même fréquence.
 
@@ -68,8 +67,7 @@ y(M,t) = Y_{1m}\cos(\omega_1 t + \phi_{M,1})+Y_{2m}\cos(\omega_2 t + \phi_{M,2})
 
 ### Représentation de Fresnel
 
-````{admonition} Attention : 
-:class: note
+````{attention}
 
 Le signal de issu de la superposition des deux ondes n'est a priori pas sinusoïdal. On ne peut lui donner une représentation complexe dans le plan complexe. Par contre, on peut remarquer que $Y(M,t)$ peut se lire comme la somme de abcisses de chaque représentation.
 
@@ -157,8 +155,7 @@ Comme on va le montrer, on attend alors un déphasage constant et la représenta
 ```
 
 
-````{admonition} Fondamental : Onde résultante sinusoïdale
-:class: attention
+````{important} __Fondamental : Onde résultante sinusoïdale__
 
 L'onde résultant de la superposition de deux ondes sinusoïdales cohérentes __de même amplitude__ __$E_0$__  est aussi une onde sinusoïdales de même fréquence $f$ et dont l'amplitude $E_{totalm}$ dépend des amplitudes des ondes qui interfèrent ET du déphasage $\Phi_M = \phi_{M,2} - \phi_{M,1}$ entre les deux ondes.
 
@@ -189,8 +186,7 @@ A défaut de démontrer mathématiquement la forme du champ résultant, on s'ent
 
 ### Cas extrêmes: Interférences constructives et destructives.
 
-````{admonition} Fondamental : Cas extrêmes
-:class: attention
+````{important} __Fondamental : Cas extrêmes__
 
 * Pour $\Phi_M = 2 m \pi$ avec $m \in  \mathbb{N}$ la fonction cos est maximale et les amplitudes des deux ondes sont en phase. L'intensité lumineuse est alors maximale. On parle d'__interférences constructives__ . Si l'on place un écran au point considéré, on observera un point très lumineux.
 * Pour $\Phi_M = (2 m +1)\pi$ avec $m \in  \mathbb{N}$ la fonction cos est minimale et les amplitudes des deux ondes sont en opposition de phase. L'intensité lumineuse est alors minimale. On parle d'__interférences destructives__ . Si l'on place un écran au point considéré, on observera un point sombre (ou plutôt on observe presque pas de lumière, voire aucune lumière).
@@ -209,15 +205,13 @@ A défaut de démontrer mathématiquement la forme du champ résultant, on s'ent
 Plutôt que de calculer le déphasage, on calculer souvent d'autres termes associées pour savoir les positions d'interférences constructives et destructives.
 
 
-````{admonition} Définition : Chemin optique
-:class: tip
+````{important} __Définition : Chemin optique__
 
 On définit le chemin optique comme l'intégrale sur le chemin parcouru par la lumière: $S = \int n(M) ds(M)$ où $n(M)$ est l'indice de réfraction au point M et $ds(M)$ la longueur du trajet parcouru par la lumière autour du point M.
 
 ````
 
-````{admonition} Fondamental : Chemin optique: cas d'un milieu homogène et isotrope
-:class: attention
+````{important} __Fondamental : Chemin optique: cas d'un milieu homogène et isotrope__
 
 Dans un milieu homogène est isotrope, le chemin optique sur un chemin SM devient $S = \frac{\lambda_0}{2 \pi} \Phi_{SM}$ où $\Phi_{SM}$ est le déphasage introduit par la propagation de l'onde entre S et M.
 ````
@@ -227,8 +221,7 @@ __Démonstration__
 Le milieu étant homogène et isotrope, le trajet de la lumière est en ligne droite et $S = \frac{c}{v_{milieu}}SM = \frac{\lambda_0}{2 \pi}k SM = \frac{\lambda_0}{2 \pi} \Phi_{SM}$
 
 
-````{admonition} Fondamental : Différence de chemin optique
-:class: attention
+````{important} __Fondamental : Différence de chemin optique__
 
 On définit la différence de chemin optique entre deux rayons par...  la différence $\delta = S_2 - S_1$. Dans le cas d'un milieu homogène et isotrope, cette différence devient:
 
@@ -239,8 +232,7 @@ On définit la différence de chemin optique entre deux rayons par...  la diffé
 avec $\Phi_M$ le déphasage de l'onde 2 sur l'onde 1 au point M.
 ````
 
-````{admonition} Fondamental : Intérêt
-:class: attention
+````{important} __Fondamental : Intérêt__
 
 La différence de chemin optique présente deux intérêts:
 
@@ -254,22 +246,21 @@ La différence de chemin optique présente deux intérêts:
 On pourra donc se servir des considérations géométriques pour calculer la différence de chemin optique et de la relation avec le déphasage pour déterminer les conditions d'interférences constructives et destructives.
 ````
 
-````{admonition} Attention : Calcul de la différence de chemin optique en pratique
-:class: note
+````{attention}
+__Calcul de la différence de chemin optique en pratique__
+
 
 En pratique, le milieu peut être homogène __par morceau__ . Il conviendra donc de découper le trajet du rayon en plusieurs morceaux de manière à calculer la différence de chemin optique au moyen des outils présentés précédemment.
 
 ````
 
-````{admonition} Définition : Ordre d'interférences
-:class: tip
+````{important} __Définition : Ordre d'interférences__
 
 On définit l'ordre d'interférence en un point M par la grandeur: $p = \frac{\delta}{\lambda_0}=\frac{\Phi_M}{2 \pi}$
 
 ````
 
-````{admonition} Fondamental : Intérêt
-:class: attention
+````{important} __Fondamental : Intérêt__
 
 * Lors d'interférences constructives, l'ordre d'interférence est un entier $m$ avec $m \in \mathbb{B}$ (à relier avec l'entier définit pour la différence de chemin optique)
 * Lors d'interférences destructives, l'ordre d'interférence est un demi-entier $m+\frac{1}{2}$ avec $m \in \mathbb{N}$
@@ -304,8 +295,7 @@ Si les deux ondes sont issues de la même source, elles peuvent (et sont souvent
 
 
 
-````{admonition} Fondamental : 
-:class: attention
+````{important} __Fondamental : __
 
 Les détails de cette études seront précisées par la suite mais en général, une perte de cohérence (temporelle ou spatiale) entraîne un __brouillage des interférences__ , c'est-à-dire que le contraste entre les zones claires (interférences constructives) et les zones sombres (interférences destructives) devient plus faible ce qui peut même entrainer la disparition complète des interférences.
 ````
@@ -514,8 +504,9 @@ On déterminera de la même manière la condition d'interférence destructive.
 Pour observer la figure d'interférence à l'infini sur un écran, il faut la __projeter au moyen d'une lentille__ . On place l'écran dans le plan focal de la lentille qui est alors conjugué avec un objet à l'infini soit la figure d'interférence à l'infini.
 ````
 
-````{admonition} Attention : Utilisation d'une lentille
-:class: note
+````{attention}
+__Utilisation d'une lentille__
+
 
 Comme on peut le voir sur l'exemple ci-dessous, les rayons sont déviés par la lentille mais __on ne peut pas utiliser une somme par morceau des trajets car la schématisation de Gauss ne modélise pas l'épaisseur de la lentille__ . Il faut utiliser une autre méthode:
 
