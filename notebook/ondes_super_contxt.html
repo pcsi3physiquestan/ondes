@@ -1,0 +1,610 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Généralités &#8212; Ondes</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/ondes/notebook/ondes_super_contxt.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Activités" href="ondes_super_meth_battements.html" />
+    <link rel="prev" title="Superposition de deux ondes: Interférences et battements" href="ondes_super.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Ondes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ondes.html">
+   Ondes
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="ondes_prop.html">
+   Description des ondes
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_prop_contxt.html">
+     Comprendre le contexte
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_prop_ex.html">
+     Maitriser les méthodes
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="ondes_super.html">
+   Superposition de deux ondes: Interférences et battements
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Généralités
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_super_meth_battements.html">
+     Activités
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_super_meth_young.html">
+     Méthodes : Etude des interférences
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_super_ex.html">
+     Application et entrainement
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="ondes_stat.html">
+   Ondes stationnaires
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_stat_contxt.html">
+     Comprendre le contexte
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_stat_meth.html">
+     Méthodes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_stat_ex.html">
+     Application et entrainement
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/ondes_super_contxt.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/ondes_super_contxt.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/ondes_super_contxt.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#position-du-probleme">
+   Position du problème
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#representation-de-fresnel">
+   Représentation de Fresnel
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#battements-cf-activites">
+   Battements cf. Activités
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interferences">
+   Interférences
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Position du problème
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cas-extremes-interferences-constructives-et-destructives">
+     Cas extrêmes: Interférences constructives et destructives.
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#autres-grandeurs-caracteristiques">
+       Autres grandeurs caractéristiques
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#notion-de-coherence-en-ligne">
+     Notion de cohérence (en ligne)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interferences-realisation-en-ligne">
+     Interférences: Réalisation (en ligne)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="generalites">
+<h1>Généralités<a class="headerlink" href="#generalites" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="position-du-probleme">
+<h2>Position du problème<a class="headerlink" href="#position-du-probleme" title="Permalink to this headline">¶</a></h2>
+<p>On considère deux sources <span class="math notranslate nohighlight">\(S_1\)</span> et <span class="math notranslate nohighlight">\(S_2\)</span> émettant chacune un signal physique se propageant dans le milieu environnant et représentée par la grandeur Y dont l’expression en un point M à un instant t sera notée <span class="math notranslate nohighlight">\(Y(M,t)\)</span>. On suppose que ces deux ondes sont sinusoïdales de fréquence <span class="math notranslate nohighlight">\(f_1\)</span> et <span class="math notranslate nohighlight">\(f_2\)</span>. On note:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(Y_1(M,t) = Y_{1m}\cos(\omega_1 t + \phi_{M,1})\)</span> pour l’onde issue de la source <span class="math notranslate nohighlight">\(S_1\)</span> (appelée onde 1).</p></li>
+<li><p><span class="math notranslate nohighlight">\(Y_1(M,t) = Y_{2m}\cos(\omega_2 t + \phi_{M,2})\)</span> pour l’onde issue de la source <span class="math notranslate nohighlight">\(S_2\)</span> (appelée onde 2).</p></li>
+</ul>
+<p>Pour fixer les idées au moyen d’expériences, les ondes considérées seront par la suite soit des ondes acoustiques, soit des ondes lumineuses. Néanmoins, et sauf précisions contraire, les études réalisées pourront être appliquées à tout type d’onde. On considérera aussi des trajets rectilignes de la lumière. On observera d’ailleurs les phénomènes d’interférences étudiés ensuite sur des ondes de surface.</p>
+<div class="sidebar">
+<p class="sidebar-title">Déphasage</p>
+<p><em>On rappelle que le déphasage d’un signal sinusoïdal 2 sur un autre signal sinusoïdal 1 est la différence de phase:</em></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\Phi_{2/1}(M,t) &amp;= \varphi_{2}(M,t) - \varphi_{1}(M,t)\\
+&amp;= \left(\omega_2 - \omega_1\right)t + \phi_{M,2} - \phi_{M,1}
+\end{align*}\]</div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Ondes synchrones et cohérentes</strong></p>
+<ul class="simple">
+<li><p>Deux ondes sont dites <strong>synchrones</strong>  si elles ont la même fréquence.</p></li>
+<li><p>Deux ondes sont dites <strong>cohérentes si elles ont la même fréquence ET que leur déphasage initiaux (aux sources) sont constants.</strong></p></li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Pourquoi deux ondes synchrones peuvent ne pas être cohérentes ?</p>
+<p>Dans le cas des ondes électromagnétiques, l’émission n’est pas continue. La source émet un train d’onde puis arrête d’émettre puis recommence.</p>
+<p>Or la largeur des trains d’ondes et l’espace entre deux émissions sont aléatoires. Il vient que deux points sources, même synchrones vont avoir un déphasage qui va varier aléatoirement. Nous verrons que cela peut-être un problème d’autant que cette incohérence <strong>s’applique aussi entre deux points d’une même source lumineuse étendue</strong> . La seule source lumineuse qui possède une grande cohérence spatiale (tous ses points sources sont cohérents) est le LASER.</p>
+</div>
+</div>
+<div class="section" id="representation-de-fresnel">
+<h2>Représentation de Fresnel<a class="headerlink" href="#representation-de-fresnel" title="Permalink to this headline">¶</a></h2>
+<div class="sidebar">
+<p class="sidebar-title">Fresnel et somme</p>
+<p>Le signal de issu de la superposition des deux ondes n’est a priori pas sinusoïdal. On ne peut lui donner une représentation complexe dans le plan complexe. Par contre, on peut remarquer que <span class="math notranslate nohighlight">\(Y(M,t)\)</span> peut se lire comme la somme de abcisses de chaque représentation.</p>
+<p>On peut utiliser cette observation pour étudier l’amplitude de variation du signal résultant <span class="math notranslate nohighlight">\(Y(M,t)\)</span>.</p>
+</div>
+<div class="topic">
+<p class="topic-title first"><strong>Observation sur la représentation de Fresnel</strong>  </p>
+<div class="figure align-center" id="fig-298">
+<img alt="../_images/Signaux_fresnel_somme.jpg" src="../_images/Signaux_fresnel_somme.jpg" />
+</div>
+<ul class="simple">
+<li><p>si les deux ondes ont à un instant <span class="math notranslate nohighlight">\(t\)</span> un déphasage faible l’un par rapport à l’autre, l’onde résultante pourra avoir une forte amplitude à cet instant <span class="math notranslate nohighlight">\(t\)</span>.</p></li>
+<li><p>si les deux ondes ont à un instant <span class="math notranslate nohighlight">\(t\)</span> un déphasage proche de <span class="math notranslate nohighlight">\(\pi\)</span>, l’onde résultante sera nécessairement très faible. Elle peut même être d’amplitude plus faible que les deux ondes initiales, voire s’annuler complètement.</p></li>
+</ul>
+<p><strong>On observe donc que deux ondes qui vont se superposer en un même point ne donneront pas nécessairement une onde d’amplitude plus importante. Le critère important est le déphasage entre les deux ondes.</strong></p>
+<p>Néanmoins, rappelons que les fréquences mises en jeu peuvent être très rapides, on ne va donc pas forcément pouvoir observer les variations de déphasages. Si les deux ondes ne sont pas de mêmes fréquences, alors le déphasasge instantané entre les deux ondes va passer par toutes les valeurs possibles sur <span class="math notranslate nohighlight">\([0;2 \pi]\)</span>.</p>
+<p>On peut distinguer trois cas: Cf. la <a class="reference external" href="https://stanislas.edunao.com/mod/folder/view.php?id=12899">simulation Geogebra (superposition)</a></p>
+<ul class="simple">
+<li><p>Les ondes ne sont pas de mêmes fréquences on parle d’ondes asynchrones - (ou le déphasage entre les deux est aléatoire) et l’écart en fréquence est grand. Le déphasage entre les deux ondes varie très rapidement: on ne peut observer une telle variation. On réalise alors une moyenne des intensités observés. Tout se passe comme si l’intensité résultante observée était la somme des deux intensités. On retrouve le calcul énergétique réalisé pour l’éclairement moyen.</p></li>
+<li><p>Les ondes ne sont pas de mêmes fréquences (on parle d’ondes asynchrones) mais l’écart en fréquence est faible: le signal va apparaître comme presque sinusoïdal mais avec une ampitude variant dans le temps. On parle de <strong>battements</strong>  (cf. suite).</p></li>
+<li><p>Les ondes ont la même fréquence (et cohérentes). Le déphasage est alors constant. Comme on va le voir, l’onde résultante est alors sinusoïdale de même pulsation et son amplitude va dépendre du déphasage. On parle d’<strong>interférences</strong> .</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="battements-cf-activites">
+<h2>Battements cf. Activités<a class="headerlink" href="#battements-cf-activites" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="interferences">
+<h2>Interférences<a class="headerlink" href="#interferences" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Position du problème<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>On considère deux sources lumineuses qui émettent chacune des ondes lumineuses <strong>cohérentes</strong> , c’est-à-dire de même fréquence <span class="math notranslate nohighlight">\(f_1=f_2=f\)</span> et dont le déphasage en un point donné est constant. On traitera pour simplifier le champ électrique comme une grandeur scalaire E. Les champs électriques des deux ondes s’écrivent:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-13194e1f-2300-43c6-8886-746d05a26bb1">
+<span class="eqno">(11)<a class="headerlink" href="#equation-13194e1f-2300-43c6-8886-746d05a26bb1" title="Permalink to this equation">¶</a></span>\[\begin{align}
+E_1(M) &amp;= E_{1m} \cos(2 \pi f t + \phi_{M,1})\\
+E_2(M) &amp;= E_{2m} \cos(2 \pi f t + \phi_{M,2})
+\end{align}\]</div>
+<p>Comme on va le montrer, on attend alors un déphasage constant et la représentation de Fresnel permet de montrer que l’amplitude résultante va dépendre du déphasage entre les deux ondes. On parlera d’interférences</p>
+<div class="figure align-center" id="fig-299">
+<img alt="../_images/Signaux_fresnel_somme.jpg" src="../_images/Signaux_fresnel_somme.jpg" />
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Onde résultante sinusoïdale</strong></p>
+<p>L’onde résultant de la superposition de deux ondes sinusoïdales cohérentes <strong>de même amplitude</strong> <strong><span class="math notranslate nohighlight">\(E_0\)</span></strong>  est aussi une onde sinusoïdales de même fréquence <span class="math notranslate nohighlight">\(f\)</span> et dont l’amplitude <span class="math notranslate nohighlight">\(E_{totalm}\)</span> dépend des amplitudes des ondes qui interfèrent ET du déphasage <span class="math notranslate nohighlight">\(\Phi_M = \phi_{M,2} - \phi_{M,1}\)</span> entre les deux ondes.</p>
+<p>Le champ électrique peut se mettre sous la forme:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-80e3ea0e-40d4-4e73-9fe2-4fc0d0151aec">
+<span class="eqno">(12)<a class="headerlink" href="#equation-80e3ea0e-40d4-4e73-9fe2-4fc0d0151aec" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+E_{total}(M,t) = A \cos(\Phi_M/2)\cos(2\pi f t +\varphi)
+\end{equation}\]</div>
+</div>
+<div class="sidebar">
+<p class="sidebar-title">Remarque</p>
+<p>Si les deux ondes n’ont pas la même amplitude, on observe aussi un phénomène d’interférences mais un peu plus atténué et l’étude est légèrement différente. On pourra retenir que les conclusions à venir sont les mêmes.</p>
+<p>A défaut de démontrer mathématiquement la forme du champ résultant, on s’entraînera à déterminer les valeurs maximales et minimales du champ résultant au moyen de la représentation de Fresnel.</p>
+</div>
+<div class="topic">
+<p class="topic-title first"><strong>Démonstration</strong></p>
+<p>On sait que <span class="math notranslate nohighlight">\(E_{total}(M,t) = E_{m1} \cos(2\pi f t +\phi_{M,1})+ E_{m2} \cos(2\pi f t +\phi_{M,2})\)</span> par principe de superposition. On suppose de plus que <span class="math notranslate nohighlight">\(E_{m1} = E_{m2} = E_0\)</span>. En utilisant les formules de trigonométrie, il vient:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+E_{total}(M,t) &amp;= 2 E_0 (\cos(\frac{2\pi f t +\phi_{M,1}-(2\pi f t +\phi_{M,2})}{2})\cos(\frac{2\pi f t +\phi_{M,2}+(2\pi f t +\phi_{M,2})}{2}))\\
+ &amp;= 2 E_0 (\cos(\frac{\phi_{M,1}-\phi_{M,2}}{2})\cos(2\pi f t +\frac{\phi_{M,1}+\phi_{M,2}}{2}))
+\end{align*}\]</div>
+<p>On obtient l’expression demandée avec: <span class="math notranslate nohighlight">\(A = 2 E_0\)</span></p>
+</div>
+</div>
+<div class="section" id="cas-extremes-interferences-constructives-et-destructives">
+<h3>Cas extrêmes: Interférences constructives et destructives.<a class="headerlink" href="#cas-extremes-interferences-constructives-et-destructives" title="Permalink to this headline">¶</a></h3>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Cas extrêmes</strong></p>
+<ul class="simple">
+<li><p>Pour <span class="math notranslate nohighlight">\(\Phi_M = 2 m \pi\)</span> avec <span class="math notranslate nohighlight">\(m \in  \mathbb{N}\)</span> la fonction cos est maximale et les amplitudes des deux ondes sont en phase. L’intensité lumineuse est alors maximale. On parle d’<strong>interférences constructives</strong> . Si l’on place un écran au point considéré, on observera un point très lumineux.</p></li>
+<li><p>Pour <span class="math notranslate nohighlight">\(\Phi_M = (2 m +1)\pi\)</span> avec <span class="math notranslate nohighlight">\(m \in  \mathbb{N}\)</span> la fonction cos est minimale et les amplitudes des deux ondes sont en opposition de phase. L’intensité lumineuse est alors minimale. On parle d’<strong>interférences destructives</strong> . Si l’on place un écran au point considéré, on observera un point sombre (ou plutôt on observe presque pas de lumière, voire aucune lumière).</p></li>
+</ul>
+<div class="figure align-center" id="fig-300">
+<img alt="../_images/Signaux_fresnel_somme.jpg" src="../_images/Signaux_fresnel_somme.jpg" />
+</div>
+</div>
+<div class="section" id="autres-grandeurs-caracteristiques">
+<h4>Autres grandeurs caractéristiques<a class="headerlink" href="#autres-grandeurs-caracteristiques" title="Permalink to this headline">¶</a></h4>
+<p>Plutôt que de calculer le déphasage, on calculer souvent d’autres termes associées pour savoir les positions d’interférences constructives et destructives.</p>
+<div class="sidebar">
+<p class="sidebar-title"><strong>Chemin optique: cas d’un milieu homogène et isotrope</strong></p>
+<p>Dans un milieu homogène est isotrope, le chemin optique sur un chemin SM devient <span class="math notranslate nohighlight">\(S = \frac{\lambda_0}{2 \pi} \Phi_{SM}\)</span> où <span class="math notranslate nohighlight">\(\Phi_{SM}\)</span> est le déphasage introduit par la propagation de l’onde entre S et M.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Chemin optique</strong></p>
+<p>On définit le chemin optique comme l’intégrale sur le chemin parcouru par la lumière: <span class="math notranslate nohighlight">\(S = \int n(M) ds(M)\)</span> où <span class="math notranslate nohighlight">\(n(M)\)</span> est l’indice de réfraction au point M et <span class="math notranslate nohighlight">\(ds(M)\)</span> la longueur du trajet parcouru par la lumière autour du point M.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Différence de chemin optique</strong></p>
+<p>On définit la différence de chemin optique entre deux rayons par…  la différence <span class="math notranslate nohighlight">\(\delta = S_2 - S_1\)</span>. Dans le cas d’un milieu homogène et isotrope, cette différence devient:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\delta &amp;= n(S_1 M - S_2M)\\
+&amp;= \frac{\lambda_0}{2 \pi} \Phi_M
+\end{align*}\]</div>
+<p>avec <span class="math notranslate nohighlight">\(\Phi_M\)</span> le déphasage de l’onde 2 sur l’onde 1 au point M.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Intérêt</strong>
+La différence de chemin optique présente deux intérêts:</p>
+<ul class="simple">
+<li><p>son expression en fonction des distance parcourues par les rayons permet de le calculer simplement par des considérations géométriques.</p></li>
+<li><p>sa relation avec le déphasage montre qu’il va prendre des valeurs particulières pour les cas d’interférences constructives et destructives. En effet:</p>
+<ul>
+<li><p>Lors d’interférences constructives, la différence de chemin optique est un nombre entier de fois la longueur d’onde: <span class="math notranslate nohighlight">\(\delta = m \lambda_0\)</span></p></li>
+<li><p>Lors d’interférences destructives, la différence de chemin opqitue est un nombre demi-entier de fois la longueur d’onde <span class="math notranslate nohighlight">\(\delta = (m + \frac{1}{2}) \lambda_0\)</span></p></li>
+</ul>
+</li>
+</ul>
+<p><em>On pourra donc se servir des considérations géométriques pour calculer la différence de chemin optique et de la relation avec le déphasage pour déterminer les conditions d’interférences constructives et destructives.</em></p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Ordre d’interférences</strong></p>
+<p>On définit l’ordre d’interférence en un point M par la grandeur: <span class="math notranslate nohighlight">\(p = \frac{\delta}{\lambda_0}=\frac{\Phi_M}{2 \pi}\)</span></p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Intérêt</strong></p>
+<ul class="simple">
+<li><p>Lors d’interférences constructives, l’ordre d’interférence est un entier <span class="math notranslate nohighlight">\(m\)</span> avec <span class="math notranslate nohighlight">\(m \in \mathbb{B}\)</span> (à relier avec l’entier définit pour la différence de chemin optique)</p></li>
+<li><p>Lors d’interférences destructives, l’ordre d’interférence est un demi-entier <span class="math notranslate nohighlight">\(m+\frac{1}{2}\)</span> avec <span class="math notranslate nohighlight">\(m \in \mathbb{N}\)</span></p></li>
+</ul>
+<p><em>L’intérêt du nombre d’interférence est de pouvoir “compter” combien de fois se produisent des interférences constructives entre 2 points <span class="math notranslate nohighlight">\(M_1\)</span> et <span class="math notranslate nohighlight">\(M_2\)</span>. En effet, la propriété précédent montre qu’entre deux de l’espace où se produisent des interférences, si l’ordre d’interférences est monotone sur le déplacement de <span class="math notranslate nohighlight">\(M_1\)</span> à <span class="math notranslate nohighlight">\(M_2\)</span> alors la différence <span class="math notranslate nohighlight">\(p_2 - p_1\)</span> correspond, en valeur entière, au nombre de fois où l’on observera des interférences constructives.</em></p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Interfrange</strong></p>
+<p>L’<strong>interfrange</strong>  est la distance entre deux franges d’égales intensités.</p>
+</div>
+</div>
+</div>
+<div class="section" id="notion-de-coherence-en-ligne">
+<h3>Notion de cohérence (en ligne)<a class="headerlink" href="#notion-de-coherence-en-ligne" title="Permalink to this headline">¶</a></h3>
+<div class="topic">
+<p class="topic-title first">Cohérence</p>
+<p>Lorsque deux ondes sont créées par deux émetteurs, elles sont en général incohérentes car:</p>
+<ul class="simple">
+<li><p><strong>Incohérence temporelle:</strong>  Souvent les fréquences émises par les deux émetteurs sont différents (on dit qu’elles ne sont pas isochrones ou pas synchrones).</p></li>
+<li><p><strong>Incohérence spatiale:</strong>  Même si les fréquences sont rigoureusement identiques, il faut savoir qu’une onde est souvent émise par intermittence, on parle de paquets d’onde. C’est toujours le cas pour des ondes lumineuses où ces paquets d’ondes correspondent à un paquet de photons (on retrouve ici un peu la nature duelle de la lumière: corpuscule et onde). Or ces petits paquets sont émis de manière aléatoire et donc différemment pour les deux sources: le déphasage initial entre les deux ondes varient de manière aléatoire: les ondes sont incohérentes.</p></li>
+</ul>
+<p>Si les deux ondes sont issues de la même source, elles peuvent (et sont souvent) incohérentes aussi car:</p>
+<ul class="simple">
+<li><p>une même source peut envoyer plusieurs longueurs d’ondes (ex: la lumière blanche): il y a incohérence temporelle.</p></li>
+<li><p>elle peut ne pas être ponctuelle mais étendue: on peut alors la considérer comme un ensemble de petite sources ponctuelles incohérentes entre elles dans la plupart des cas. Il y a incohérence spatiale.</p></li>
+</ul>
+<p>Quand l’incohérence devient trop grande, la figure d’interférence est brouillée.</p>
+</div>
+</div>
+<div class="section" id="interferences-realisation-en-ligne">
+<h3>Interférences: Réalisation (en ligne)<a class="headerlink" href="#interferences-realisation-en-ligne" title="Permalink to this headline">¶</a></h3>
+<div class="topic">
+<p class="topic-title first">Réalisation</p>
+<p>Si l’on veut réaliser des interférences, il faut donc en général augmenter la cohérence temporelle ET spatiale des sources mises en jeu:</p>
+<ul class="simple">
+<li><p>on peut s’approcher d’une source cohérente temporellement en utilisant des filtres lumineux pour ne laisser passer qu’une petite bande de fréquence.</p></li>
+<li><p>on peut diaphragmer la source pour limiter sa taille et augmenter sa cohérence spatiale.</p></li>
+<li><p>On peut utiliser un LASER qui permet d’avoir une forte cohérence spatiale ET temporelle sans dispositif supplémentaire. Évidemment, cela restreint le choix des longueurs d’onde.</p></li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Division du front d’onde et division d’amplitude</p>
+<p>Si l’on veut créer deux ondes cohérentes, c’est-à-dire de même fréquence ET dont le retard de l’une sur l’autre est constant, le plus simple est donc de partir d’une seule onde issue d’un point source monochromatique (qu’on fabrique comme expliqué précédemment) et la séparer en deux. On utilise deux méthodes:</p>
+<ul class="simple">
+<li><p><strong>Division du front d’onde.</strong>  Principe: On prend une onde qui s’est étendue en se propageant et on prend deux points de cette onde qu’on retransforme en deux sources (en utilisant le phénomène de diffraction). Exemple: Les fentes d’Young (a) qui seront étudiées par la suite.</p></li>
+<li><p><strong>Division d’amplitude.</strong>  Principe: Quand une onde arrive sur une variation brutale de milieu, elle se sépare en deux: une partie est réfléchie (réflexion), l’autre est transmise (réfraction ou transmission). Pour les ondes électromagnétiques, on retrouve les lois de Snell-Descartes. On a ainsi créer deux ondes cohérentes (b)!</p></li>
+</ul>
+<div class="figure align-center" id="fig-301">
+<img alt="../_images/Signaux_division_ondes.jpg" src="../_images/Signaux_division_ondes.jpg" />
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ondes_super.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Superposition de deux ondes: Interférences et battements</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ondes_super_meth_battements.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Activités</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

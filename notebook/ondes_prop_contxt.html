@@ -1,0 +1,728 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comprendre le contexte &#8212; Ondes</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/ondes/notebook/ondes_prop_contxt.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Maitriser les méthodes" href="ondes_prop_ex.html" />
+    <link rel="prev" title="Description des ondes" href="ondes_prop.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Ondes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ondes.html">
+   Ondes
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="ondes_prop.html">
+   Description des ondes
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Comprendre le contexte
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_prop_ex.html">
+     Maitriser les méthodes
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="ondes_super.html">
+   Superposition de deux ondes: Interférences et battements
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_super_contxt.html">
+     Généralités
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_super_meth_battements.html">
+     Activités
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_super_meth_young.html">
+     Méthodes : Etude des interférences
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_super_ex.html">
+     Application et entrainement
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="ondes_stat.html">
+   Ondes stationnaires
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_stat_contxt.html">
+     Comprendre le contexte
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_stat_meth.html">
+     Méthodes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_stat_ex.html">
+     Application et entrainement
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/ondes_prop_contxt.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/ondes_prop_contxt.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/ondes_prop_contxt.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#definition-generale">
+   Définition générale
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#modelisation-mathematique-de-la-propagation-d-ondes">
+   Modélisation mathématique de la propagation d’ondes
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#onde-progressive">
+     Onde progressive
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#onde-progressive-harmonique">
+     Onde progressive harmonique
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemples-d-ondes-en-ligne">
+   Exemples d’ondes (en ligne)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#corde-vibrante-onde-mecanique">
+     Corde vibrante. Onde mécanique
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ondes-acoustiques">
+     Ondes acoustiques
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ondes-a-la-surface-d-un-fluide">
+     Ondes à la surface d’un fluide
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ondes-electriques">
+     Ondes électriques
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ondes-electromagnetiques">
+     Ondes électromagnétiques
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#front-d-onde-et-diffraction">
+   Front d’onde et diffraction
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#source-lumineuse">
+     Source lumineuse
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#front-d-onde">
+     Front d’onde
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="comprendre-le-contexte">
+<h1>Comprendre le contexte<a class="headerlink" href="#comprendre-le-contexte" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="definition-generale">
+<h2>Définition générale<a class="headerlink" href="#definition-generale" title="Permalink to this headline">¶</a></h2>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<ul class="simple">
+<li><p>Une onde transporte de l’énergie sans transporter de matière.</p></li>
+</ul>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Onde</strong></p>
+<p>Une onde est la propagation d’une perturbation produisant sur son passage une variation réversible des propriétés physiques locales du milieu.</p>
+<ul class="simple">
+<li><p>Elle se déplace avec une vitesse déterminée qui dépend des caractéristiques du milieu de propagation. On appelle cette vitesse la <strong>célérité</strong>  de l’onde dans le milieu.</p></li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Exemple : Description et types d’ondes</p>
+<p>On décrit la propagation d’une onde par l’expression des grandeurs physiques associées au phénomènes <strong>dans l’espace et dans le temps</strong> . Les grandeurs dépendent du type d’onde que l’on veut décrire. A titre d’exemple non exhaustif:</p>
+<ul class="simple">
+<li><p><strong>La corde vibrante (ondes mécaniques)</strong> : Déformation de la corde <span class="math notranslate nohighlight">\(z(M,t)\)</span></p></li>
+<li><p><strong>A la surface de l’eau:</strong>  Altitude de la surface <span class="math notranslate nohighlight">\(z(M,t)\)</span></p></li>
+<li><p><strong>Ondes électriques:</strong>  Intensité et Tension</p></li>
+<li><p><strong>Ondes acoustiques:</strong>  vitesse de l’air <span class="math notranslate nohighlight">\(v(M,t)\)</span> et surpression de l’air <span class="math notranslate nohighlight">\(p(M,t)\)</span></p></li>
+<li><p><strong>Ondes électromagnétiques:</strong>  Champ électrique et champ magnétique</p></li>
+</ul>
+<p>On remarque que ces grandeurs dépendent du temps ET de l’espace car l’onde se propage dans…  l’espace. Certaines peuvent être vectorielles (vitesses, champ électrique… ).</p>
+</div>
+</div>
+<div class="section" id="modelisation-mathematique-de-la-propagation-d-ondes">
+<h2>Modélisation mathématique de la propagation d’ondes<a class="headerlink" href="#modelisation-mathematique-de-la-propagation-d-ondes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="onde-progressive">
+<h3>Onde progressive<a class="headerlink" href="#onde-progressive" title="Permalink to this headline">¶</a></h3>
+<p><strong>Mise en situation :</strong>  Supposons une onde se propageant avec une célérité v. Elle est caractérisée par une grandeur y dont on note l’expression en un point M à un instant t <span class="math notranslate nohighlight">\(y(M,t)\)</span></p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Forme mathématique d’une onde (1)</strong>
+L’expression de y au point B et notée <span class="math notranslate nohighlight">\(y(B,t)\)</span> est la même que l’expression de y au point A mais <strong>retardée</strong>  du temps <span class="math notranslate nohighlight">\(\Delta t_{{AB}}\)</span> correspondant au retard à la propagation entre A et B:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-77472f20-7d18-4d0d-801c-3e51c2372689">
+<span class="eqno">(1)<a class="headerlink" href="#equation-77472f20-7d18-4d0d-801c-3e51c2372689" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+y(B,t) = y(A,  t - \Delta t_{{AB}})
+\end{equation}\]</div>
+</div>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>On fera le lien avec le décalage horizontal graphique du tracé d’une fonction.</p>
+</div>
+<div class="topic">
+<p class="topic-title first"><strong>Démonstration</strong></p>
+<p>Considérons le passage de l’onde au point A au temps <span class="math notranslate nohighlight">\(t_A\)</span>. L’onde va mettre un temps <span class="math notranslate nohighlight">\(\Delta t_{AB}\)</span>.</p>
+<p>Au temps <span class="math notranslate nohighlight">\(t_B\)</span>, l’onde a en B la valeur <span class="math notranslate nohighlight">\(y(B,t_B)\)</span> qu’elle avait au point A au temps <span class="math notranslate nohighlight">\(t' = t_B - \Delta t_{AB}\)</span>, soit:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-b6565e58-3aa8-481b-844d-d49979c3207d">
+<span class="eqno">(2)<a class="headerlink" href="#equation-b6565e58-3aa8-481b-844d-d49979c3207d" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+y(B,t_B) = y(A,t')=y(A, t_B - \Delta t_{AB})
+\end{equation}\]</div>
+</div>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<ul class="simple">
+<li><p>On se ramène donc à décrire l’onde avec une seule fonction <span class="math notranslate nohighlight">\(g\)</span> décrite par la source.</p></li>
+<li><p><em>Attention</em>: Cette expression n’est valable que pour un milieu homogène et une propagation rectiligne.</p></li>
+</ul>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Cas particuliers utiles (à connaître)</p>
+<p><strong>Propagation rectiligne dans un milieu homogène.</strong></p>
+<ul class="simple">
+<li><p>Si la propagation est rectiligne, on peut choisir un repère où l’axe Ox est suivant la direction de propagation.</p>
+<ul>
+<li><p>On peut choisir un point d’abscisse de référence, souvent le point source, <span class="math notranslate nohighlight">\(x=0\)</span> où l’onde émise à pour expression <span class="math notranslate nohighlight">\(y(x=0,t) = g(t)\)</span>.</p></li>
+</ul>
+</li>
+<li><p>Si l’onde de propage suivant les x positifs, le temps mis pour atteindre un point M d’abscisse <span class="math notranslate nohighlight">\(x\)</span> est <span class="math notranslate nohighlight">\(\frac{x}{v}\)</span> et la forme mathématique devient:</p></li>
+</ul>
+<div class="amsmath math notranslate nohighlight" id="equation-921345c4-d221-45c6-bb65-10b55b34cc0e">
+<span class="eqno">(3)<a class="headerlink" href="#equation-921345c4-d221-45c6-bb65-10b55b34cc0e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+y(x,t) = g(t - \frac{x}{v})
+\end{equation}\]</div>
+<ul class="simple">
+<li><p>Si l’onde de propage suivant les x négatifs (on parle d’onde régressive), le temps mis pour atteindre un point M d’abscisse <span class="math notranslate nohighlight">\(x\)</span> est <span class="math notranslate nohighlight">\(-\frac{x}{v}\)</span> (on passe en M avant O si <span class="math notranslate nohighlight">\(x&gt;0\)</span>) et la forme mathématique devient:</p></li>
+</ul>
+<div class="amsmath math notranslate nohighlight" id="equation-8532106b-f7df-4196-8768-e5c0b2472166">
+<span class="eqno">(4)<a class="headerlink" href="#equation-8532106b-f7df-4196-8768-e5c0b2472166" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+y(x,t) = g(t + \frac{x}{v})
+\end{equation}\]</div>
+</div>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<ul class="simple">
+<li><p>On ne traite que le cas de la propagation rectiligne dans un milieu homogène.</p></li>
+<li><p>On peut voir la fonction <span class="math notranslate nohighlight">\(y(x,t_1)\)</span> comme une photographique de l’onde à l’instant <span class="math notranslate nohighlight">\(t_1\)</span>.</p></li>
+</ul>
+</div>
+<div class="sidebar">
+<p class="sidebar-title">Origine des temps</p>
+<p>Si l’on considère l’instant <span class="math notranslate nohighlight">\(t=0\)</span> comme référence des temps et la forme de l’onde <span class="math notranslate nohighlight">\(h(t) = y(x,t=0)\)</span>, alors la forme de l’onde à un instant <span class="math notranslate nohighlight">\(t\)</span> sera:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-e9812b6a-044b-48c2-83cf-0fe8b1fbbc83">
+<span class="eqno">(5)<a class="headerlink" href="#equation-e9812b6a-044b-48c2-83cf-0fe8b1fbbc83" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+y(x,t) = h(x - v t)
+\end{equation}\]</div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Forme mathématique d’une onde (2)</strong><br />
+<strong>Propagation rectiligne dans un milieu homogène.</strong></p>
+<p>Considérons la forme de l’onde <span class="math notranslate nohighlight">\(y(x,t_1)\)</span> à un instant <span class="math notranslate nohighlight">\(t_1\)</span> en tout point <span class="math notranslate nohighlight">\(x\)</span> de l’axe. La forme spatiale de l’onde à un instant <span class="math notranslate nohighlight">\(t_2\)</span> est noté <span class="math notranslate nohighlight">\(y(x,t_2)\)</span>.</p>
+<ul class="simple">
+<li><p>Si l’onde se propage suivant les <span class="math notranslate nohighlight">\(x\)</span> positifs, alors:</p></li>
+</ul>
+<div class="amsmath math notranslate nohighlight" id="equation-5d188f97-0865-42a7-b61a-bf5ee339537e">
+<span class="eqno">(6)<a class="headerlink" href="#equation-5d188f97-0865-42a7-b61a-bf5ee339537e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+y(x,t_2) = y(x - v (t_2 - t_1), t_1)
+\end{equation}\]</div>
+<ul class="simple">
+<li><p>Si l’onde se propage suivant les <span class="math notranslate nohighlight">\(x\)</span> négatifs, alors:</p></li>
+</ul>
+<div class="amsmath math notranslate nohighlight" id="equation-45d7dd79-7cfd-46ae-af72-3d2832072eee">
+<span class="eqno">(7)<a class="headerlink" href="#equation-45d7dd79-7cfd-46ae-af72-3d2832072eee" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+y(x,t_2) = y(x + v (t_2 - t_1), t_1)
+\end{equation}\]</div>
+</div>
+<div class="topic">
+<p class="topic-title first"><strong>Démonstration</strong></p>
+<p>On raisonne cette fois sur la forme spatiale à un instant t mais le raisonnement est le même, l’expression de <span class="math notranslate nohighlight">\(y(x,t_2)\)</span> en un point B de coordonnées x à l’instant <span class="math notranslate nohighlight">\(t_2\)</span> sera celle de <span class="math notranslate nohighlight">\(y(x_A,t_1)\)</span> en un point A à l’instant <span class="math notranslate nohighlight">\(t_1\)</span> tel que l’écart <span class="math notranslate nohighlight">\(x - x_A\)</span> soit égal à la distance parcourue par l’onde en un temps <span class="math notranslate nohighlight">\(t_2 - t_1\)</span> soit <span class="math notranslate nohighlight">\(x_A = x - v(t_2 - t_1)\)</span></p>
+</div>
+</div>
+<div class="section" id="onde-progressive-harmonique">
+<h3>Onde progressive harmonique<a class="headerlink" href="#onde-progressive-harmonique" title="Permalink to this headline">¶</a></h3>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>L’intérêt des ondes harmonique est à rapprocher de l’intérêt du RSF.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Ondes progressive harmonique (OPH)</strong>
+Une onde sinusoïdale est une onde dont la forme est un sinusoïde <span class="math notranslate nohighlight">\(g(t) = g_m \cos(\omega t)\)</span>. Si elle est émise d’un point S, l’amplitude en un point M sera:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-b1aa7942-376c-43b8-9fae-96c941d00ec7">
+<span class="eqno">(8)<a class="headerlink" href="#equation-b1aa7942-376c-43b8-9fae-96c941d00ec7" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+y(M,t) = y(S,t - \Delta t) = g_m \cos \left(\omega (t - \Delta t)\right)
+\end{equation}\]</div>
+</div>
+<div class="sidebar">
+<p class="sidebar-title"><strong>Relation temps-espace</strong></p>
+<p>Pour une onde sinusoïdale de célérité <span class="math notranslate nohighlight">\(c\)</span> et de fréquence f.<br />
+On a les relation: <span class="math notranslate nohighlight">\(\lambda f = v_{onde}\)</span> et <span class="math notranslate nohighlight">\(\frac{\omega}{k} = v_{onde}\)</span>.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Cas rectiligne et homogène</p>
+<ul class="simple">
+<li><p>Une onde progressive sur un axe Ox suivant les x croissants aura pour amplitude:</p></li>
+</ul>
+<div class="amsmath math notranslate nohighlight" id="equation-bee34099-028b-4a81-87c5-f6ae280fb754">
+<span class="eqno">(9)<a class="headerlink" href="#equation-bee34099-028b-4a81-87c5-f6ae280fb754" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+y(x,t) = g_m \cos(\omega t - \omega \frac{x}{v}) = g_m \cos(\omega t - kx)
+\end{equation}\]</div>
+<ul class="simple">
+<li><p>De même pour une onde progressant suivant les x négatifs:</p></li>
+</ul>
+<div class="amsmath math notranslate nohighlight" id="equation-8471f33f-7cb4-4d72-9712-99829798483a">
+<span class="eqno">(10)<a class="headerlink" href="#equation-8471f33f-7cb4-4d72-9712-99829798483a" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+y(x,t) = g_m \cos(\omega t + \omega \frac{x}{v}) = g_m \cos(\omega t + kx)
+\end{equation}\]</div>
+<ul class="simple">
+<li><p><strong>Pulsation/Fréquence/Période temporelle:</strong>  <span class="math notranslate nohighlight">\(\omega; f= \frac{\omega}{2 \pi}; T = \frac{2 \pi}{\omega}\)</span></p></li>
+<li><p><strong>La longueur d’onde (ou période spatiale)</strong>  <span class="math notranslate nohighlight">\(\lambda\)</span> est la distance minimale qui sépare deux positions où la perturbation est la même à chaque instant.</p></li>
+<li><p><strong>Le nombre d’onde</strong>  est définie par <span class="math notranslate nohighlight">\(k = \frac{2 \pi}{\lambda}\)</span></p></li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Représentation complexe</p>
+<p>Lorsqu’on étudie des signaux sinusoïdaux, il peut être intéressant d’utiliser un artifice mathématique pour simplifier l’étude: on utilise <strong>la représentation complexe des signaux sinusoïdaux</strong>  comme on apu le faire pour des signaux sinusoïdaux en régime sinusoïdal forcé.</p>
+</div>
+</div>
+</div>
+<div class="section" id="exemples-d-ondes-en-ligne">
+<h2>Exemples d’ondes (en ligne)<a class="headerlink" href="#exemples-d-ondes-en-ligne" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="corde-vibrante-onde-mecanique">
+<h3>Corde vibrante. Onde mécanique<a class="headerlink" href="#corde-vibrante-onde-mecanique" title="Permalink to this headline">¶</a></h3>
+<div class="topic">
+<p class="topic-title first">Description</p>
+<p>Une corde vibrante est une corde de masse linéique <span class="math notranslate nohighlight">\(\mu_0\)</span> tendue par une tension <span class="math notranslate nohighlight">\(\overrightarrow{T_0}\)</span> de norme <span class="math notranslate nohighlight">\(T_0\)</span> (les deux extrémités peuvent se mouvoir). On la suppose parfaitement horizontal au repos, ce qui revient à négliger la pesanteur. Chaque point de la corde peut vibrer dans le plan vertical. L’axe Ox est l’axe horizontal, les axes Oy et Oz sont les axes du plan de vibration. Pour simplifier, on supposera que la corde ne peut vibrer que dans la direction Oy (ce qui signifie que l’excitation n’est que dans le plan Oy).</p>
+<p><strong>Description physique</strong></p>
+<ul class="simple">
+<li><p><strong>Système considéré:</strong>  Pour décrire le mouvement de la corde, on considère un petit morceau de corde autour d’un point M de la corde repéré par son abscisse x.</p></li>
+<li><p><strong>Grandeur considérée:</strong>  On peut décrire l’état de la corde en décrivant l’état d’un point M plusieurs grandeurs par:</p>
+<ul>
+<li><p>sa position transversale: <span class="math notranslate nohighlight">\(y(x,t)\)</span></p></li>
+<li><p>sa vitesse de déplacement transversale: <span class="math notranslate nohighlight">\(v_y(x,t)\)</span></p></li>
+<li><p>la tension de la corde en tout point: <span class="math notranslate nohighlight">\(\overrightarrow{T(x,t)}\)</span> (ici la force exercée par la partie à gauche de x sur la partie à droite de x).</p></li>
+</ul>
+</li>
+<li><p><strong>Célérité des ondes mécanique</strong>  On peut montrer que (sous hypothèse) <span class="math notranslate nohighlight">\(v_{onde}=\sqrt{\frac{T_0}{\mu_0}}\)</span></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="ondes-acoustiques">
+<h3>Ondes acoustiques<a class="headerlink" href="#ondes-acoustiques" title="Permalink to this headline">¶</a></h3>
+<div class="topic">
+<p class="topic-title first">Description</p>
+<p>Une onde sonore est la propagation dans un milieu matériel (par exemple l’air) d’une surpression provoquant sur son passage une agitation locale du milieu. Considérons une tube dans lequel se trouve de l’air (on pourra par exemple assimiler cela à un instrument à vent). Un surpression causée en entrée va «pousser» une tranche de fluide (l’air), qui en s’agitant va induire une surpression sur la tranche de fluide suivant qui se met à son tour en mouvement et ainsi de suite: il se propage un son. Ce son arrive jusqu’à nos oreilles où jusqu’à un micro. La surpression qui s’est propagée fait alors vibrer une membrane (tympan ou capteur de pression).</p>
+<p><strong>Description physique</strong></p>
+<ul class="simple">
+<li><p><strong>Système étudié:</strong>  On étudie le mouvement d’une tranche de fluide d’épaisseur dx autour d’une position x.</p></li>
+<li><p><strong>Grandeur considéré (dans le cas d’un fluide):</strong></p>
+<ul>
+<li><p>la surpression engendrée: <span class="math notranslate nohighlight">\(p(x,t)\)</span>. La pression au point M est: <span class="math notranslate nohighlight">\(P(x,t)=P_O+p(x,t)\)</span> où <span class="math notranslate nohighlight">\(P_0\)</span> est la pression du milieu au repos.</p></li>
+<li><p>la vitesse de la portion de fluide: <span class="math notranslate nohighlight">\(v(x,t)\)</span> (pas de grandeur à ajouter car au repos, cette portion de fluide ne bouge évidemment pas).</p></li>
+<li><p>la variation de masse volumique du fluide: <span class="math notranslate nohighlight">\(\Delta \mu(x,)t\)</span>. <span class="math notranslate nohighlight">\(\mu(x,t) = \mu_0 + \Delta \mu(x,t)\)</span> (<span class="math notranslate nohighlight">\(\mu_0\)</span> est la masse volumique du fluide au repos).</p></li>
+</ul>
+</li>
+<li><p><strong>Intensité acoustique</strong> : On définit l’intensité acoustique instantanée <span class="math notranslate nohighlight">\(I(x,t)\)</span> d’une onde sonore comme la puissance transportée par l’onde dans une direction donnée par unité de surface.</p>
+<ul>
+<li><p>On peut montrer que l’intensité acoustique instantanée dans la direction de propagation du son est <span class="math notranslate nohighlight">\(I(x,t)=p(x,t)v(x,t)\)</span>.</p></li>
+<li><p>L’intensité acoustique est la valeur moyenne de l’intensité acoustique instantanée.</p></li>
+<li><p>Le niveau d’intensité sonore est définit par <span class="math notranslate nohighlight">\(L = 10 \log(I/I_0)\)</span> exprimé en dB où <span class="math notranslate nohighlight">\(I_0 = 10^{-12} \rm{SI}\)</span>
+<em>Ces formules ne sont pas à connaître mais on retiendra qu’une onde <strong>transporte une puissance</strong> .</em></p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="ondes-a-la-surface-d-un-fluide">
+<h3>Ondes à la surface d’un fluide<a class="headerlink" href="#ondes-a-la-surface-d-un-fluide" title="Permalink to this headline">¶</a></h3>
+<div class="topic">
+<p class="topic-title first">Description</p>
+<p>La surface d’un fluide (l’eau), peut être excitée par exemple par le vent, donnant naissance à la houle. Ce phénomène correspond à la propagation d’une onde à la surface du fluide. En effet, il se produit alors une montée d’eau en une position. La conservation de la masse et la variation de pression dans la colonne d’eau induit alors une variation de hauteur d’eau dans la colonne d’eau suivante et ainsi de suite se propage une onde de surface. Nous signalons simplement l’existence de ces ondes car elles sont courantes autour de nous et qu’elles seront étudiée de manière descriptive en TP.</p>
+<p><em>Grandeurs observées:</em> En un point du passage de l’onde, on peut définir la hauteur de la surface du fluide à un instant t: <span class="math notranslate nohighlight">\(z(x,t)\)</span>. Il existe d’autres grandeurs décrivant le passage de l’onde mais nous nous limitons ici à cette grandeur qui suffit à décrire l’onde à chaque instant.</p>
+</div>
+</div>
+<div class="section" id="ondes-electriques">
+<h3>Ondes électriques<a class="headerlink" href="#ondes-electriques" title="Permalink to this headline">¶</a></h3>
+<div class="topic">
+<p class="topic-title first">Description</p>
+<p>Quand en un point du circuit, on modifie le potentiel ou l’intensité (exemple: on allume le circuit), la  variation locale d’intensité/de potentiel va se propager de proche en proche tout au long du circuit: une onde électrique se propage dans le circuit.</p>
+<p><strong>Description physique</strong></p>
+<ul class="simple">
+<li><p>Le système étudié est une portion de circuit et sa modélisation électrique (cf. deuxième année). Les grandeurs utilisées sont bien entendu le potentiel électrique et l’intensité.</p></li>
+<li><p><em>ARQS : On rappelle que la célérité des ondes électriques est de l’ordre de la célérité de la lumière dans le vide de sorte que pour des signaux “lents” sur des circuits “courts”, on peut négliger les phénomènes de propagation, c’est-à-dire les considérer comme instantanés.</em></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="ondes-electromagnetiques">
+<h3>Ondes électromagnétiques<a class="headerlink" href="#ondes-electromagnetiques" title="Permalink to this headline">¶</a></h3>
+<div class="topic">
+<p class="topic-title first">Description</p>
+<p>Dans une approche classique de la lumière, celle-ci est une onde électromagnétique. La propagation d’une onde électromagnétique correspond à la propagation d’une variation des champs électriques <span class="math notranslate nohighlight">\(\overrightarrow{E}(M,t)\)</span> et magnétique <span class="math notranslate nohighlight">\(\overrightarrow{B}(M,t)\)</span> en tout point du trajet de l’onde. Les variations spatiales et temporelles des ces deux grandeurs sont corrélées par des équations (les équations de Maxwell). Ces relations permettent de propager ces variations de proche en proche: une onde électromagnétique se propage.</p>
+<p><strong>Description physique</strong></p>
+<ul class="simple">
+<li><p>Le système étudié est une portion d’espace. Comme précisé précédemment, les grandeurs qui décrivent l’onde seront le champ électrique et magnétique en chaque point. On remarque qu’il s’agit de <strong>champs vectoriels</strong> . L’orientation du champ électrique est notamment extrêmement importante.</p></li>
+<li><p><em>Dans le vide, les ondes électromagnétiques se propage à la vitesse <span class="math notranslate nohighlight">\(c=299792458 \rm{m.s^{-1}}\)</span>.</em></p></li>
+<li><p><strong>Considérations énergétiques</strong> : Energie propagée: L’étude de l’énergie propagée par une onde électromagnétique est un peu complexe. On peut retenir que:</p>
+<ul>
+<li><p>On traite en général l’éclairement énergétique I qui correspond à l’énergie transportée par le rayonnement électromagnétique par unité de surface (on pourra faire le parallèle avec les cas précédents).</p></li>
+<li><p>La sensation de luminosité perçue par notre oeil est en rapport avec l’éclairement.</p></li>
+<li><p>Pour une onde monochromatique progressive, l’éclairement est proportionnel au carré du module du champ électrique <span class="math notranslate nohighlight">\(I \approx \frac{cn \epsilon}{2} \vert E^2 \vert\)</span>. Le coefficient de proportionnalité n’est pas à connaître. Un rapide calcul montre que les fréquences associées au rayonnement visible sont de l’ordre de <span class="math notranslate nohighlight">\(10^{14}\rm{Hz}\)</span>. Cela montre que notre oeil n’est pas sensible à l’éclairement instantanée mais à la valeur moyenne de l’éclairement. <strong>C’est pourquoi, on définit directement l’éclairement énergétique comme une grandeur proportionnelle à la valeur moyenne du champ électrique au carré.</strong> <strong><span class="math notranslate nohighlight">\(I \propto \langle E^2 \rangle\)</span></strong></p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="front-d-onde-et-diffraction">
+<h2>Front d’onde et diffraction<a class="headerlink" href="#front-d-onde-et-diffraction" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="source-lumineuse">
+<h3>Source lumineuse<a class="headerlink" href="#source-lumineuse" title="Permalink to this headline">¶</a></h3>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Point source lumineux</strong></p>
+<ul class="simple">
+<li><p>Un point source lumineux est un point émettant une onde lumineuse dans une ou plusieurs direction. On lui associe en général un cône d’émission (qui peut-être toute la sphère) ainsi qu’un spectre d’émission.</p></li>
+<li><p>Un point source monochromatique est un point source émettant une lumière monochromatique.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="front-d-onde">
+<h3>Front d’onde<a class="headerlink" href="#front-d-onde" title="Permalink to this headline">¶</a></h3>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Surface d’onde</strong>
+Une surface d’onde (où front d’onde) est l’ensemble des points possédant la même phase (le même retard sur la source de l’onde).</p>
+<div class="figure align-center" id="fig-293">
+<a class="reference internal image-reference" href="../_images/Signaux_ondes_circulaire.jpg"><img alt="../_images/Signaux_ondes_circulaire.jpg" src="../_images/Signaux_ondes_circulaire.jpg" style="width: 30%;" /></a>
+</div>
+<p>Sur le graphique précédent, on a représenté en traits pleins les surfaces d’ondes et en pointillés les “rayons” de l’onde correspond à la direction de propagation.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Théorème de Malus (Admis)</strong>
+Lorsque le phénomène de diffraction peut-être négligé (cf. suite), le trajet d’une onde matérialisée par le trajet de l’énergie suivant des “rayons” est perpendiculaire au surface d’onde (cf. la figure précédente).</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Types d’ondes</strong></p>
+<ul class="simple">
+<li><p><strong>Cas d’une onde plane:</strong>  l’amplitude ne dépend pas de la position transverse à la propagation. On étudie souvent ce type d’onde car elle est simple mais les ondes créées en général sont plutôt circulaires ou sphériques (et encore… ).</p></li>
+</ul>
+<div class="figure align-center" id="fig-294">
+<a class="reference internal image-reference" href="../_images/Signaux_ondes_planes.jpg"><img alt="../_images/Signaux_ondes_planes.jpg" src="../_images/Signaux_ondes_planes.jpg" style="width: 30%;" /></a>
+</div>
+<ul class="simple">
+<li><p>Cas d’une ondes circulaire: (on pourra généraliser l’idée à une onde sphérique à 3 dimensions) Il s’agit d’une représentation assez usuelle pour une source ponctuelle (point lumineux, source sonore… ).</p></li>
+</ul>
+<div class="figure align-center" id="fig-295">
+<a class="reference internal image-reference" href="../_images/Signaux_ondes_circulaire.jpg"><img alt="../_images/Signaux_ondes_circulaire.jpg" src="../_images/Signaux_ondes_circulaire.jpg" style="width: 30%;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ondes_prop.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Description des ondes</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ondes_prop_ex.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Maitriser les méthodes</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,512 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Méthodes : Etude des interférences &#8212; Ondes</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/ondes/notebook/ondes_super_meth_young.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Application et entrainement" href="ondes_super_ex.html" />
+    <link rel="prev" title="Activités" href="ondes_super_meth_battements.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Ondes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ondes.html">
+   Ondes
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="ondes_prop.html">
+   Description des ondes
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_prop_contxt.html">
+     Comprendre le contexte
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_prop_ex.html">
+     Maitriser les méthodes
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="ondes_super.html">
+   Superposition de deux ondes: Interférences et battements
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_super_contxt.html">
+     Généralités
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_super_meth_battements.html">
+     Activités
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Méthodes : Etude des interférences
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_super_ex.html">
+     Application et entrainement
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="ondes_stat.html">
+   Ondes stationnaires
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_stat_contxt.html">
+     Comprendre le contexte
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_stat_meth.html">
+     Méthodes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_stat_ex.html">
+     Application et entrainement
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/ondes_super_meth_young.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/ondes_super_meth_young.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/ondes_super_meth_young.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fentes-d-young">
+   Fentes d’Young
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interferences-a-l-infini">
+   Interférences à l’infini
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="methodes-etude-des-interferences">
+<h1>Méthodes : Etude des interférences<a class="headerlink" href="#methodes-etude-des-interferences" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="fentes-d-young">
+<h2>Fentes d’Young<a class="headerlink" href="#fentes-d-young" title="Permalink to this headline">¶</a></h2>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>Un éclairage LASER cohérent et monochromatique de longueur d’onde <span class="math notranslate nohighlight">\(\lambda_0\)</span> éclaire un ensemble de deux fentes parallèles de longueur L et de largeur <span class="math notranslate nohighlight">\(\epsilon\)</span> distantes l’une de l’autre de <span class="math notranslate nohighlight">\(a\)</span>. On suppose que <span class="math notranslate nohighlight">\(L\gg a\)</span> et <span class="math notranslate nohighlight">\(a\gg \epsilon\)</span> de sorte qu’on peut assimiler les fentes à des fentes de longueur infinies et d’épaisseur nulle.</p>
+<p>On place un écran parallèle aux fentes à une distance D des fentes telle que <span class="math notranslate nohighlight">\(D&gt;&gt;a\)</span> et on visualise la figure lumineuse en une zone proche du centre de l’écran (défini en regard du centre de la double fente). La figure, appelée figure d’interférences obtenues, est données figure suivante (la courbe correspond au profil d’intensité mesuré grâce à un capteur CCD).</p>
+<div class="figure align-center" id="fig-303">
+<a class="reference internal image-reference" href="../_images/Signaux_young_schema.jpg"><img alt="../_images/Signaux_young_schema.jpg" src="../_images/Signaux_young_schema.jpg" style="width: 50%;" /></a>
+</div>
+<p>La diffraction permet de considérer les deux fentes <span class="math notranslate nohighlight">\(S_1\)</span> et <span class="math notranslate nohighlight">\(S_2\)</span> comme de nouvelles sources (des sources secondaires) qui émettent dans (presque) toutes les directions. Les interférences ont lieu dans tout une zone d’espace: on parle d’interférences délocalisées.</p>
+<ol class="simple">
+<li><p>Déterminer la différence de chemin optique en un point M de coordonnées <span class="math notranslate nohighlight">\((x;0)\)</span> sur l’écran sans approximation puis simplifier l’expressoin obtenue pour <span class="math notranslate nohighlight">\(x\ll D\)</span>.</p></li>
+<li><p>En déduire l’ordre d’interférence et le déphasage entre les deux ondes dans le cadre de l’approximation <span class="math notranslate nohighlight">\(x\ll D\)</span>.</p></li>
+<li><p>Déterminer les positions où l’interférences est contructives, destructives. Commenter la forme des zones claires et sombres.</p></li>
+<li><p>Déterminer l’interfrange, distance entre deux franges d’égales intensité.</p></li>
+<li><p>Comparer les données aux observations expérimentales faites ci-dessous.</p></li>
+</ol>
+<div class="figure align-center" id="fig-304">
+<a class="reference internal image-reference" href="../_images/Signaux_3_Interference.jpg"><img alt="../_images/Signaux_3_Interference.jpg" src="../_images/Signaux_3_Interference.jpg" style="width: 50%;" /></a>
+</div>
+<p>Intérêt de l’ordre d’interéférences</p>
+<ol class="simple">
+<li><p>Exprimer l’ordre d’interférence au centre de la figure (appelé <span class="math notranslate nohighlight">\(O_1\)</span>). Correspond-il à une frange brillante ou sombre?</p></li>
+<li><p>Exprimer l’ordre d’interférence en un point M de l’écran situé à une abscisse x.</p></li>
+<li><p>Exprimer au moyen de l’interfrange le nombre de franges située entre <span class="math notranslate nohighlight">\(O_1\)</span> et M. Retrouver l’interprétation de l’interfrange.</p></li>
+</ol>
+</div>
+<div class="topic">
+<p class="topic-title first">Correction</p>
+<blockquote>
+<div><p><strong>Calcul de la différence de chemin optique</strong><br />
+Le chemin parcouru par le premier rayon est <span class="math notranslate nohighlight">\(SS_1 M\)</span> et le chemin parcouru par le second rayon est <span class="math notranslate nohighlight">\(SS_2 M\)</span>. Les portions <span class="math notranslate nohighlight">\(SS_1\)</span> et <span class="math notranslate nohighlight">\(SS_2\)</span> étant identique, la différence de marche (qui est aussi la différence de chemin optique puisque <span class="math notranslate nohighlight">\(n=1\)</span>) est la même. Il vient <span class="math notranslate nohighlight">\(\delta = S_2 M - S_1 M\)</span> soit:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\delta &amp;= \sqrt{{\left(\frac{a}{2}- x\right)}^2 + D^2} - \sqrt{{\left(\frac{a}{2}+ x\right)}^2 + D^2}\\
+&amp;= D\left(\sqrt{{\left(\frac{\frac{a}{2}- x}{D}\right)}^2 + 1} - \sqrt{{\left(\frac{\frac{a}{2}+ x}{D}\right)}^2 + 1}\right)\\
+&amp;\approx D\left({1 + \frac{1}{2}\left(\frac{\frac{a}{2}- x}{D}\right)}^2 - \left(1 + \frac{1}{2}{\left(\frac{\frac{a}{2}+ x}{D}\right)}^2 + 1\right)\right)\\
+&amp;\approx - \frac{ax}{D}
+\end{align*}\]</div>
+<p><strong>Déphasage et ordre d’interférence</strong></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\Phi &amp;= \frac{2 \pi \delta}{\lambda_0}\\
+&amp;\approx - \frac{2\pi ax}{D\lambda_0}\\
+p &amp;= \frac{\delta}{\lambda_0}\\
+&amp;=\frac{ax}{D\lambda_0}
+\end{align*}\]</div>
+<p><strong>Interférences constructives et destructives</strong><br />
+Les interférences constructives sont obtenues là où le déphasage est de la forme <span class="math notranslate nohighlight">\(2m\pi\)</span> avec <span class="math notranslate nohighlight">\(m \in \mathbb{Z}\)</span> et les interférences destructives sont obtenues là où le déphasage est de la forme <span class="math notranslate nohighlight">\((2m+1)\pi\)</span> avec <span class="math notranslate nohighlight">\(m \in \mathbb{Z}\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+&amp;- \frac{2\pi ax_{constructif}}{D\lambda_0} = 2m \pi \\
+&amp; \Longrightarrow x_{constructif} = \frac{D \lambda_0 m}{ a}\\
+&amp;- \frac{2\pi ax_{destructif}}{D\lambda_0} = (2m + 1) \pi \\
+&amp; \Longrightarrow x_{destructif} = \frac{D \lambda_0 (m + 1/2)}{ a}
+\end{align*}\]</div>
+<p>Les zones claires et sombres correspondent à des zones où x est fixé mais la coordonnées transverses y est quelconque: les zones claires et sombres seront des franges.</p>
+<p><strong>Interfrange et interférométrie.</strong><br />
+L’interfrange est l’écart minimale entre deux franges d’égales intensités (brillantes par exemples) donc soit: <span class="math notranslate nohighlight">\(i = x_{m+1} - x_{m} = \frac{D\lambda_0}{a}\)</span>. On observe que l’interfrange (grandeur mesurable est d’<strong>autant plus grande que l’écart entre les fentes est petit</strong> : on peut donc remonter à une distance très petite en la transformation en une distance très grande, mesurable à notre échelle: c’est le grand intérêt de l’<strong>interférométrie</strong> .</p>
+<p><strong>Figure d’interférences</strong><br />
+On observe bien l’alternance de franges brillantes et sombres comme prévu.</p>
+<p>Par contre, on observe une diminution de l’intensité quand on s’éloigne du bord qui n’est pas prévu par la théorie. Cela est du au phénomène de diffraction. Ce dernier élargie les faisceau au niveu des fentes permettant aux deux faisceaux de se rencontrer, <strong>d’interférer</strong> . Mais cet élargissement est limité à un cône et en dehors de ce cône, l’intensité chute diminuant l’intensité des raies observées. Cette diminution n’est pas brutale mais suit un profil similaire à celui observé pour la diffraction seule dans le chaptre précédent.</p>
+<p><strong>Ordre d’interférence</strong><br />
+Au centre, <span class="math notranslate nohighlight">\(p=0\)</span>, on observe une frange brillante.</p>
+<p>En un point d’abscisse x, l’ordre d’interférence est <span class="math notranslate nohighlight">\(p = \frac{ ax}{D\lambda_0}\)</span></p>
+<p>Entre O et M, le nombre de franges brillantes est <span class="math notranslate nohighlight">\(\frac{x}{i}= \frac{ax}{D\lambda_0} = p\)</span>: on retrouve le fait que la différence d’ordre d’interférence entre deux points correspond au nombre de franges brillantes visible (attention, il faut que l’ordre d’interférence soit monotone entre les deux points).</p>
+</div></blockquote>
+</div>
+<div class="topic">
+<p class="topic-title first">Perte de cohérence temporelle</p>
+<p><strong>La taille de l’interfrange varie en fonction de la longueur d’onde/</strong>  Si on superpose deux couleurs (en envoyant une lumière qui n’est pas monochromatique), leur figure d’interférence va simplement se superposer (<strong>ce sont deux ondes qui n’ont pas la même longueur d’onde donc il ne se produit pas d’interférences: on somme les intensités</strong> ).</p>
+<p>Il se passe la même chose avec la lumière blanche: on observe une superposition continue de figure d’interférences décalées qui produisent un phénomène d’irisation. L’image est plus flou à cause des superposition: on parle de <strong>décohérence temporelle</strong> .</p>
+<div class="figure align-center" id="fig-305">
+<img alt="../_images/Signaux_3_Coherence.jpg" src="../_images/Signaux_3_Coherence.jpg" />
+</div>
+</div>
+</div>
+<div class="section" id="interferences-a-l-infini">
+<h2>Interférences à l’infini<a class="headerlink" href="#interferences-a-l-infini" title="Permalink to this headline">¶</a></h2>
+<p><em>Il est très fréquent qu’on s’intéresse à une figure d’interférence à l’infini. Nous allons voir comme la traiter puis comment traiter sa projection.</em></p>
+<div class="attention admonition">
+<p class="admonition-title">Interférences à l’infini </p>
+<p>On considère toujours le dispositif des fentes d’Young mais on supprime l’écran et on s’intéresse à la figure d’interférences observées à l’infini (celle qu’observerait un oeil emmétrope au repos se plaçant à la place de l’écran - attention en pratique, il ne faut pas le faire si c’est un LASER !).</p>
+<ol class="simple">
+<li><p>Quelle grandeur va alors caractériser un point de l’image à l’infini ?</p></li>
+<li><p>En utilisant le théorème de Malus et le principe de retour inverse, montrer que la différence de chemin optique se limite à la distance entre <span class="math notranslate nohighlight">\(S_2\)</span> et le projeté de <span class="math notranslate nohighlight">\(S_1\)</span> sur le rayon 2. En déduire la différence de chemin optique.</p></li>
+<li><p>Exprimer alors les conditions d’intérférence constructives et destructives.</p></li>
+<li><p>Comment faire pour observer la figure d’interférences à l’infini…  sur un écran. Déduire alors les conditions d’interférences constructives et l’interfrange sur l’écran.</p></li>
+</ol>
+</div>
+<div class="topic">
+<p class="topic-title first">Correction</p>
+<blockquote>
+<div><p><strong>Image à l’infini</strong><br />
+Un point-image à l’infini est caractérisé par l’angle (noté <span class="math notranslate nohighlight">\(\theta_S\)</span> ici) que fait le faisceau de rayon parallèle qui point vers le points avec l’axe optique (ici la médiane aux deux fentes).</p>
+</div></blockquote>
+<div class="figure align-center" id="fig-306">
+<img alt="../_images/Signaux_young_infini.jpg" src="../_images/Signaux_young_infini.jpg" />
+</div>
+<blockquote>
+<div><p>Deux rayons issus des fentes et interférant en un point repérant par un angle <span class="math notranslate nohighlight">\(\theta\)</span> seront donc deux rayons parallèles passant par <span class="math notranslate nohighlight">\(S_1\)</span> et <span class="math notranslate nohighlight">\(S_2\)</span> et faisant un angle <span class="math notranslate nohighlight">\(\theta\)</span> avec l’axe optique (comme représenté ci-avant).</p>
+<p>Si l’on considère deux rayons issus du point image et se dirigeant vers les fentes, le théorème de Malus assure que les front d’onde sont perpendiculaire donc le déphasage entre deux plans perpendiculaire aux rayons est nul. Il reste que le déphasage entre les deux rayons quand il arrive aux fentes se résume au retard à la propagation associé au petit chemin supplémentaire parcouru par le rayon 2 pour aller du projeté de <span class="math notranslate nohighlight">\(S_1\)</span> sur le rayon 2 (point noté H sur le même front d’onde que <span class="math notranslate nohighlight">\(S_1\)</span>) jusqu’au point <span class="math notranslate nohighlight">\(S_2\)</span>.</p>
+<p>Par principe de retour inverse, la lumière emprunte le même chemin pour aller des fentes au point objet et le déphasage entre les deux rayons sera le même que dans l’autre sens. Il vient que la différence de chemin optique sera <span class="math notranslate nohighlight">\(nS_2 H = S_2 H = a \sin \theta_S\)</span>.</p>
+<p>On en déduit la condition d’interférence constructive: <span class="math notranslate nohighlight">\(a \sin \theta_S = m \lambda_0\)</span> avec <span class="math notranslate nohighlight">\(m \in \mathbb{Z}\)</span>.</p>
+<p>On déterminera de la même manière la condition d’interférence destructive.</p>
+<p>Pour observer la figure d’interférence à l’infini sur un écran, il faut la <strong>projeter au moyen d’une lentille</strong> . On place l’écran dans le plan focal de la lentille qui est alors conjugué avec un objet à l’infini soit la figure d’interférence à l’infini.</p>
+</div></blockquote>
+</div>
+<div class="attention admonition">
+<p class="admonition-title">Utilisation d’une lentille</p>
+<p>On reprend le dispositif précédent et on place une lentille après les fentes puis un écran dans le plan focal image de la lentille.</p>
+<div class="figure align-center" id="fig-307">
+<a class="reference internal image-reference" href="../_images/Signaux_Correction_Lentilles.jpg"><img alt="../_images/Signaux_Correction_Lentilles.jpg" src="../_images/Signaux_Correction_Lentilles.jpg" style="width: 30%;" /></a>
+</div>
+<p>Déterminer l’interfrance de la figure d’interférence sur l’écran.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<ul class="simple">
+<li><p>Comme on peut le voir sur l’exemple ci-dessous, les rayons sont déviés par la lentille mais <strong>on ne peut pas utiliser une somme par morceau des trajets car la schématisation de Gauss ne modélise pas l’épaisseur de la lentille</strong>.</p></li>
+<li><p>La différence de chemin optique __est identique en deux points conjugués (objet et image) par un système optique.</p></li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Correction</p>
+<blockquote>
+<div><p>La méthode est la suivante:</p>
+<ol class="simple">
+<li><p>On déterminer l’antécédent de l’écran par la lentille (ici, c’est l’infini)</p></li>
+<li><p>On relie les caractéristiques géométriques d’un point de l’antécédent à celui d’un point sur l’écran.</p></li>
+<li><p>On détermine la figure d’interférence dans le plan de l’antécédent</p></li>
+</ol>
+<p><strong>Interférences dans le plan focal de la lentille</strong></p>
+<ol class="simple">
+<li><p>On a placé l’écran de sorte qu’il soit conjugué avec le plan objet à l’infini donc la figure d’interférence sur l’écran est conjugué à celle à l’infini sans la lentille.</p></li>
+<li><p>Pour un point M situé à une distance x de l’axe optique, on peut construire les rayons incidents (faisceau de rayons parallèles) en utilisant les règles habituelles:</p>
+<ul class="simple">
+<li><p>ici on trace un rayon sortant passe par M et le centre optique vient d’un rayon non dévié. Les deux rayons incident passant par les sources et ressortant par M doivent être parallèles à ce rayon, d’où la construction.</p></li>
+<li><p>il vient que l’angle que fait le faisceau incident avec l’axe optique est <span class="math notranslate nohighlight">\(\theta \approx \tan \theta = \frac{x}{f'}\)</span> (on utilise les conditions de Gauss pour réaliser un stigmatisme).</p></li>
+</ul>
+</li>
+<li><p>On a déjà déterminé les caractéristiques de la figure d’interférence à l’infini (s’entrainer à le refaire).</p>
+<ul class="simple">
+<li><p>Dans les conditions d’interférences constructives, on a la relation <span class="math notranslate nohighlight">\(\theta \approx \sin \theta = m \frac{\lambda_0}{a}\)</span> soit une condition d’interférence constructive sur l’écran: <span class="math notranslate nohighlight">\(x =\frac{mf' \lambda_0}{a}\)</span>.</p></li>
+</ul>
+</li>
+</ol>
+<p>L’interfrange est donc <span class="math notranslate nohighlight">\(i = \frac{f' \lambda_0}{a}\)</span>.</p>
+</div></blockquote>
+<div class="figure align-center" id="fig-308">
+<img alt="../_images/lentille.png" src="../_images/lentille.png" />
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ondes_super_meth_battements.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Activités</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ondes_super_ex.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Application et entrainement</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

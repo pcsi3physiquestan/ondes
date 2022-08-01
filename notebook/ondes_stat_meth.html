@@ -1,0 +1,622 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Méthodes &#8212; Ondes</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/ondes/notebook/ondes_stat_meth.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Application et entrainement" href="ondes_stat_ex.html" />
+    <link rel="prev" title="Comprendre le contexte" href="ondes_stat_contxt.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Ondes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ondes.html">
+   Ondes
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="ondes_prop.html">
+   Description des ondes
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_prop_contxt.html">
+     Comprendre le contexte
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_prop_ex.html">
+     Maitriser les méthodes
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="ondes_super.html">
+   Superposition de deux ondes: Interférences et battements
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_super_contxt.html">
+     Généralités
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_super_meth_battements.html">
+     Activités
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_super_meth_young.html">
+     Méthodes : Etude des interférences
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_super_ex.html">
+     Application et entrainement
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="ondes_stat.html">
+   Ondes stationnaires
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_stat_contxt.html">
+     Comprendre le contexte
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Méthodes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ondes_stat_ex.html">
+     Application et entrainement
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/ondes_stat_meth.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/ondes_stat_meth.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/ondes_stat_meth.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reflexion-parfaite-sur-une-corde">
+   Réflexion parfaite sur une corde
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#modes-propres">
+   Modes propres
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercices-d-application">
+   Exercices d’application
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cavite-laser-resonante">
+     Cavité LASER résonante
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tuyau-ouvert">
+     Tuyau ouvert
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#travaux-diriges">
+   Travaux dirigés
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#corde-vibrante">
+     Corde vibrante
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#le-pipeau">
+     Le pipeau
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="methodes">
+<h1>Méthodes<a class="headerlink" href="#methodes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="reflexion-parfaite-sur-une-corde">
+<h2>Réflexion parfaite sur une corde<a class="headerlink" href="#reflexion-parfaite-sur-une-corde" title="Permalink to this headline">¶</a></h2>
+<p><em>On va démontrer le caractére stationnaire de l’onde en présence d’un noeud.</em></p>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Si le paramétrage est libre, pensez à mettre la condition aux limites nulle en 0.</p>
+</div>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>On considère une corde tendue par une tension T horizontale de masse linéique <span class="math notranslate nohighlight">\(\mu\)</span>. La célérité des ondes mécaniques qui se propagent sur la corde est alors <span class="math notranslate nohighlight">\(c = \sqrt{\frac{T}{\mu}}\)</span>. On notera <span class="math notranslate nohighlight">\(k = \frac{2\pi}{\lambda}\)</span> avec <span class="math notranslate nohighlight">\(\lambda\)</span> la longueur d’onde d’une onde progressive. La corde est attaché en un point A. Une onde progressive harmonique se propose dans le sens des x positifs de <span class="math notranslate nohighlight">\(-\infty\)</span> vers le point A.</p>
+<ol class="simple">
+<li><p>Justifier l’existence d’une onde réfléchie. En déduire l’expression générale de la côte verticale <span class="math notranslate nohighlight">\(y(x,t)\)</span> de la corde.</p></li>
+<li><p>Que vaut y au point A? En déduire que l’onde résultante est une onde stationnaire.</p></li>
+<li><p>Déterminer la position des noeuds et des ventres de l’onde.</p></li>
+</ol>
+</div>
+<div class="sidebar">
+<p class="sidebar-title">Attention</p>
+<ul class="simple">
+<li><p>On n’écrit pas tout de suite que les amplitudes sont égales, il va falloir le prouver.</p></li>
+<li><p>On peut choisir la phase à l’origine nulle pour l’onde incidente puisque qu’on fixer l’origine des phases.</p></li>
+</ul>
+<p>Mais on ne peut le faire qu’une seule fois (on fixe la “référence des phases”, c’est pourquoi on écrit pas que la phase à l’origine pour l’onde réfléchie est nulle, il faut aussi le prouver (et ça peut être faux si la réflexion n’a pas lieu en <span class="math notranslate nohighlight">\(x=0\)</span>.</p>
+</div>
+<div class="topic">
+<p class="topic-title first">Correction</p>
+<blockquote>
+<div><p><strong>Existence d’une onde réfléchie</strong><br />
+Une onde transporte de l’énergie. Or au point A, il n’y a pas de mouvement, donc par d’énergie transmise vers les x positifs. Il vient que cette énergie est nécessairement réfléchie d’où l’existence d’une onde réfléchie:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-cd0d09e7-7f16-49b4-8d08-a60de9a4daf0">
+<span class="eqno">(15)<a class="headerlink" href="#equation-cd0d09e7-7f16-49b4-8d08-a60de9a4daf0" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+y(x,t) = A \cos \left(\omega t - kx\right) + B \cos \left(\omega t + kx + \varphi\right)
+\end{equation}\]</div>
+<p><strong>Onde stationnaire</strong><br />
+On pose <span class="math notranslate nohighlight">\(x_A = 0\)</span>. On a y(0,t) = 0 pour tout t. Il vient:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+y(0,t) = 0 &amp;= A \cos \omega t + B \cos \omega t +\varphi \\
+0 &amp;= \left(A + B \cos \varphi\right)\cos \omega t - B \sin \varphi \sin \omega t
+\end{align*}\]</div>
+<p>La dernière équation devant être vraie pour tout t, il vient que <span class="math notranslate nohighlight">\(B \sin \varphi = 0\)</span> et <span class="math notranslate nohighlight">\(A + B \cos \varphi =0\)</span> soit trivialement <span class="math notranslate nohighlight">\(\varphi = 0\)</span> et <span class="math notranslate nohighlight">\(A = -B\)</span> soit:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+y(x,t) &amp;= A \cos \left(\omega t - kx\right) - A \cos \left(\omega t + kx\right)\\
+&amp;= 2 A \sin \omega t \sin kx
+\end{align*}\]</div>
+<p>L’onde résultante est bien une onde stationnaire.</p>
+<p><strong>Noeud et ventre</strong><br />
+Les noeuds sont tels que <span class="math notranslate nohighlight">\(y(x,t) = 0\)</span> à tout instant soit <span class="math notranslate nohighlight">\(\sin kx = 0\)</span> soit <span class="math notranslate nohighlight">\( x = \frac{m\pi}{k} = \frac{m\lambda}{2}\)</span> avec m un entier. On observe que les noeuds sont espacés d’une demie longueur d’onde.</p>
+<p>Les ventres sont tels que l’amplitude de <span class="math notranslate nohighlight">\(y(x,t)\)</span> est maximale soit <span class="math notranslate nohighlight">\(\sin kx = 1\)</span> soit <span class="math notranslate nohighlight">\(x = \frac{m\pi}{k} + \frac{\pi}{2 k}= \frac{m\lambda}{2} + \frac{\lambda}{4}\)</span>. A nouveau les ventres sont espacés d’une demi longueur d’onde. On retrouve l’allure observée précédemment.</p>
+</div></blockquote>
+<div class="figure align-center" id="fig-311">
+<img alt="../_images/Standing_wave.gif" src="../_images/Standing_wave.gif" />
+</div>
+</div>
+</div>
+<div class="section" id="modes-propres">
+<span id="md-pr"></span><h2>Modes propres<a class="headerlink" href="#modes-propres" title="Permalink to this headline">¶</a></h2>
+<div class="important admonition">
+<p class="admonition-title">Corde de Melde</p>
+<p>On considère une corde de longueur L fixée aux deux points extrêmes A et B sous une tension <span class="math notranslate nohighlight">\(\overrightarrow{T}\)</span>. La corde peut vibrer et une onde mécanique se propage le long de la corde. On rappelle que pour une onde mécanique, on peut décrire la vibration de la corde se propageant par l’écart de la position d’un point de la corde à sa position d’équilibre (la corde tendue au repos est supposée être horizontale): <span class="math notranslate nohighlight">\(y(x,t)\)</span>.</p>
+<ol class="simple">
+<li><p>Montrer que l’onde résultante est stationnaire.</p></li>
+<li><p>Montrer que la corde ne peut vibrer d’elle même qu’à des fréquences particulières qu’on déterminera : les <strong>modes propres</strong>.</p></li>
+</ol>
+</div>
+<div class="sidebar">
+<p class="sidebar-title">Soultions harmoniques</p>
+<ul class="simple">
+<li><p>On ne cherche pas à déterminer une solution quelconque. On va chercher une solution <strong>harmonique</strong>  c’est-à-dire résultant de la superposition de deux ondes progressives harmoniques (l’une dans le sens de x positifs et l’autre dans le sens des x négatifs).</p>
+<ul>
+<li><p>Le choix d’étudier les ondes harmoniques s’explique par la linéarité du système (cf. deuxième année) et le principe de décomposition en série de Fourier (cf. début d’année).</p></li>
+</ul>
+</li>
+<li><p>On pourra noter que la structure de l’onde progressive impose la structure de l’onde régressive. C’est obligatoire pour assurer les conditions aux limites à tout instant.</p></li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Correction Q1.</p>
+<blockquote>
+<div><p><strong>Paramétrage.</strong></p>
+<p>Quand l’onde se propage, elle arrive au bout de la corde. Elle est alors réfléchie et se propage dans l’autre sens pour être à nouveau réfléchie et ainsi de suite. Cette série d’onde réfléchies se superpose. On peut «regrouper» l’ensemble des ondes obtenues en deux ondes:</p>
+<ul class="simple">
+<li><p>une onde mécanique se propageant suivant les x croissants: <span class="math notranslate nohighlight">\(y_{+}(x,t)=y_{+}(t- \frac{x}{v_{onde}})\)</span></p></li>
+<li><p>une onde mécanique se propageant suivant les x décroissants: <span class="math notranslate nohighlight">\(y_{-}(x,t)=y_{-}(t+ \frac{x}{v_{onde}})\)</span>
+L’onde résultante totale donne la position instantanée de chaque point de la corde:</p></li>
+</ul>
+<div class="amsmath math notranslate nohighlight" id="equation-a011d46c-e9b7-4c09-8571-b31a8666cea2">
+<span class="eqno">(16)<a class="headerlink" href="#equation-a011d46c-e9b7-4c09-8571-b31a8666cea2" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+y(x,t)=y_{+}(t- \frac{x}{v_{onde}}) + y_{-}(t+ \frac{x}{v_{onde}})
+\end{equation}\]</div>
+<p><strong>Conditions aux limites</strong><br />
+On ne peut choisir arbitrairement la forme de l’onde car on impose <strong>des conditions aux limites: l’amplitude aux points extrêmes x=0 et x= L doit nécessairement être nulle (corde fixée).</strong>
+L’onde résultante a donc la forme:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-63bb63f2-cf83-4f73-8349-a3e0fecc32cd">
+<span class="eqno">(17)<a class="headerlink" href="#equation-63bb63f2-cf83-4f73-8349-a3e0fecc32cd" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+y(x,t)=y_{+m}\sin(\omega t- kx) + y_{-m}\sin(\omega t+ kx +\varphi)
+\end{equation}\]</div>
+<p><strong>Q1.</strong> Cf. la question précédente __en utilisant la condition aux limites en <span class="math notranslate nohighlight">\(x=0\)</span>. L’onde résultante aura donc pour expression:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-699cc5ae-b0ab-4eee-920f-7396f294827a">
+<span class="eqno">(18)<a class="headerlink" href="#equation-699cc5ae-b0ab-4eee-920f-7396f294827a" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+y(x,t)=Y_m \cos(\omega t)\sin(k x) = Y \cos(\omega t)\sin(\frac{2 \pi}{\lambda} x)
+\end{equation}\]</div>
+</div></blockquote>
+</div>
+<div class="topic">
+<p class="topic-title first">Correction Q2 - Méthode mathématique.</p>
+<blockquote>
+<div><p><strong>Q2.</strong> Nous allons maintenant utiliser la deuxième condition aux limites. Celle-ci est fondamental puisqu’elle conduit à la <strong>quantification des modes propres</strong> . Utilisons la deuxième condition aux limites <span class="math notranslate nohighlight">\(y(L,t)=0\)</span>: <span class="math notranslate nohighlight">\(y(L,t)=Y_m \cos(\omega t)\sin(k L) = 0\)</span>.</p>
+</div></blockquote>
+<p>A nouveau, cette relation doit être vérifiée pour tout t, donc <span class="math notranslate nohighlight">\(\sin(kL) =0\)</span> soit: <span class="math notranslate nohighlight">\(kL = n \pi\)</span> avec <span class="math notranslate nohighlight">\(n \in \mathbb{N}\)</span> soit:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-34fddd21-84c2-406b-b219-d6a05d0af4b4">
+<span class="eqno">(19)<a class="headerlink" href="#equation-34fddd21-84c2-406b-b219-d6a05d0af4b4" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\begin{cases}
+k &amp;= \frac{n \pi}{L}\\
+\lambda &amp;= \frac{2L}{n}\\
+f &amp;= \frac{n v_{onde}}{2L}
+\end{cases}
+\end{equation}\]</div>
+</div>
+<div class="topic">
+<p class="topic-title first">Correction Q2 - Méthode graphique.</p>
+<p>On connait que l’onde est stationnaire. La forme spatiale de l’onde est alors un sinusoïde. Sauf qu’on impose deux noeuds en x=0 et x=L. On peut ainsi chercher à tracer les formes sinusoïdales qui coïncident avec ces conditions aux limites.</p>
+<div class="figure align-center" id="fig-312">
+<img alt="../_images/Vibration_corde_trois_modes_petit.gif" src="../_images/Vibration_corde_trois_modes_petit.gif" />
+</div>
+<p>La représentation précédente (ANIMATION) montre les trois premiers modes propres possibles. Dans le premier, on dessine une demi longueur d’onde sur une longueur de corde, dans le second une longueur d’onde et dans le troisième une longueur d’onde est demie.</p>
+<p>On peut généraliser cette observation en remarquant que les conditions aux limites imposent que la longueur de corde soit égale à un nombre entier ou demi-entier de longueur d’onde soit <span class="math notranslate nohighlight">\(L = \frac{m\lambda}{2}\)</span> avec m un entier. On pourra retrouver la quantification des fréquences.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>A retenir</strong>
+Pour qu’une onde sinusoïdale de fréquence f puisse exister dans une corde de longueur L fixée à ses deux extrémités où la vitesse de propagation des ondes mécanique est <span class="math notranslate nohighlight">\(v_{onde}\)</span>, il faut que <span class="math notranslate nohighlight">\(f=n \frac{v_{onde}}{2L}\)</span> soit une longueur d’onde: <span class="math notranslate nohighlight">\(\lambda=\frac{2L}{n}\)</span> avec <span class="math notranslate nohighlight">\(n \in \mathbb{N}\)</span>.</p>
+<p>La forme de l’onde résultante peut s’écrire:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-2c1b6fb6-58e3-4416-94a4-85ab38d2d877">
+<span class="eqno">(20)<a class="headerlink" href="#equation-2c1b6fb6-58e3-4416-94a4-85ab38d2d877" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+y(x,t)=Y_n \cos(\omega_n t)\sin(k_n x) = Y_n \cos(\omega_n t)\sin(\frac{2 \pi}{\lambda_n} x)
+\end{equation}\]</div>
+</div>
+<div class="topic">
+<p class="topic-title first">Interprétation</p>
+<p>L’étude précédente permet de mettre en avant les vibrations pouvant exister pour la corde (supposée parfaite puisqu’on néglige toute perte).</p>
+<p>Elle a l’avantage d’être simple. Néanmoins, pour qu’une vibration sinusoïdale se produise dans la corde à une fréquence <span class="math notranslate nohighlight">\(f_n\)</span>, il faut des conditions particulières: une excitation initiale sinusoïdale (cf. TP corde de Melde). Si l’on s’intéresse au principe des instruments de musique, une telle excitation n’est pas réalisée. L’observation du spectre créé par la corde est alors plus complexe: il s’agit d’une superposition des ondes sinusoïdales pures. Dans le langage acoustique, on distingue alors la fréquence la plus faible, correspondant à la hauteur du son (<span class="math notranslate nohighlight">\(f_1\)</span> normalement), c’est le <strong>fondamental</strong> . Et les fréquences suivantes (<span class="math notranslate nohighlight">\(f_n\)</span> avec n&gt;1), toutes des multiples du fondamental qui enrichissent le son pour former son timbre: ce sont les <strong>harmoniques</strong> .</p>
+<p><strong>Conditions initiales et harmoniques</strong><br />
+Les conditions initiales permettent de déterminer l’amplitude du fondamental et des harmonique. Néanmoins, cette étude dépasse de loin le cadre du programme de classe préparatoire.</p>
+<p>On peut par contre, à notre niveau, déjà avoir quelques idées qualitative sur les harmoniques qu’on va pouvoir observer. En effet, celle-ci impose l’existence de deux noeuds en certains points. Ainsi si l’on excite fortement la corde au milieu, on peut attendre que toutes les harmoniques paires soient nulles (ou opposés) puisqu’elles ont toutes un noeud au milieu. A l’inverse, la présence d’un limitateur de vibration (un doigt humain par exemple) peut empêcher un ventre et par la même occasion annuler un mode.</p>
+</div>
+<div class="topic">
+<p class="topic-title first">Généralisation</p>
+<p><strong>Types d’ondes différentes</strong><br />
+La présence d’onde stationnaire est un phénomène qui ne se limite pas à la corde vibrante.</p>
+<ul class="simple">
+<li><p>Dans le domaine acoustique, les instruments à vents sont basés sur le même principe: la longueur du tube (ou la position des trous) définis les modes propres pouvant exister et ainsi le son et le timbre qu’on va entendre.</p></li>
+<li><p>Dans le domaine électromagnétique, on réalise des cavités permettant de sélectionner certaines fréquences, c’est notamment le cas des cavités LASER.</p></li>
+</ul>
+<p><strong>Spectre théorique et spectre réel</strong><br />
+L’étude précédente montre que la corde ne peut vibrer qu’aux fréquences quantifiées <span class="math notranslate nohighlight">\(f_n\)</span>. L’expérience (cf. TP) montre qu’en réalité, un vibreur peut faire vibrer la corde à d’autre fréquence mais l’amplitude de vibration est beaucoup plus faible. En pratique, on observe un phénomène de <strong>résonance</strong>  pour chaque fréquence <span class="math notranslate nohighlight">\(f_n\)</span>: l’amplitude y est maximale (maximum local) puis s’atténue quand on s’éloigne de ces fréquences. Nous verrons en électrocinétique/mécanique que l’élargissement d’un phénomène de résonance (les autres fréquences “passent” encore) est dû aux phénomènes dissipatifs.</p>
+<p>Dans le cas de la corde vibrante, le principe est le même. L’étude qui permet d’obtenir la structure de l’onde proposée précédemment suppose qu’aucun phénomène dissipatif (frottements) n’existe. Ce qui n’est pas le cas. Deux faits très simple permettent de s’en rendre compte:</p>
+<ul class="simple">
+<li><p>les vibrations de la corde finissent par s’atténuer si on arrête d’exciter la corde.</p></li>
+<li><p>une corde vibrante est utilisée pour créer un son. Un son est une onde se propageant dans le milieu environnant et comme toute onde progressive, il transporte sur son chemin de l’énergie. Cette énergie est nécessairement fournie par la source, ici la corde vibrante. Autrement dit, l’excitation de l’air ambiant par la corde provoque un échange d’énergie: la corde fournit de l’énergie à l’onde sonore, il y a donc phénomène de dissipation pour le système {corde vibrante}.</p></li>
+</ul>
+<div class="figure align-center" id="fig-313">
+<img alt="../_images/Signaux_Sol_Flute.png" src="../_images/Signaux_Sol_Flute.png" />
+</div>
+</div>
+</div>
+<div class="section" id="exercices-d-application">
+<h2>Exercices d’application<a class="headerlink" href="#exercices-d-application" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="cavite-laser-resonante">
+<h3>Cavité LASER résonante<a class="headerlink" href="#cavite-laser-resonante" title="Permalink to this headline">¶</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>Un LASER est une source lumineuse monochromatique. Si l’émission de la lumière est due à des phénomènes de transitions entre les niveaux d’énergie d’atomes. On place généralement ce milieu dans un cavité résonante dont l’intérêt est d’affiner la sélection des longueurs de la source et ainsi obtenir une lumière la plus monochromatique possible.</p>
+<p>On se propose de préciser le mode de fonctionnement de la cavité résonnante au moyen d’un modèle simple (donc imparfait mais déjà intéressant). On suppose que celle-ci est composée de deux miroirs plans parfaits face à face distants d’une distance d et séparés par du vide. On note Ox l’axe perpendiculaire aux miroirs. Entre les deux miroirs se propage une onde électromagnétique monochromatique plane pouvant se propager dans les deux sens. Les miroirs sont supposés parfaits c’est-à-dire qu’il réfléchissent entièrement le rayonnement. Cela implique  (admis) que le champ électrique doit être nul sur les miroirs. On décrit la vibration électromagnétique par le champ électrique de l’onde en tout point de l’espace: <span class="math notranslate nohighlight">\(\overrightarrow{E(x,t)}=E_y(x,t) \overrightarrow{e_y}\)</span></p>
+<ol class="simple">
+<li><p>Quelle autre grandeur physique décrit la propagation d’une telle onde?</p></li>
+<li><p>Préciser dans le cas d’une onde progressive monochromatique de pulsation <span class="math notranslate nohighlight">\(\omega\)</span> se déplaçant dans le sens des x positifs l’expression générale du champ électrique.</p></li>
+<li><p>Justifier simplement la présence d’une onde régressive monochromatique, c’est-à-dire se déplaçant dans le sens des x négatifs. Donner son expression général puis l’expression de l’onde électromagnétique résultante dans la cavité.</p></li>
+<li><p>Exprimer les deux conditions aux limites qui en découlent. En déduire que l’onde résultante est une onde stationnaire et que les pulsations permises pour l’onde sont quantifiées.</p></li>
+<li><p>En réalité, le rayonnement est émis par le milieu amplificateur du LASER composé de différents atomes. Pour de nombreuses raisons, cette émission ne produit pas un rayonnement monochromatique mais une gamme de fréquence. Pourquoi une telle cavité permet de sélectionner une fréquence et donc d’obtenir une lumière monochromatique?</p></li>
+<li><p>(Recherche) En réalité, la lumière d’un LASER n’est pas rigoureusement monochromatique. Rechercher les ordres de grandeurs de largeurs de raie de LASER (courant ou non) ainsi que les origines possibles d’un tel élargissement.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="tuyau-ouvert">
+<h3>Tuyau ouvert<a class="headerlink" href="#tuyau-ouvert" title="Permalink to this headline">¶</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>On considère le cas d’un tuyau ouvert et on cherche les fréquences correspondant aux modes propres d’une onde acoustique stationnaire. On admet que pour un tel tuyau, on attend un ventre de vitesse aux deux extrémités. On réalisera une étude graphique pour déterminer les modes propres.</p>
+</div>
+</div>
+</div>
+<div class="section" id="travaux-diriges">
+<h2>Travaux dirigés<a class="headerlink" href="#travaux-diriges" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="corde-vibrante">
+<h3>Corde vibrante<a class="headerlink" href="#corde-vibrante" title="Permalink to this headline">¶</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>On considère une corde de longueur L fixée à ses deux extrémités. Sa masse linéique est <span class="math notranslate nohighlight">\(\mu\)</span> et elle est tendue par une tension <span class="math notranslate nohighlight">\(T_0\)</span>. La vitesse de propagation des ondes mécaniques sur la corde est alors: <span class="math notranslate nohighlight">\(v=\sqrt{\frac{T_0}{\mu}}\)</span>.</p>
+<ol class="simple">
+<li><p>Quelle grandeur permet de décrire la vibration de la corde?</p></li>
+<li><p>Montrer que v est bien homogène à une vitesse.</p></li>
+<li><p>Rappeler brièvement pourquoi on doit décrire la vibration de la corde comme la superposition de deux ondes. Préciser leurs expressions générales.</p></li>
+<li><p>On cherche les pulsations <span class="math notranslate nohighlight">\(\omega\)</span> auxquelles cette corde peut vibrer. Quelle est alors la forme générale de l’onde résultante?</p></li>
+<li><p>Exprimer les conditions que doit satisfaire l’onde? En déduire les pulsations quantifiées auxquelles la corde peut vibrer. On précisera le fondamental <span class="math notranslate nohighlight">\(\omega_0\)</span>.</p></li>
+<li><p>(HP) *On peut montrer que la puissance moyenne transportée par une onde mécanique progressive monochromatique le long de la corde est de la forme: <span class="math notranslate nohighlight">\(\langle P(x) \rangle = a \langle Y^2(x,t) \rangle\)</span> où <span class="math notranslate nohighlight">\(a\)</span> est une constante qu’on ne déterminera pas. Montrer que pour une onde stationnaire, il n’y a pas d’énergie transportée. Donner un autre sens au terme “d’onde stationnaire”.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="le-pipeau">
+<h3>Le pipeau<a class="headerlink" href="#le-pipeau" title="Permalink to this headline">¶</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>Comme les instruments à corde, la production du son dans les instruments à vent est basé sur le principe d’ondes stationnaires. Nous allons illustrer ce principe en modélisant le fonctionnement du pipeau quand tous les trous sont bouchés (Fa). Dans une telle flûte, le son est produit par un résonateur (l’ouverture du pipeau) à une extrémité de l’instrument et se propage le long du tube se section droite <span class="math notranslate nohighlight">\(S\)</span> de longueur <span class="math notranslate nohighlight">\(L=10\rm{cm}\)</span>. On note Ox l’axe du tube, O étant la côte du résonateur. On suppose que la célérité du son dans le tube (rempli d’air) est <span class="math notranslate nohighlight">\(c=344 \rm{m.s^{-1}}\)</span>. On rappelle que les deux grandeurs décrivant la propagation de l’onde sont la vitesse d’agitation d’une tranche d’air: <span class="math notranslate nohighlight">\(v(x,t)\)</span> et la surpression engendrée par le passage de l’onde sonore: <span class="math notranslate nohighlight">\(p(x,t)\)</span>. On précise aussi qu’on a la relation:</p>
+<p><span class="math notranslate nohighlight">\(\frac{\partial v}{\partial t} = - \frac{1}{\rho_0} \frac{\partial p}{\partial x}\)</span> où <span class="math notranslate nohighlight">\(\rho_0\)</span> est la masse volumique de l’air au repos.</p>
+<ol class="simple">
+<li><p>On suppose que le résonateur crée une onde plane progressive de fréquence f se propageant dans la direction des x croissants. On note <span class="math notranslate nohighlight">\(v_{0+}\)</span> l’amplitude de l’oscillation de la vitesse et <span class="math notranslate nohighlight">\(p_{0+}\)</span> l’amplitude de l’oscillation de la pression. Donner les expressions de <span class="math notranslate nohighlight">\(v_{+}(x,t)\)</span> et <span class="math notranslate nohighlight">\(p_{+}(x,t)\)</span> associées à cette onde en tout point du tube (utiliser les grandeurs définies dans l’énoncé).</p></li>
+<li><p>Justifier la relation: <span class="math notranslate nohighlight">\(\lambda f =c\)</span> où <span class="math notranslate nohighlight">\(\lambda\)</span> est la longueur d’onde de l’onde sonore dans le milieu.</p></li>
+<li><p>(HP)Montrer que <span class="math notranslate nohighlight">\(\rho_0 c v_{0+} = p_{O+}\)</span>.</p></li>
+<li><p>Au bout du tube, l’ouverture brutale provoque une réflexion d’onde dans le sens inverse de propagation. On note <span class="math notranslate nohighlight">\(v_{0-}\)</span> l’amplitude de l’oscillation de la vitesse et <span class="math notranslate nohighlight">\(p_{0-}\)</span> l’amplitude de l’oscillation de la pression. Donner les expressions de <span class="math notranslate nohighlight">\(v_{-}(x,t)\)</span> et <span class="math notranslate nohighlight">\(p_{-}(x,t)\)</span> associées à cette onde réfléchie en tout point du tube (utiliser les grandeurs définies dans l’énoncé).</p></li>
+<li><p>(HP)Montrer que <span class="math notranslate nohighlight">\(\rho_0 c v_{0+-} = - p_{O-}\)</span>.</p></li>
+<li><p>Donner l’expression de la surpression <span class="math notranslate nohighlight">\(p(x,t)\)</span> et de la vitesse d’une tranche d’air <span class="math notranslate nohighlight">\(v(x,t)\)</span> de l’onde résultante dans le tube.</p></li>
+<li><p>Le résonateur et l’ouverture du tube impose un effondrement de la pression aux extrémités soit <span class="math notranslate nohighlight">\(p(0,t)=p(L,t)=0\)</span>.</p></li>
+<li><p>Montrer, en déterminant <span class="math notranslate nohighlight">\(p(x,t)\)</span> que l’onde résultante est alors une onde stationnaire dans les fréquence possible sont quantifiées.</p></li>
+<li><p>Déterminer <span class="math notranslate nohighlight">\(v(x,t)\)</span>. Comparer la position des noeuds de pression et de vitesse.</p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ondes_stat_contxt.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Comprendre le contexte</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ondes_stat_ex.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Application et entrainement</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
