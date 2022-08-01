@@ -14,4 +14,11 @@ kernelspec:
   name: python3
 ---
 # Superposition de deux ondes: Interférences et battements
-
+````{admonition} Compétences
+:class: tip
+* Déterminer une différence de fréquences à partir d'enregistrements de battements.
+* Exrpimer les conditions d'interférences constructives ou destructives.
+* Déterminer l'amplitude de l'onde résultante en un point en fonction du déphasage.
+* Relier le déphasage entrer les deux ondes à la différence de chemin optique.
+* Etablir l'expression de la différence de chemin optique entre deux ondes.
+````

@@ -148,11 +148,7 @@ On reprend le dispositif précédent et on place une lentille après les fentes 
 :align: center
 :width: 30%
 ```
-
 Déterminer l'interfrance de la figure d'interférence sur l'écran.
-
-
-
 ````
 
 ````{important}
