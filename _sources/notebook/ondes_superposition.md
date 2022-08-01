@@ -61,9 +61,9 @@ Or la largeur des trains d'ondes et l'espace entre deux émissions sont aléatoi
 __Principe de superposition__  
 Pour les ondes étudiées ici, on pourra utiliser le principe de superposition, c'est-à-dire que l'expression de l'onde résultante au point M $y(M,t)$ s'écrit comme la somme:
 
-\begin{equation}
+$$
 y(M,t) = Y_{1m}\cos(\omega_1 t + \phi_{M,1})+Y_{2m}\cos(\omega_2 t + \phi_{M,2})
-\end{equation}
+$$
 
 ### Représentation de Fresnel
 
@@ -161,9 +161,9 @@ L'onde résultant de la superposition de deux ondes sinusoïdales cohérentes __
 
 Le champ électrique peut se mettre sous la forme:
 
-\begin{equation}
+$$
 E_{total}(M,t) = A \cos(\Phi_M/2)\cos(2\pi f t +\varphi)
-\end{equation}
+$$
 ````
 
 
@@ -598,9 +598,9 @@ On considère une source de lumière monochromatique de longueur d'onde $\lambda
 
 On considère l'expérience des trous d'Young présentées dans l'exercice précédent. On se place dans le même cadre d'approximation de sorte que pour une lumière monochromatique de longueur d'onde $\lambda$, on obtiendra les mêmes résultats. Pour un point M de l'écran, le champ électrique s'écrit:
 
-\begin{equation}
+$$
 E(M,t) = 2 E_{1m} \cos(\frac{\pi a y_M}{\lambda D_2}) \cos(\omega t - \Phi_M)
-\end{equation}
+$$
 avec $\Phi_M$ un terme de phase inutile ici.
 
 Un capteur de lumière (capteur CCD) parcourt à une vitesse $v$ l'axe Ay de l'écran et fournit une tension $U(t)$ proportionnelle à l'éclairement $I$ où il se trouve.

@@ -30,9 +30,10 @@ On peut très bien remplacer les fonctions sinus par des fonctions cosinus.
 __Expression mathématique__
 
 Une onde stationnaire peut s'écrire sous la forme:
-\begin{equation}
+
+$$
 y(x,t) = f(x)g(t) = A \sin (\omega t + \varphi) \sin (k x + \psi)
-\end{equation}
+$$
 ````
 
 ````{important} 

@@ -77,9 +77,9 @@ Pour aller d'un point A de coordonnées $x_A$ à un point B de coordonnées $x_B
 
 L'expression de y au point B de coordonnées $x_B$ et notée $y(x_B,t)$ est la même que l'expression de y au point A mais __retardée__  du temps $\Delta t$ correspondant au retard à la propagation entre A et B:
 
-\begin{equation}
+$$
 y(x_B,t) = y(x_A,  t - \frac{\overline{AB}}{v})
-\end{equation}
+$$
 ````
 
 
@@ -93,17 +93,17 @@ Au temps $t$, l'onde a en B la valeur $y(x_B,t)$ qu'elle avait au point A au tem
 __Forme d'onde__  
 Dans les cas étudiées (onde plane), l'onde ne se déforme pas de sorte que la forme (temporelle) qu'elle prend en un point d'abscisse de référence $x=0$pourra être décrite par une fonction $g(t)=y(0,t)$ qui sera aussi la forme (temporelle) de l'onde en un point de coordonnées x mais décalée:
 
-\begin{equation}
+$$
 y(x,t) = g(t - \frac{x}{v})
-\end{equation}
+$$
 
 ````{important} __Fondamental : Forme mathématique d'une onde (2)__
 
 La forme spatiale de l'onde à un instant $t_2$ $y(x,t_2)$ correspond à la forme spatiale de l'onde à un instant $t_1$ où l'expression y en chaque point est "décalé" d'une distance $v t_1$:
 
-\begin{equation}
+$$
 y(x,t_2) = y(x - v (t_2 - t_1), t_1)
-\end{equation}
+$$
 ````
 
 
@@ -115,9 +115,9 @@ On raisonne cette fois sur la forme spatiale à un instant t mais le raisonnemen
 __Forme d'onde (2)__  
 Dans les cas étudiées (onde plane), l'onde ne se déforme pas de sorte que la forme (spatiale) qu'elle prend à un instant référance $t=0$pourra être décrite par une fonction $h(x)=y(x,0)$ qui sera aussi la forme (spatiale) de l'onde en un point de coordonnées x mais décalée:
 
-\begin{equation}
+$$
 y(x,t) = h(x - v t)
-\end{equation}
+$$
 
 ````{attention}
 __Ondes progressive et régressive__
@@ -147,14 +147,14 @@ Dans toute cette étude, on supposera qu'il existe une source au point O d'où l
 
 Une onde sinusoïdale est une onde dont la forme est un sinusoïde $g(t) = g_m \cos(\omega t)$. Une onde progressive sur un axe Ox suivant les x croissants aura pour amplitude:
 
-\begin{equation}
+$$
 y(x,t) = g_m \cos(\omega t - \omega \frac{x}{v}) = g_m \cos(\omega t - kx)
-\end{equation}
+$$
 De même pour une onde progressant suivant les x négatifs:
 
-\begin{equation}
+$$
 y(x,t) = g_m \cos(\omega t + \omega \frac{x}{v}) = g_m \cos(\omega t + kx)
-\end{equation}
+$$
 
 ````
 
@@ -443,9 +443,9 @@ Cas d'une ondes circulaire: (on pourra généraliser l'idée à une onde sphéri
 
 Démontrer l'expression mathématique des ondes régressives:
 
-\begin{equation}
+$$
 y(x,t) = g_m \cos(\omega t + \omega \frac{x}{v}) = g_m \cos(\omega t + kx)
-\end{equation}
+$$
 
 ````
 

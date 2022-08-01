@@ -138,9 +138,9 @@ Pour qu'une onde sinusoïdale de fréquence f puisse exister dans une corde de l
 
 La forme de l'onde résultante peut s'écrire:
 
-\begin{equation}
+$$
 y(x,t)=Y_n \cos(\omega_n t)\sin(k_n x) = Y_n \cos(\omega_n t)\sin(\frac{2 \pi}{\lambda_n} x)
-\end{equation}
+$$
 ````
 
 ````{topic} Interprétation

@@ -49,9 +49,9 @@ On considère une source de lumière monochromatique de longueur d'onde $\lambda
 
 On considère l'expérience des trous d'Young présentées dans l'exercice précédent. On se place dans le même cadre d'approximation de sorte que pour une lumière monochromatique de longueur d'onde $\lambda$, on obtiendra les mêmes résultats. Pour un point M de l'écran, le champ électrique s'écrit:
 
-\begin{equation}
+$$
 E(M,t) = 2 E_{1m} \cos(\frac{\pi a y_M}{\lambda D_2}) \cos(\omega t - \Phi_M)
-\end{equation}
+$$
 avec $\Phi_M$ un terme de phase inutile ici.
 
 Un capteur de lumière (capteur CCD) parcourt à une vitesse $v$ l'axe Ay de l'écran et fournit une tension $U(t)$ proportionnelle à l'éclairement $I$ où il se trouve.
@@ -72,3 +72,4 @@ On considère une lame à face parallèle d'épaisseur $e$ et d'indice $n$ entou
 1. Réaliser le tracé des deux premiers rayons transmis à droite de la lame et justifier que les interférences ont lieu à l'infini.
 2. On ne considère que les deux premiers rayons transmis. Déterminer pour $i\ll 1$ et en travaillant à l'ordre 1, la condition sur l'épaisseur $\lambda$ pour qu'on observe des interférences constructives.
 ````
+ Un devoir libre est disponible [en ligne](https://stanislas.edunao.com/mod/resource/view.php?id=12870)

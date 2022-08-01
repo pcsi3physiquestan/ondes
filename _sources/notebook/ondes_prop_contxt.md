@@ -48,9 +48,9 @@ __Mise en situation :__  Supposons une onde se propageant avec une célérité v
 ````{important} __Forme mathématique d'une onde (1)__
 L'expression de y au point B et notée $y(B,t)$ est la même que l'expression de y au point A mais __retardée__  du temps $\Delta t_{{AB}}$ correspondant au retard à la propagation entre A et B:
 
-\begin{equation}
+$$
 y(B,t) = y(A,  t - \Delta t_{{AB}})
-\end{equation}
+$$
 ````
 
 ```{margin}
@@ -60,9 +60,10 @@ On fera le lien avec le décalage horizontal graphique du tracé d'une fonction.
 Considérons le passage de l'onde au point A au temps $t_A$. L'onde va mettre un temps $\Delta t_{AB}$.
 
 Au temps $t_B$, l'onde a en B la valeur $y(B,t_B)$ qu'elle avait au point A au temps $t' = t_B - \Delta t_{AB}$, soit:
-\begin{equation}
+
+$$
 y(B,t_B) = y(A,t')=y(A, t_B - \Delta t_{AB})
-\end{equation}
+$$
 ````
 
 ```{margin}
@@ -75,13 +76,15 @@ __Propagation rectiligne dans un milieu homogène.__
 * Si la propagation est rectiligne, on peut choisir un repère où l'axe Ox est suivant la direction de propagation. 
     * On peut choisir un point d'abscisse de référence, souvent le point source, $x=0$ où l'onde émise à pour expression $y(x=0,t) = g(t)$.
 * Si l'onde de propage suivant les x positifs, le temps mis pour atteindre un point M d'abscisse $x$ est $\frac{x}{v}$ et la forme mathématique devient:
-\begin{equation}
+
+$$
 y(x,t) = g(t - \frac{x}{v})
-\end{equation}
+$$
 * Si l'onde de propage suivant les x négatifs (on parle d'onde régressive), le temps mis pour atteindre un point M d'abscisse $x$ est $-\frac{x}{v}$ (on passe en M avant O si $x>0$) et la forme mathématique devient:
-\begin{equation}
+
+$$
 y(x,t) = g(t + \frac{x}{v})
-\end{equation}
+$$
 ````
 
 ```{margin}
@@ -90,9 +93,10 @@ y(x,t) = g(t + \frac{x}{v})
 ```
 ````{sidebar} Origine des temps
 Si l'on considère l'instant $t=0$ comme référence des temps et la forme de l'onde $h(t) = y(x,t=0)$, alors la forme de l'onde à un instant $t$ sera:
-\begin{equation}
+
+$$
 y(x,t) = h(x - v t)
-\end{equation}
+$$
 ````
 ````{important} 
 __Forme mathématique d'une onde (2)__  
@@ -101,14 +105,16 @@ __Propagation rectiligne dans un milieu homogène.__
 Considérons la forme de l'onde $y(x,t_1)$ à un instant $t_1$ en tout point $x$ de l'axe. La forme spatiale de l'onde à un instant $t_2$ est noté $y(x,t_2)$.
 
 * Si l'onde se propage suivant les $x$ positifs, alors:
-\begin{equation}
+
+$$
 y(x,t_2) = y(x - v (t_2 - t_1), t_1)
-\end{equation}
+$$
 
 * Si l'onde se propage suivant les $x$ négatifs, alors:
-\begin{equation}
+
+$$
 y(x,t_2) = y(x + v (t_2 - t_1), t_1)
-\end{equation}
+$$
 ````
 ````{topic} __Démonstration__  
 On raisonne cette fois sur la forme spatiale à un instant t mais le raisonnement est le même, l'expression de $y(x,t_2)$ en un point B de coordonnées x à l'instant $t_2$ sera celle de $y(x_A,t_1)$ en un point A à l'instant $t_1$ tel que l'écart $x - x_A$ soit égal à la distance parcourue par l'onde en un temps $t_2 - t_1$ soit $x_A = x - v(t_2 - t_1)$
@@ -122,9 +128,10 @@ L'intérêt des ondes harmonique est à rapprocher de l'intérêt du RSF.
 ````{important} 
 __Ondes progressive harmonique (OPH)__
 Une onde sinusoïdale est une onde dont la forme est un sinusoïde $g(t) = g_m \cos(\omega t)$. Si elle est émise d'un point S, l'amplitude en un point M sera:
-\begin{equation}
+
+$$
 y(M,t) = y(S,t - \Delta t) = g_m \cos \left(\omega (t - \Delta t)\right)
-\end{equation}
+$$
 ````
 
 ````{sidebar} __Relation temps-espace__
@@ -133,13 +140,15 @@ On a les relation: $\lambda f = v_{onde}$ et $\frac{\omega}{k} = v_{onde}$.
 ````
 ````{important} Cas rectiligne et homogène
 * Une onde progressive sur un axe Ox suivant les x croissants aura pour amplitude:
-\begin{equation}
+
+$$
 y(x,t) = g_m \cos(\omega t - \omega \frac{x}{v}) = g_m \cos(\omega t - kx)
-\end{equation}
+$$
 * De même pour une onde progressant suivant les x négatifs:
-\begin{equation}
+
+$$
 y(x,t) = g_m \cos(\omega t + \omega \frac{x}{v}) = g_m \cos(\omega t + kx)
-\end{equation}
+$$
 
 * __Pulsation/Fréquence/Période temporelle:__  $\omega; f= \frac{\omega}{2 \pi}; T = \frac{2 \pi}{\omega}$
 * __La longueur d'onde (ou période spatiale)__  $\lambda$ est la distance minimale qui sépare deux positions où la perturbation est la même à chaque instant.

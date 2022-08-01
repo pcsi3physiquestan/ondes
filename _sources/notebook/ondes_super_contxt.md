@@ -101,9 +101,9 @@ L'onde résultant de la superposition de deux ondes sinusoïdales cohérentes __
 
 Le champ électrique peut se mettre sous la forme:
 
-\begin{equation}
+$$
 E_{total}(M,t) = A \cos(\Phi_M/2)\cos(2\pi f t +\varphi)
-\end{equation}
+$$
 ````
 
 ````{sidebar} Remarque

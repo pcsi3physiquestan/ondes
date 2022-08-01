@@ -29,9 +29,9 @@ Une onde stationnaire est le phénomène résultant de la propagation simultané
 
 Une onde stationnaire peut s'écrire sous la forme:
 
-\begin{equation}
+$$
 y(x,t) = f(x)g(t) = A \sin (\omega t + \varphi) \sin (k x + \psi)
-\end{equation}
+$$
 ````
 
 
@@ -129,9 +129,9 @@ On considère une corde tendue par une tension T horizontale de masse linéique 
 __Existence d'une onde réfléchie__  
 Une onde transporte de l'énergie. Or au point A, il n'y a pas de mouvement, donc par d'énergie transmise vers les x positifs. Il vient que cette énergie est nécessairement réfléchie d'où l'existence d'une onde réfléchie:
 
-\begin{equation}
+$$
 y(x,t) = A \cos \left(\omega t - kx\right) + B \cos \left(\omega t + kx + \varphi\right)
-\end{equation}
+$$
 
 ```{attention}
 
@@ -187,9 +187,9 @@ Quand l'onde se propage, elle arrive au bout de la corde. Elle est alors réflé
 
 L'onde résultante totale donne la position instantanée de chaque point de la corde:
 
-\begin{equation}
+$$
 y(x,t)=y_{+}(t- \frac{x}{v_{onde}}) + y_{-}(t+ \frac{x}{v_{onde}})
-\end{equation}
+$$
 
 
 __Conditions aux limites__  
@@ -206,18 +206,18 @@ Le choix d'étudier les ondes harmoniques s'explique par la linéarité du syst�
 
 L'onde résultante a donc la forme:
 
-\begin{equation}
+$$
 y(x,t)=y_{+m}\sin(\omega t- kx) + y_{-m}\sin(\omega t+ kx +\varphi)
-\end{equation}
+$$
 
 ### Ondes stationnaire
 
 _Rappel :_  
 _On rappelle qu'une des deux conditions aux limites permet de montrer que l'onde est stationnaire. On utilise ici la condition $y(0,t) = 0$ pour montrer que l'onde peut se mettre sous la forme_
 
-\begin{equation}
+$$
 y(x,t)=Y_m \cos(\omega t)\sin(k x) = Y \cos(\omega t)\sin(\frac{2 \pi}{\lambda} x)
-\end{equation}
+$$
 
 ````{dropdown} Complément : Solution stationnaire
 
@@ -237,9 +237,9 @@ Pour qu'une onde sinusoïdale de fréquence f puisse exister dans une corde de l
 
 La forme de l'onde résultante peut s'écrire:
 
-\begin{equation}
+$$
 y(x,t)=Y_n \cos(\omega_n t)\sin(k_n x) = Y_n \cos(\omega_n t)\sin(\frac{2 \pi}{\lambda_n} x)
-\end{equation}
+$$
 ````
 
 
