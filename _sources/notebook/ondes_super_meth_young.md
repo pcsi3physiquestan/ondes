@@ -153,7 +153,7 @@ Déterminer l'interfrance de la figure d'interférence sur l'écran.
 
 ````{important}
 * Comme on peut le voir sur l'exemple ci-dessous, les rayons sont déviés par la lentille mais __on ne peut pas utiliser une somme par morceau des trajets car la schématisation de Gauss ne modélise pas l'épaisseur de la lentille__.
-* La différence de chemin optique __est identique en deux points conjugués (objet et image) par un système optique.
+* La différence de chemin optique __est identique en deux points conjugués (objet et image) par un système optique__.
 ````
 
 ````{topic} Correction

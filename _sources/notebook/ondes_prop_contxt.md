@@ -100,6 +100,7 @@ $$
 ````
 ````{important} 
 __Forme mathématique d'une onde (2)__  
+
 __Propagation rectiligne dans un milieu homogène.__
 
 Considérons la forme de l'onde $y(x,t_1)$ à un instant $t_1$ en tout point $x$ de l'axe. La forme spatiale de l'onde à un instant $t_2$ est noté $y(x,t_2)$.

@@ -31,7 +31,8 @@ On considère le problème proposé précédemment.
 1. (Simulation): On pourra chercher, au moyen de logiciels simulant des sons (Ex: Audacity) à partir de quelle fréquence l'on arrive plus à déceler la variation temporelle de l'intensité sonore (c'est un ordre de grandeur car il sera probablement différent pour chacun)
 ````
 
-````{admonition} A retenir
-:class: important
+````{important} 
+__A retenir__
+
 La superposition de deux ondes de fréquences très proches cause un phénomène de battement : l'onde résultante est une onde modulée en amplitude.
 ````

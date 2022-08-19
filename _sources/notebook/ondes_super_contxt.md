@@ -45,7 +45,7 @@ Dans le cas des ondes électromagnétiques, l'émission n'est pas continue. La s
 Or la largeur des trains d'ondes et l'espace entre deux émissions sont aléatoires. Il vient que deux points sources, même synchrones vont avoir un déphasage qui va varier aléatoirement. Nous verrons que cela peut-être un problème d'autant que cette incohérence __s'applique aussi entre deux points d'une même source lumineuse étendue__ . La seule source lumineuse qui possède une grande cohérence spatiale (tous ses points sources sont cohérents) est le LASER.
 ````
 
-## Représentation de Fresnel
+## Représentation de Fresnel (en ligne)
 
 ````{sidebar} Fresnel et somme
 Le signal de issu de la superposition des deux ondes n'est a priori pas sinusoïdal. On ne peut lui donner une représentation complexe dans le plan complexe. Par contre, on peut remarquer que $Y(M,t)$ peut se lire comme la somme de abcisses de chaque représentation.
@@ -176,7 +176,7 @@ On définit l'ordre d'interférence en un point M par la grandeur: $p = \frac{\d
 ````
 
 ````{important} __Intérêt__
-* Lors d'interférences constructives, l'ordre d'interférence est un entier $m$ avec $m \in \mathbb{B}$ (à relier avec l'entier définit pour la différence de chemin optique)
+* Lors d'interférences constructives, l'ordre d'interférence est un entier $m$ avec $m \in \mathbb{N}$ (à relier avec l'entier définit pour la différence de chemin optique)
 * Lors d'interférences destructives, l'ordre d'interférence est un demi-entier $m+\frac{1}{2}$ avec $m \in \mathbb{N}$
 
 
