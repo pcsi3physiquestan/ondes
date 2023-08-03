@@ -23,13 +23,17 @@ On se propose de préciser le mode de fonctionnement de la cavité résonnante a
 
 1. Quelle autre grandeur physique décrit la propagation d'une telle onde?
 1. Préciser dans le cas d'une onde progressive monochromatique de pulsation $\omega$ se déplaçant dans le sens des x positifs l'expression générale du champ électrique.
-1. Justifier simplement la présence d'une onde régressive monochromatique, c'est-à-dire se déplaçant dans le sens des x négatifs. Donner son expression général puis l'expression de l'onde électromagnétique résultante dans la cavité.
+1. Justifier simplement la présence d'une onde régressive monochromatique, c'est-à-dire se déplaçant dans le sens des x négatifs. Donner son expression générale puis l'expression de l'onde électromagnétique résultante dans la cavité.
 1. Exprimer les deux conditions aux limites qui en découlent. En déduire que l'onde résultante est une onde stationnaire et que les pulsations permises pour l'onde sont quantifiées.
 1. En réalité, le rayonnement est émis par le milieu amplificateur du LASER composé de différents atomes. Pour de nombreuses raisons, cette émission ne produit pas un rayonnement monochromatique mais une gamme de fréquence. Pourquoi une telle cavité permet de sélectionner une fréquence et donc d'obtenir une lumière monochromatique?
 1. (Recherche) En réalité, la lumière d'un LASER n'est pas rigoureusement monochromatique. Rechercher les ordres de grandeurs de largeurs de raie de LASER (courant ou non) ainsi que les origines possibles d'un tel élargissement.
-
-
 ````
+
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Forme mathématique d'une onde progressive._
+* _$\Longrightarrow$ Grandeurs associées aux ondes électromagnétique._
+* _$\Longrightarrow$ Etude mathématique des propres._
+
 
 ````{admonition} Tuyau ouvert 
 :class: attention
@@ -37,6 +41,9 @@ On se propose de préciser le mode de fonctionnement de la cavité résonnante a
 On considère le cas d'un tuyau ouvert et on cherche les fréquences correspondant aux modes propres d'une onde acoustique stationnaire. On admet que pour un tel tuyau, on attend un ventre de vitesse aux deux extrémités. On réalisera une étude graphique pour déterminer les modes propres.
 
 ````
+
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Etude graphique des modes propres._
 
 ## Entrainement
 
@@ -51,9 +58,11 @@ On considère une corde de longueur L fixée à ses deux extrémités. Sa masse 
 1. On cherche les pulsations $\omega$ auxquelles cette corde peut vibrer. Quelle est alors la forme générale de l'onde résultante?
 1. Exprimer les conditions que doit satisfaire l'onde? En déduire les pulsations quantifiées auxquelles la corde peut vibrer. On précisera le fondamental $\omega_0$.
 1. (HP) *On peut montrer que la puissance moyenne transportée par une onde mécanique progressive monochromatique le long de la corde est de la forme: $\langle P(x) \rangle = a \langle Y^2(x,t) \rangle$ où $a$ est une constante qu'on ne déterminera pas. Montrer que pour une onde stationnaire, il n'y a pas d'énergie transportée. Donner un autre sens au terme "d'onde stationnaire".
-
-
 ````
+
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Etude mathématique des propres._
+* _$\Longrightarrow$ Forme mathématique d'une onde progressive._
 
 ````{admonition} Le pipeau
 :class: attention
@@ -72,3 +81,6 @@ $\frac{\partial v}{\partial t} = - \frac{1}{\rho_0} \frac{\partial p}{\partial x
 1. Montrer, en déterminant $p(x,t)$ que l'onde résultante est alors une onde stationnaire dans les fréquence possible sont quantifiées.
 1. Déterminer $v(x,t)$. Comparer la position des noeuds de pression et de vitesse.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Etude mathématique des propres._
+* _$\Longrightarrow$ Forme mathématique d'une onde progressive._

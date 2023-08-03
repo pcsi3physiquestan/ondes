@@ -25,6 +25,9 @@ En comparant des ordres de grandeurs adaptés, montrer qu'on ne peut observer un
 Reproduire dans un tableau le bilan des grandeurs caractéristiques qu'on peut calculer pour étudier une figure d'interférences et donner les valeurs possibles qu'elles peuvent prendre pour des cas d'interférences constructives et des cas d'interférences destructives.
 ````
 
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Conditions d'interférences destructives et constructives._
+
 ## Entrainement
 ````{admonition} Trous d'Young. Représentation de Fresnel
 :class: attention
@@ -43,6 +46,12 @@ On considère une source de lumière monochromatique de longueur d'onde $\lambda
 1. Déterminer par le calcul l'amplitude complexe de l'onde résultante en un point de coordonnées $(y_M;0)$ puis son amplitude réelle. Déterminer alors les positions des franges brillantes et des franges sombres ainsi que l'interfrange.
 1. On déplace la source S d'une distance d dans la direction Oy. On suppose les résultats précédents toujours vrais, déterminer le nombre de franges brillantes que l'on voit défiler au point $A(0;0)$ sur l'écran pendant l'opération.
 ````
+
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Retard d'une onde_
+* _$\Longrightarrow$ Conditions d'interférences destructives et constructives._
+* _$\Longrightarrow$ Interfrange._
+* _$\Longrightarrow$ Développements limités._
 
 ````{admonition} Doublet du sodium.
 :class: attention
@@ -63,7 +72,10 @@ Un capteur de lumière (capteur CCD) parcourt à une vitesse $v$ l'axe Ay de l'�
     1. Justifier que la détermination du spectre de $U_T(t)$ permet de remonter aux deux longueurs d'onde $\lambda_1$ et $\lambda_2$.
     1. Montrer aussi que l'étude graphique de l'évolution temporelle de $U_T(t)$ permettrait de déterminer $k_m$ et $\Delta k$ et donc les deux longueurs d'onde, préciser clairement la méthode.
 ````
-
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Spectre d'un signal_
+* _$\Longrightarrow$ Battements._
+* _$\Longrightarrow$ Modulation._
 
 ````{admonition} Filtre interférentiel.
 :class: attention
@@ -72,4 +84,11 @@ On considère une lame à face parallèle d'épaisseur $e$ et d'indice $n$ entou
 1. Réaliser le tracé des deux premiers rayons transmis à droite de la lame et justifier que les interférences ont lieu à l'infini.
 2. On ne considère que les deux premiers rayons transmis. Déterminer pour $i\ll 1$ et en travaillant à l'ordre 1, la condition sur l'épaisseur $\lambda$ pour qu'on observe des interférences constructives.
 ````
+
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Retard d'une onde_
+* _$\Longrightarrow$ Conditions d'interférences destructives et constructives._
+* _$\Longrightarrow$ Lois de Snell Descartes._
+* _$\Longrightarrow$ Développements limités (petits angles)._
+
  Un devoir libre est disponible [en ligne](https://stanislas.edunao.com/mod/resource/view.php?id=12870)

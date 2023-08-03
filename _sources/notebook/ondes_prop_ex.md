@@ -36,6 +36,8 @@ On étudie la propagation sans amortissement d'une perturbation le long d'une co
     1.  A quelle date $t_5$ cesse-t-il de bouger? 
     1.  A l'aide des résultats précédents, schématiser l'allure de la courbe $y_Q=f(t)$ où $y_Q$ représente l'élongation du point Q à la date t.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Retard à la propagation._
 
 ````{admonition} Ondes acoustiques
 :class: attention
@@ -48,11 +50,19 @@ On considère une onde sonore unidirectionnelle se propageant dans la direction 
 1. Exprimer la surpression $p_0$ correspondant à l'intensité de référence $I_0$ pour l'air (il correspond à peu près au seuil moyen de perception humaine pour des fréquences autour de 3kHz).
 1. Le seuil de douleur pour l'oreille humaine se situe autour de 120dB. Estimer la surpression moyenne correspondante.
 ````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Grandeurs associées aux ondes acoustiques._
+* _$\Longrightarrow$ Forme mathématique d'une onde progressive._
 
 ````{admonition} Onde plane 
 :class: attention
 Comment faire expérimentalement une onde lumineuse plane à partir d'une source ponctuelle?
 ````
+
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Optique._
+* _$\Longrightarrow$ Théorème de Malus._
+
 
 ## Entrainement
 ````{admonition} Retard d'une OEM
@@ -68,6 +78,9 @@ On considère une source Laser considéré comme une source ponctuelle située a
 1. Déterminer la fréquence du signal émis par le Laser, est-ce une fréquence temporelle ou spatiale? Préciser son unité. Le Laser émet-il dans le visible?
 1. Exprimer le retard de l'onde passant par chaque point représenté sur le graphique. On donne leurs abscisses respectives (m): $0;4\times 10^{-6}; 6 \times 10^{-6}; 10^{-5}$. En déduire l'expression temporelle du champ électrique en chaque point.
 1. Représenter graphiquement le chronogramme du champ électrique aux différents points considérés.
-
-
 ````
+
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Grandeurs associées aux ondes électromagnétique._
+* _$\Longrightarrow$ Retard à la propagation._
+* _$\Longrightarrow$ Forme mathématique d'une onde progressive._
