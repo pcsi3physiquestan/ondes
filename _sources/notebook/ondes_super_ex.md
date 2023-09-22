@@ -91,4 +91,4 @@ _Point utile pour cet exercice_
 * _$\Longrightarrow$ Lois de Snell Descartes._
 * _$\Longrightarrow$ Développements limités (petits angles)._
 
- Un devoir libre est disponible [en ligne](https://stanislas.edunao.com/mod/resource/view.php?id=12870)
+ Un devoir libre est disponible [en ligne](https://moodlecpge.stanislas.fr/mod/resource/view.php?id=166)

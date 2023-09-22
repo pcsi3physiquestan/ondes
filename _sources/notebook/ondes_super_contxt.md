@@ -69,7 +69,7 @@ __On observe donc que deux ondes qui vont se superposer en un même point ne don
 Néanmoins, rappelons que les fréquences mises en jeu peuvent être très rapides, on ne va donc pas forcément pouvoir observer les variations de déphasages. Si les deux ondes ne sont pas de mêmes fréquences, alors le déphasasge instantané entre les deux ondes va passer par toutes les valeurs possibles sur $[0;2 \pi]$.
 
 
-On peut distinguer trois cas: Cf. la [simulation Geogebra (superposition)](https://stanislas.edunao.com/mod/folder/view.php?id=12899)
+On peut distinguer trois cas: Cf. la [simulation Geogebra (superposition)](https://moodlecpge.stanislas.fr/mod/folder/view.php?id=168)
 * Les ondes ne sont pas de mêmes fréquences on parle d'ondes asynchrones - (ou le déphasage entre les deux est aléatoire) et l'écart en fréquence est grand. Le déphasage entre les deux ondes varie très rapidement: on ne peut observer une telle variation. On réalise alors une moyenne des intensités observés. Tout se passe comme si l'intensité résultante observée était la somme des deux intensités. On retrouve le calcul énergétique réalisé pour l'éclairement moyen.
 * Les ondes ne sont pas de mêmes fréquences (on parle d'ondes asynchrones) mais l'écart en fréquence est faible: le signal va apparaître comme presque sinusoïdal mais avec une ampitude variant dans le temps. On parle de __battements__  (cf. suite).
 * Les ondes ont la même fréquence (et cohérentes). Le déphasage est alors constant. Comme on va le voir, l'onde résultante est alors sinusoïdale de même pulsation et son amplitude va dépendre du déphasage. On parle d'__interférences__ .
