@@ -28,6 +28,23 @@ Reproduire dans un tableau le bilan des grandeurs caractéristiques qu'on peut c
 _Point utile pour cet exercice_
 * _$\Longrightarrow$ Conditions d'interférences destructives et constructives._
 
+````{admonition} Application aux ondes sonores
+:class: attention
+On considère un trombone modélisé par le schéma ci-après. La partie gauche peut coulisser, ralongeant le trajet de l'onde sonore dans cette partie. Un haut-parleur émet un son à une fréquence de $f = 1.5 kHz$ et un microphone enregistre le signal en sortie. En déplaçant $T_1$, on fait varier l'amplitude du signal observé qui passe deux fois de suite par une valeur minimale lorsqu'on déplace $T_1$ de $d = 11.5cm$
+
+```{figure} ./images/ondes_inter_trombone.png
+:name: fig_303
+:align: center
+:width: 30%
+```
+
+1. Déterminer la longueur d'onde puis la célérité du son dans l'air pour l'expérience réalisée.
+````
+_Point utile pour cet exercice_
+* _$\Longrightarrow$ Conditions d'interférences destructives et constructives._
+* _$\Longrightarrow$ Relation de dispersion._
+
+
 ## Entrainement
 ````{admonition} Trous d'Young. Représentation de Fresnel
 :class: attention
