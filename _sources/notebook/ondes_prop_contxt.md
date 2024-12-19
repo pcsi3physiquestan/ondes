@@ -162,6 +162,14 @@ Lorsqu'on étudie des signaux sinusoïdaux, il peut être intéressant d'utilise
 
 ## Exemples d'ondes (en ligne)
 
+```{figure} ./images/qr_code/qr_ondes_descr.png
+:name: qr_ondes_descr
+:width: 150px
+:align: center
+:target: ondes_prop_contxt.html#exemples-d-ondes-en-ligne
+```
+
+
 ### Corde vibrante. Onde mécanique
 ````{topic} Description
 Une corde vibrante est une corde de masse linéique $\mu_0$ tendue par une tension $\overrightarrow{T_0}$ de norme $T_0$ (les deux extrémités peuvent se mouvoir). On la suppose parfaitement horizontal au repos, ce qui revient à négliger la pesanteur. Chaque point de la corde peut vibrer dans le plan vertical. L'axe Ox est l'axe horizontal, les axes Oy et Oz sont les axes du plan de vibration. Pour simplifier, on supposera que la corde ne peut vibrer que dans la direction Oy (ce qui signifie que l'excitation n'est que dans le plan Oy).

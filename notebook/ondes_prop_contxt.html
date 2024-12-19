@@ -1,47 +1,60 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Comprendre le contexte &#8212; Ondes</title>
-    
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    <title>1.1. Comprendre le contexte &#8212; Ondes</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -51,58 +64,98 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebook/ondes_prop_contxt';</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/ondes/notebook/ondes_prop_contxt.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Maitriser les méthodes" href="ondes_prop_ex.html" />
-    <link rel="prev" title="Description des ondes" href="ondes_prop.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+    <link rel="next" title="1.2. Maitriser les méthodes" href="ondes_prop_ex.html" />
+    <link rel="prev" title="1. Description des ondes" href="ondes_prop.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
     
-    <div class="container-fluid" id="banner"></div>
-
     
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
-      
-      
-      
-      <h1 class="site-logo" id="site-title">Ondes</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+<a class="navbar-brand logo" href="../ondes.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Ondes</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -112,446 +165,210 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="ondes_prop.html">
-   Description des ondes
-  </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     Comprendre le contexte
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="ondes_prop_ex.html">
-     Maitriser les méthodes
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="ondes_super.html">
-   Superposition de deux ondes: Interférences et battements
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="ondes_super_contxt.html">
-     Généralités
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="ondes_super_meth_battements.html">
-     Activités
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="ondes_super_meth_young.html">
-     Méthodes : Etude des interférences
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="ondes_super_ex.html">
-     Application et entrainement
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="ondes_stat.html">
-   Ondes stationnaires
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="ondes_stat_contxt.html">
-     Comprendre le contexte
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="ondes_stat_meth.html">
-     Méthodes
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="ondes_stat_ex.html">
-     Application et entrainement
-    </a>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="ondes_prop.html">1. Description des ondes</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">1.1. Comprendre le contexte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ondes_prop_ex.html">1.2. Maitriser les méthodes</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ondes_super.html">2. Superposition de deux ondes: Interférences et battements</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ondes_super_contxt.html">2.1. Généralités</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ondes_super_meth_battements.html">2.2. Activités</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ondes_super_meth_young.html">2.3. Méthodes : Etude des interférences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ondes_super_ex.html">2.4. Application et entrainement</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ondes_stat.html">3. Ondes stationnaires</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ondes_stat_contxt.html">3.1. Comprendre le contexte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ondes_stat_meth.html">3.2. Méthodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ondes_stat_ex.html">3.3. Application et entrainement</a></li>
+</ul>
+</li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
-
-
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/ondes_prop_contxt.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
   
-
-<span class="headerbtn__icon-container">
-  
-    <img src="../_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-    </ul>
+  <div class="sidebar-primary-items__end sidebar-primary__section">
   </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebook/ondes_prop_contxt.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
 </div>
+
+
+
 
 <button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/notebook/ondes_prop_contxt.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download notebook file"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-code"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="../_sources/notebook/ondes_prop_contxt.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#definition-generale">
-   Définition générale
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#modelisation-mathematique-de-la-propagation-d-ondes">
-   Modélisation mathématique de la propagation d’ondes
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#onde-progressive">
-     Onde progressive
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#onde-progressive-harmonique">
-     Onde progressive harmonique
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemples-d-ondes-en-ligne">
-   Exemples d’ondes (en ligne)
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#corde-vibrante-onde-mecanique">
-     Corde vibrante. Onde mécanique
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#ondes-acoustiques">
-     Ondes acoustiques
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#ondes-a-la-surface-d-un-fluide">
-     Ondes à la surface d’un fluide
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#ondes-electriques">
-     Ondes électriques
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#ondes-electromagnetiques">
-     Ondes électromagnétiques
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#front-d-onde-et-diffraction">
-   Front d’onde et diffraction
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#source-lumineuse">
-     Source lumineuse
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#front-d-onde">
-     Front d’onde
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Comprendre le contexte</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#definition-generale">
-   Définition générale
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#modelisation-mathematique-de-la-propagation-d-ondes">
-   Modélisation mathématique de la propagation d’ondes
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#onde-progressive">
-     Onde progressive
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#onde-progressive-harmonique">
-     Onde progressive harmonique
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemples-d-ondes-en-ligne">
-   Exemples d’ondes (en ligne)
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#corde-vibrante-onde-mecanique">
-     Corde vibrante. Onde mécanique
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#ondes-acoustiques">
-     Ondes acoustiques
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#ondes-a-la-surface-d-un-fluide">
-     Ondes à la surface d’un fluide
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#ondes-electriques">
-     Ondes électriques
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#ondes-electromagnetiques">
-     Ondes électromagnétiques
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#front-d-onde-et-diffraction">
-   Front d’onde et diffraction
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#source-lumineuse">
-     Source lumineuse
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#front-d-onde">
-     Front d’onde
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Comprendre le contexte</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition-generale">1.1.1. Définition générale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelisation-mathematique-de-la-propagation-d-ondes">1.1.2. Modélisation mathématique de la propagation d’ondes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#onde-progressive">1.1.2.1. Onde progressive</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#onde-progressive-harmonique">1.1.2.2. Onde progressive harmonique</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemples-d-ondes-en-ligne">1.1.3. Exemples d’ondes (en ligne)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#corde-vibrante-onde-mecanique">1.1.3.1. Corde vibrante. Onde mécanique</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ondes-acoustiques">1.1.3.2. Ondes acoustiques</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ondes-a-la-surface-d-un-fluide">1.1.3.3. Ondes à la surface d’un fluide</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ondes-electriques">1.1.3.4. Ondes électriques</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ondes-electromagnetiques">1.1.3.5. Ondes électromagnétiques</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#front-d-onde-et-diffraction">1.1.4. Front d’onde et diffraction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#source-lumineuse">1.1.4.1. Source lumineuse</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#front-d-onde">1.1.4.2. Front d’onde</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
-  <div class="tex2jax_ignore mathjax_ignore section" id="comprendre-le-contexte">
-<h1>Comprendre le contexte<a class="headerlink" href="#comprendre-le-contexte" title="Permalink to this headline">#</a></h1>
-<div class="section" id="definition-generale">
-<h2>Définition générale<a class="headerlink" href="#definition-generale" title="Permalink to this headline">#</a></h2>
-<div class="margin sidebar">
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="comprendre-le-contexte">
+<h1><span class="section-number">1.1. </span>Comprendre le contexte<a class="headerlink" href="#comprendre-le-contexte" title="Permalink to this heading">#</a></h1>
+<section id="definition-generale">
+<h2><span class="section-number">1.1.1. </span>Définition générale<a class="headerlink" href="#definition-generale" title="Permalink to this heading">#</a></h2>
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <ul class="simple">
 <li><p>Une onde transporte de l’énergie sans transporter de matière.</p></li>
 </ul>
-</div>
+</aside>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Onde</strong></p>
@@ -560,7 +377,7 @@ title="Print to PDF"
 <li><p>Elle se déplace avec une vitesse déterminée qui dépend des caractéristiques du milieu de propagation. On appelle cette vitesse la <strong>célérité</strong>  de l’onde dans le milieu.</p></li>
 </ul>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Exemple : Description et types d’ondes</p>
 <p>On décrit la propagation d’une onde par l’expression des grandeurs physiques associées au phénomènes <strong>dans l’espace et dans le temps</strong> . Les grandeurs dépendent du type d’onde que l’on veut décrire. A titre d’exemple non exhaustif:</p>
 <ul class="simple">
@@ -571,12 +388,12 @@ title="Print to PDF"
 <li><p><strong>Ondes électromagnétiques:</strong>  Champ électrique et champ magnétique</p></li>
 </ul>
 <p>On remarque que ces grandeurs dépendent du temps ET de l’espace car l’onde se propage dans…  l’espace. Certaines peuvent être vectorielles (vitesses, champ électrique… ).</p>
-</div>
-</div>
-<div class="section" id="modelisation-mathematique-de-la-propagation-d-ondes">
-<h2>Modélisation mathématique de la propagation d’ondes<a class="headerlink" href="#modelisation-mathematique-de-la-propagation-d-ondes" title="Permalink to this headline">#</a></h2>
-<div class="section" id="onde-progressive">
-<h3>Onde progressive<a class="headerlink" href="#onde-progressive" title="Permalink to this headline">#</a></h3>
+</aside>
+</section>
+<section id="modelisation-mathematique-de-la-propagation-d-ondes">
+<h2><span class="section-number">1.1.2. </span>Modélisation mathématique de la propagation d’ondes<a class="headerlink" href="#modelisation-mathematique-de-la-propagation-d-ondes" title="Permalink to this heading">#</a></h2>
+<section id="onde-progressive">
+<h3><span class="section-number">1.1.2.1. </span>Onde progressive<a class="headerlink" href="#onde-progressive" title="Permalink to this heading">#</a></h3>
 <p><strong>Mise en situation :</strong>  Supposons une onde se propageant avec une célérité v. Elle est caractérisée par une grandeur y dont on note l’expression en un point M à un instant t <span class="math notranslate nohighlight">\(y(M,t)\)</span></p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -587,11 +404,11 @@ L’expression de y au point B et notée <span class="math notranslate nohighlig
 y(B,t) = y(A,  t - \Delta t_{{AB}})
 \]</div>
 </div>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <p>On fera le lien avec le décalage horizontal graphique du tracé d’une fonction.</p>
-</div>
-<div class="topic">
+</aside>
+<aside class="topic">
 <p class="topic-title"><strong>Démonstration</strong></p>
 <p>Considérons le passage de l’onde au point A au temps <span class="math notranslate nohighlight">\(t_A\)</span>. L’onde va mettre un temps <span class="math notranslate nohighlight">\(\Delta t_{AB}\)</span>.</p>
 <p>Au temps <span class="math notranslate nohighlight">\(t_B\)</span>, l’onde a en B la valeur <span class="math notranslate nohighlight">\(y(B,t_B)\)</span> qu’elle avait au point A au temps <span class="math notranslate nohighlight">\(t' = t_B - \Delta t_{AB}\)</span>, soit:</p>
@@ -599,14 +416,14 @@ y(B,t) = y(A,  t - \Delta t_{{AB}})
 \[
 y(B,t_B) = y(A,t')=y(A, t_B - \Delta t_{AB})
 \]</div>
-</div>
-<div class="margin sidebar">
+</aside>
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <ul class="simple">
 <li><p>On se ramène donc à décrire l’onde avec une seule fonction <span class="math notranslate nohighlight">\(g\)</span> décrite par la source.</p></li>
 <li><p><em>Attention</em>: Cette expression n’est valable que pour un milieu homogène et une propagation rectiligne.</p></li>
 </ul>
-</div>
+</aside>
 <div class="tip admonition">
 <p class="admonition-title">Cas particuliers utiles (à connaître)</p>
 <p><strong>Propagation rectiligne dans un milieu homogène.</strong></p>
@@ -630,21 +447,21 @@ y(x,t) = g(t - \frac{x}{v})
 y(x,t) = g(t + \frac{x}{v})
 \]</div>
 </div>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <ul class="simple">
 <li><p>On ne traite que le cas de la propagation rectiligne dans un milieu homogène.</p></li>
 <li><p>On peut voir la fonction <span class="math notranslate nohighlight">\(y(x,t_1)\)</span> comme une photographique de l’onde à l’instant <span class="math notranslate nohighlight">\(t_1\)</span>.</p></li>
 </ul>
-</div>
-<div class="sidebar">
+</aside>
+<aside class="sidebar">
 <p class="sidebar-title">Origine des temps</p>
 <p>Si l’on considère l’instant <span class="math notranslate nohighlight">\(t=0\)</span> comme référence des temps et la forme de l’onde <span class="math notranslate nohighlight">\(h(t) = y(x,t=0)\)</span>, alors la forme de l’onde à un instant <span class="math notranslate nohighlight">\(t\)</span> sera:</p>
 <div class="math notranslate nohighlight">
 \[
 y(x,t) = h(x - v t)
 \]</div>
-</div>
+</aside>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Forme mathématique d’une onde (2)</strong></p>
@@ -665,17 +482,17 @@ y(x,t_2) = y(x - v (t_2 - t_1), t_1)
 y(x,t_2) = y(x + v (t_2 - t_1), t_1)
 \]</div>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title"><strong>Démonstration</strong></p>
 <p>On raisonne cette fois sur la forme spatiale à un instant t mais le raisonnement est le même, l’expression de <span class="math notranslate nohighlight">\(y(x,t_2)\)</span> en un point B de coordonnées x à l’instant <span class="math notranslate nohighlight">\(t_2\)</span> sera celle de <span class="math notranslate nohighlight">\(y(x_A,t_1)\)</span> en un point A à l’instant <span class="math notranslate nohighlight">\(t_1\)</span> tel que l’écart <span class="math notranslate nohighlight">\(x - x_A\)</span> soit égal à la distance parcourue par l’onde en un temps <span class="math notranslate nohighlight">\(t_2 - t_1\)</span> soit <span class="math notranslate nohighlight">\(x_A = x - v(t_2 - t_1)\)</span></p>
-</div>
-</div>
-<div class="section" id="onde-progressive-harmonique">
-<h3>Onde progressive harmonique<a class="headerlink" href="#onde-progressive-harmonique" title="Permalink to this headline">#</a></h3>
-<div class="margin sidebar">
+</aside>
+</section>
+<section id="onde-progressive-harmonique">
+<h3><span class="section-number">1.1.2.2. </span>Onde progressive harmonique<a class="headerlink" href="#onde-progressive-harmonique" title="Permalink to this heading">#</a></h3>
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <p>L’intérêt des ondes harmonique est à rapprocher de l’intérêt du RSF.</p>
-</div>
+</aside>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Ondes progressive harmonique (OPH)</strong>
@@ -685,11 +502,11 @@ Une onde sinusoïdale est une onde dont la forme est un sinusoïde <span class="
 y(M,t) = y(S,t - \Delta t) = g_m \cos \left(\omega (t - \Delta t)\right)
 \]</div>
 </div>
-<div class="sidebar">
+<aside class="sidebar">
 <p class="sidebar-title"><strong>Relation temps-espace</strong></p>
 <p>Pour une onde sinusoïdale de célérité <span class="math notranslate nohighlight">\(c\)</span> et de fréquence f.<br />
 On a les relation: <span class="math notranslate nohighlight">\(\lambda f = v_{onde}\)</span> et <span class="math notranslate nohighlight">\(\frac{\omega}{k} = v_{onde}\)</span>.</p>
-</div>
+</aside>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Cas rectiligne et homogène</p>
@@ -713,17 +530,20 @@ y(x,t) = g_m \cos(\omega t + \omega \frac{x}{v}) = g_m \cos(\omega t + kx)
 <li><p><strong>Le nombre d’onde</strong>  est définie par <span class="math notranslate nohighlight">\(k = \frac{2 \pi}{\lambda}\)</span></p></li>
 </ul>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Représentation complexe</p>
 <p>Lorsqu’on étudie des signaux sinusoïdaux, il peut être intéressant d’utiliser un artifice mathématique pour simplifier l’étude: on utilise <strong>la représentation complexe des signaux sinusoïdaux</strong>  comme on apu le faire pour des signaux sinusoïdaux en régime sinusoïdal forcé.</p>
-</div>
-</div>
-</div>
-<div class="section" id="exemples-d-ondes-en-ligne">
-<h2>Exemples d’ondes (en ligne)<a class="headerlink" href="#exemples-d-ondes-en-ligne" title="Permalink to this headline">#</a></h2>
-<div class="section" id="corde-vibrante-onde-mecanique">
-<h3>Corde vibrante. Onde mécanique<a class="headerlink" href="#corde-vibrante-onde-mecanique" title="Permalink to this headline">#</a></h3>
-<div class="topic">
+</aside>
+</section>
+</section>
+<section id="exemples-d-ondes-en-ligne">
+<h2><span class="section-number">1.1.3. </span>Exemples d’ondes (en ligne)<a class="headerlink" href="#exemples-d-ondes-en-ligne" title="Permalink to this heading">#</a></h2>
+<figure class="align-center" id="qr-ondes-descr">
+<a class="reference external image-reference" href="ondes_prop_contxt.html#exemples-d-ondes-en-ligne"><img alt="../_images/qr_ondes_descr.png" src="../_images/qr_ondes_descr.png" style="width: 150px;" /></a>
+</figure>
+<section id="corde-vibrante-onde-mecanique">
+<h3><span class="section-number">1.1.3.1. </span>Corde vibrante. Onde mécanique<a class="headerlink" href="#corde-vibrante-onde-mecanique" title="Permalink to this heading">#</a></h3>
+<aside class="topic">
 <p class="topic-title">Description</p>
 <p>Une corde vibrante est une corde de masse linéique <span class="math notranslate nohighlight">\(\mu_0\)</span> tendue par une tension <span class="math notranslate nohighlight">\(\overrightarrow{T_0}\)</span> de norme <span class="math notranslate nohighlight">\(T_0\)</span> (les deux extrémités peuvent se mouvoir). On la suppose parfaitement horizontal au repos, ce qui revient à négliger la pesanteur. Chaque point de la corde peut vibrer dans le plan vertical. L’axe Ox est l’axe horizontal, les axes Oy et Oz sont les axes du plan de vibration. Pour simplifier, on supposera que la corde ne peut vibrer que dans la direction Oy (ce qui signifie que l’excitation n’est que dans le plan Oy).</p>
 <p><strong>Description physique</strong></p>
@@ -738,11 +558,11 @@ y(x,t) = g_m \cos(\omega t + \omega \frac{x}{v}) = g_m \cos(\omega t + kx)
 </li>
 <li><p><strong>Célérité des ondes mécanique</strong>  On peut montrer que (sous hypothèse) <span class="math notranslate nohighlight">\(v_{onde}=\sqrt{\frac{T_0}{\mu_0}}\)</span></p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="ondes-acoustiques">
-<h3>Ondes acoustiques<a class="headerlink" href="#ondes-acoustiques" title="Permalink to this headline">#</a></h3>
-<div class="topic">
+</aside>
+</section>
+<section id="ondes-acoustiques">
+<h3><span class="section-number">1.1.3.2. </span>Ondes acoustiques<a class="headerlink" href="#ondes-acoustiques" title="Permalink to this heading">#</a></h3>
+<aside class="topic">
 <p class="topic-title">Description</p>
 <p>Une onde sonore est la propagation dans un milieu matériel (par exemple l’air) d’une surpression provoquant sur son passage une agitation locale du milieu. Considérons une tube dans lequel se trouve de l’air (on pourra par exemple assimiler cela à un instrument à vent). Un surpression causée en entrée va «pousser» une tranche de fluide (l’air), qui en s’agitant va induire une surpression sur la tranche de fluide suivant qui se met à son tour en mouvement et ainsi de suite: il se propage un son. Ce son arrive jusqu’à nos oreilles où jusqu’à un micro. La surpression qui s’est propagée fait alors vibrer une membrane (tympan ou capteur de pression).</p>
 <p><strong>Description physique</strong></p>
@@ -764,19 +584,19 @@ y(x,t) = g_m \cos(\omega t + \omega \frac{x}{v}) = g_m \cos(\omega t + kx)
 </ul>
 </li>
 </ul>
-</div>
-</div>
-<div class="section" id="ondes-a-la-surface-d-un-fluide">
-<h3>Ondes à la surface d’un fluide<a class="headerlink" href="#ondes-a-la-surface-d-un-fluide" title="Permalink to this headline">#</a></h3>
-<div class="topic">
+</aside>
+</section>
+<section id="ondes-a-la-surface-d-un-fluide">
+<h3><span class="section-number">1.1.3.3. </span>Ondes à la surface d’un fluide<a class="headerlink" href="#ondes-a-la-surface-d-un-fluide" title="Permalink to this heading">#</a></h3>
+<aside class="topic">
 <p class="topic-title">Description</p>
 <p>La surface d’un fluide (l’eau), peut être excitée par exemple par le vent, donnant naissance à la houle. Ce phénomène correspond à la propagation d’une onde à la surface du fluide. En effet, il se produit alors une montée d’eau en une position. La conservation de la masse et la variation de pression dans la colonne d’eau induit alors une variation de hauteur d’eau dans la colonne d’eau suivante et ainsi de suite se propage une onde de surface. Nous signalons simplement l’existence de ces ondes car elles sont courantes autour de nous et qu’elles seront étudiée de manière descriptive en TP.</p>
 <p><em>Grandeurs observées:</em> En un point du passage de l’onde, on peut définir la hauteur de la surface du fluide à un instant t: <span class="math notranslate nohighlight">\(z(x,t)\)</span>. Il existe d’autres grandeurs décrivant le passage de l’onde mais nous nous limitons ici à cette grandeur qui suffit à décrire l’onde à chaque instant.</p>
-</div>
-</div>
-<div class="section" id="ondes-electriques">
-<h3>Ondes électriques<a class="headerlink" href="#ondes-electriques" title="Permalink to this headline">#</a></h3>
-<div class="topic">
+</aside>
+</section>
+<section id="ondes-electriques">
+<h3><span class="section-number">1.1.3.4. </span>Ondes électriques<a class="headerlink" href="#ondes-electriques" title="Permalink to this heading">#</a></h3>
+<aside class="topic">
 <p class="topic-title">Description</p>
 <p>Quand en un point du circuit, on modifie le potentiel ou l’intensité (exemple: on allume le circuit), la  variation locale d’intensité/de potentiel va se propager de proche en proche tout au long du circuit: une onde électrique se propage dans le circuit.</p>
 <p><strong>Description physique</strong></p>
@@ -784,11 +604,11 @@ y(x,t) = g_m \cos(\omega t + \omega \frac{x}{v}) = g_m \cos(\omega t + kx)
 <li><p>Le système étudié est une portion de circuit et sa modélisation électrique (cf. deuxième année). Les grandeurs utilisées sont bien entendu le potentiel électrique et l’intensité.</p></li>
 <li><p><em>ARQS : On rappelle que la célérité des ondes électriques est de l’ordre de la célérité de la lumière dans le vide de sorte que pour des signaux “lents” sur des circuits “courts”, on peut négliger les phénomènes de propagation, c’est-à-dire les considérer comme instantanés.</em></p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="ondes-electromagnetiques">
-<h3>Ondes électromagnétiques<a class="headerlink" href="#ondes-electromagnetiques" title="Permalink to this headline">#</a></h3>
-<div class="topic">
+</aside>
+</section>
+<section id="ondes-electromagnetiques">
+<h3><span class="section-number">1.1.3.5. </span>Ondes électromagnétiques<a class="headerlink" href="#ondes-electromagnetiques" title="Permalink to this heading">#</a></h3>
+<aside class="topic">
 <p class="topic-title">Description</p>
 <p>Dans une approche classique de la lumière, celle-ci est une onde électromagnétique. La propagation d’une onde électromagnétique correspond à la propagation d’une variation des champs électriques <span class="math notranslate nohighlight">\(\overrightarrow{E}(M,t)\)</span> et magnétique <span class="math notranslate nohighlight">\(\overrightarrow{B}(M,t)\)</span> en tout point du trajet de l’onde. Les variations spatiales et temporelles des ces deux grandeurs sont corrélées par des équations (les équations de Maxwell). Ces relations permettent de propager ces variations de proche en proche: une onde électromagnétique se propage.</p>
 <p><strong>Description physique</strong></p>
@@ -803,13 +623,13 @@ y(x,t) = g_m \cos(\omega t + \omega \frac{x}{v}) = g_m \cos(\omega t + kx)
 </ul>
 </li>
 </ul>
-</div>
-</div>
-</div>
-<div class="section" id="front-d-onde-et-diffraction">
-<h2>Front d’onde et diffraction<a class="headerlink" href="#front-d-onde-et-diffraction" title="Permalink to this headline">#</a></h2>
-<div class="section" id="source-lumineuse">
-<h3>Source lumineuse<a class="headerlink" href="#source-lumineuse" title="Permalink to this headline">#</a></h3>
+</aside>
+</section>
+</section>
+<section id="front-d-onde-et-diffraction">
+<h2><span class="section-number">1.1.4. </span>Front d’onde et diffraction<a class="headerlink" href="#front-d-onde-et-diffraction" title="Permalink to this heading">#</a></h2>
+<section id="source-lumineuse">
+<h3><span class="section-number">1.1.4.1. </span>Source lumineuse<a class="headerlink" href="#source-lumineuse" title="Permalink to this heading">#</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Point source lumineux</strong></p>
@@ -818,16 +638,16 @@ y(x,t) = g_m \cos(\omega t + \omega \frac{x}{v}) = g_m \cos(\omega t + kx)
 <li><p>Un point source monochromatique est un point source émettant une lumière monochromatique.</p></li>
 </ul>
 </div>
-</div>
-<div class="section" id="front-d-onde">
-<h3>Front d’onde<a class="headerlink" href="#front-d-onde" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="front-d-onde">
+<h3><span class="section-number">1.1.4.2. </span>Front d’onde<a class="headerlink" href="#front-d-onde" title="Permalink to this heading">#</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Surface d’onde</strong>
 Une surface d’onde (où front d’onde) est l’ensemble des points possédant la même phase (le même retard sur la source de l’onde).</p>
-<div class="figure align-center" id="fig-293">
+<figure class="align-center" id="fig-293">
 <a class="reference internal image-reference" href="../_images/Signaux_ondes_circulaire.jpg"><img alt="../_images/Signaux_ondes_circulaire.jpg" src="../_images/Signaux_ondes_circulaire.jpg" style="width: 30%;" /></a>
-</div>
+</figure>
 <p>Sur le graphique précédent, on a représenté en traits pleins les surfaces d’ondes et en pointillés les “rayons” de l’onde correspond à la direction de propagation.</p>
 </div>
 <div class="admonition important">
@@ -841,19 +661,19 @@ Lorsque le phénomène de diffraction peut-être négligé (cf. suite), le traje
 <ul class="simple">
 <li><p><strong>Cas d’une onde plane:</strong>  l’amplitude ne dépend pas de la position transverse à la propagation. On étudie souvent ce type d’onde car elle est simple mais les ondes créées en général sont plutôt circulaires ou sphériques (et encore… ).</p></li>
 </ul>
-<div class="figure align-center" id="fig-294">
+<figure class="align-center" id="fig-294">
 <a class="reference internal image-reference" href="../_images/Signaux_ondes_planes.jpg"><img alt="../_images/Signaux_ondes_planes.jpg" src="../_images/Signaux_ondes_planes.jpg" style="width: 30%;" /></a>
-</div>
+</figure>
 <ul class="simple">
 <li><p>Cas d’une ondes circulaire: (on pourra généraliser l’idée à une onde sphérique à 3 dimensions) Il s’agit d’une représentation assez usuelle pour une source ponctuelle (point lumineux, source sonore… ).</p></li>
 </ul>
-<div class="figure align-center" id="fig-295">
+<figure class="align-center" id="fig-295">
 <a class="reference internal image-reference" href="../_images/Signaux_ondes_circulaire.jpg"><img alt="../_images/Signaux_ondes_circulaire.jpg" src="../_images/Signaux_ondes_circulaire.jpg" style="width: 30%;" /></a>
+</figure>
 </div>
-</div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -867,7 +687,7 @@ Lorsque le phénomène de diffraction peut-être négligé (cf. suite), le traje
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./notebook"
         },
         predefinedOutput: true
@@ -875,50 +695,119 @@ Lorsque le phénomène de diffraction peut-être négligé (cf. suite), le traje
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="ondes_prop.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Description des ondes</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="ondes_prop_ex.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Maitriser les méthodes</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
-</div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
-  
-    By C. Lacpatia<br/>
-  
-      &copy; Copyright 2021.<br/>
-</p>
-        </footer>
-    </div>
-    
-</div>
 
-
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="ondes_prop.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Description des ondes</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="ondes_prop_ex.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">1.2. </span>Maitriser les méthodes</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition-generale">1.1.1. Définition générale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelisation-mathematique-de-la-propagation-d-ondes">1.1.2. Modélisation mathématique de la propagation d’ondes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#onde-progressive">1.1.2.1. Onde progressive</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#onde-progressive-harmonique">1.1.2.2. Onde progressive harmonique</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemples-d-ondes-en-ligne">1.1.3. Exemples d’ondes (en ligne)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#corde-vibrante-onde-mecanique">1.1.3.1. Corde vibrante. Onde mécanique</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ondes-acoustiques">1.1.3.2. Ondes acoustiques</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ondes-a-la-surface-d-un-fluide">1.1.3.3. Ondes à la surface d’un fluide</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ondes-electriques">1.1.3.4. Ondes électriques</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ondes-electromagnetiques">1.1.3.5. Ondes électromagnétiques</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#front-d-onde-et-diffraction">1.1.4. Front d’onde et diffraction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#source-lumineuse">1.1.4.1. Source lumineuse</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#front-d-onde">1.1.4.2. Front d’onde</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By C. Lacpatia
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2021.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

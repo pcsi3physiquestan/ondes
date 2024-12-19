@@ -1,47 +1,60 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Méthodes &#8212; Ondes</title>
-    
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    <title>3.2. Méthodes &#8212; Ondes</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -51,58 +64,98 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebook/ondes_stat_meth';</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/ondes/notebook/ondes_stat_meth.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Application et entrainement" href="ondes_stat_ex.html" />
-    <link rel="prev" title="Comprendre le contexte" href="ondes_stat_contxt.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+    <link rel="next" title="3.3. Application et entrainement" href="ondes_stat_ex.html" />
+    <link rel="prev" title="3.1. Comprendre le contexte" href="ondes_stat_contxt.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
     
-    <div class="container-fluid" id="banner"></div>
-
     
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
-      
-      
-      
-      <h1 class="site-logo" id="site-title">Ondes</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+<a class="navbar-brand logo" href="../ondes.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Ondes</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -112,347 +165,216 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="ondes_prop.html">
-   Description des ondes
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="ondes_prop_contxt.html">
-     Comprendre le contexte
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="ondes_prop_ex.html">
-     Maitriser les méthodes
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="ondes_super.html">
-   Superposition de deux ondes: Interférences et battements
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="ondes_super_contxt.html">
-     Généralités
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="ondes_super_meth_battements.html">
-     Activités
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="ondes_super_meth_young.html">
-     Méthodes : Etude des interférences
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="ondes_super_ex.html">
-     Application et entrainement
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="ondes_stat.html">
-   Ondes stationnaires
-  </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2">
-    <a class="reference internal" href="ondes_stat_contxt.html">
-     Comprendre le contexte
-    </a>
-   </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     Méthodes
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="ondes_stat_ex.html">
-     Application et entrainement
-    </a>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ondes_prop.html">1. Description des ondes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ondes_prop_contxt.html">1.1. Comprendre le contexte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ondes_prop_ex.html">1.2. Maitriser les méthodes</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ondes_super.html">2. Superposition de deux ondes: Interférences et battements</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ondes_super_contxt.html">2.1. Généralités</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ondes_super_meth_battements.html">2.2. Activités</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ondes_super_meth_young.html">2.3. Méthodes : Etude des interférences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ondes_super_ex.html">2.4. Application et entrainement</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="ondes_stat.html">3. Ondes stationnaires</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ondes_stat_contxt.html">3.1. Comprendre le contexte</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">3.2. Méthodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ondes_stat_ex.html">3.3. Application et entrainement</a></li>
+</ul>
+</li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
-
-
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/ondes_stat_meth.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
   
-
-<span class="headerbtn__icon-container">
-  
-    <img src="../_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-    </ul>
+  <div class="sidebar-primary-items__end sidebar-primary__section">
   </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebook/ondes_stat_meth.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
 </div>
+
+
+
 
 <button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/notebook/ondes_stat_meth.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download notebook file"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-code"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="../_sources/notebook/ondes_stat_meth.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#reflexion-parfaite-sur-une-corde">
-   Réflexion parfaite sur une corde
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#modes-propres">
-   Modes propres
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Méthodes</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#reflexion-parfaite-sur-une-corde">
-   Réflexion parfaite sur une corde
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#modes-propres">
-   Modes propres
-  </a>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Méthodes</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflexion-parfaite-sur-une-corde">3.2.1. Réflexion parfaite sur une corde</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modes-propres">3.2.2. Modes propres</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
-  <div class="tex2jax_ignore mathjax_ignore section" id="methodes">
-<h1>Méthodes<a class="headerlink" href="#methodes" title="Permalink to this headline">#</a></h1>
-<div class="section" id="reflexion-parfaite-sur-une-corde">
-<h2>Réflexion parfaite sur une corde<a class="headerlink" href="#reflexion-parfaite-sur-une-corde" title="Permalink to this headline">#</a></h2>
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="methodes">
+<h1><span class="section-number">3.2. </span>Méthodes<a class="headerlink" href="#methodes" title="Permalink to this heading">#</a></h1>
+<section id="reflexion-parfaite-sur-une-corde">
+<h2><span class="section-number">3.2.1. </span>Réflexion parfaite sur une corde<a class="headerlink" href="#reflexion-parfaite-sur-une-corde" title="Permalink to this heading">#</a></h2>
 <p><em>On va démontrer le caractére stationnaire de l’onde en présence d’un noeud.</em></p>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <p>Si le paramétrage est libre, pensez à mettre la condition aux limites nulle en 0.</p>
-</div>
+</aside>
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
 <p>On considère une corde tendue par une tension T horizontale de masse linéique <span class="math notranslate nohighlight">\(\mu\)</span>. La célérité des ondes mécaniques qui se propagent sur la corde est alors <span class="math notranslate nohighlight">\(c = \sqrt{\frac{T}{\mu}}\)</span>. On notera <span class="math notranslate nohighlight">\(k = \frac{2\pi}{\lambda}\)</span> avec <span class="math notranslate nohighlight">\(\lambda\)</span> la longueur d’onde d’une onde progressive. La corde est attaché en un point A. Une onde progressive harmonique se propose dans le sens des x positifs de <span class="math notranslate nohighlight">\(-\infty\)</span> vers le point A.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Justifier l’existence d’une onde réfléchie. En déduire l’expression générale de la côte verticale <span class="math notranslate nohighlight">\(y(x,t)\)</span> de la corde.</p></li>
 <li><p>Que vaut y au point A? En déduire que l’onde résultante est une onde stationnaire.</p></li>
 <li><p>Déterminer la position des noeuds et des ventres de l’onde.</p></li>
 </ol>
 </div>
-<div class="sidebar">
+<aside class="sidebar">
 <p class="sidebar-title">Attention</p>
 <ul class="simple">
 <li><p>On n’écrit pas tout de suite que les amplitudes sont égales, il va falloir le prouver.</p></li>
 <li><p>On peut choisir la phase à l’origine nulle pour l’onde incidente puisque qu’on fixer l’origine des phases.</p></li>
 </ul>
 <p>Mais on ne peut le faire qu’une seule fois (on fixe la “référence des phases”, c’est pourquoi on écrit pas que la phase à l’origine pour l’onde réfléchie est nulle, il faut aussi le prouver (et ça peut être faux si la réflexion n’a pas lieu en <span class="math notranslate nohighlight">\(x=0\)</span>.</p>
-</div>
-<div class="topic">
-<p class="topic-title">Correction</p>
+</aside>
+<aside class="topic">
+<p class="topic-title"><strong>Correction</strong></p>
 <blockquote>
 <div><p><strong>Existence d’une onde réfléchie</strong><br />
 Une onde transporte de l’énergie. Or au point A, il n’y a pas de mouvement, donc par d’énergie transmise vers les x positifs. Il vient que cette énergie est nécessairement réfléchie d’où l’existence d’une onde réfléchie:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-421b5c17-c0a1-450d-9557-b33bcf3bac4e">
-<span class="eqno">(2)<a class="headerlink" href="#equation-421b5c17-c0a1-450d-9557-b33bcf3bac4e" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-dfe3873b-4353-4d4f-bf9b-fec440402323">
+<span class="eqno">(3.1)<a class="headerlink" href="#equation-dfe3873b-4353-4d4f-bf9b-fec440402323" title="Permalink to this equation">#</a></span>\[\begin{equation}
 y(x,t) = A \cos \left(\omega t - kx\right) + B \cos \left(\omega t + kx + \varphi\right)
 \end{equation}\]</div>
 <p><strong>Onde stationnaire</strong><br />
@@ -473,22 +395,22 @@ y(x,t) &amp;= A \cos \left(\omega t - kx\right) - A \cos \left(\omega t + kx\rig
 Les noeuds sont tels que <span class="math notranslate nohighlight">\(y(x,t) = 0\)</span> à tout instant soit <span class="math notranslate nohighlight">\(\sin kx = 0\)</span> soit <span class="math notranslate nohighlight">\( x = \frac{m\pi}{k} = \frac{m\lambda}{2}\)</span> avec m un entier. On observe que les noeuds sont espacés d’une demie longueur d’onde.</p>
 <p>Les ventres sont tels que l’amplitude de <span class="math notranslate nohighlight">\(y(x,t)\)</span> est maximale soit <span class="math notranslate nohighlight">\(\sin kx = 1\)</span> soit <span class="math notranslate nohighlight">\(x = \frac{m\pi}{k} + \frac{\pi}{2 k}= \frac{m\lambda}{2} + \frac{\lambda}{4}\)</span>. A nouveau les ventres sont espacés d’une demi longueur d’onde. On retrouve l’allure observée précédemment.</p>
 </div></blockquote>
-<div class="figure align-center" id="fig-311">
-<img alt="../_images/Standing_wave.gif" src="../_images/Standing_wave.gif" />
-</div>
-</div>
-</div>
-<div class="section" id="modes-propres">
-<span id="md-pr"></span><h2>Modes propres<a class="headerlink" href="#modes-propres" title="Permalink to this headline">#</a></h2>
+<figure class="align-center" id="fig-311">
+<img alt="../_images/Standing_wave.png" src="../_images/Standing_wave.png" />
+</figure>
+</aside>
+</section>
+<section id="modes-propres">
+<span id="md-pr"></span><h2><span class="section-number">3.2.2. </span>Modes propres<a class="headerlink" href="#modes-propres" title="Permalink to this heading">#</a></h2>
 <div class="important admonition">
 <p class="admonition-title">Corde de Melde</p>
 <p>On considère une corde de longueur L fixée aux deux points extrêmes A et B sous une tension <span class="math notranslate nohighlight">\(\overrightarrow{T}\)</span>. La corde peut vibrer et une onde mécanique se propage le long de la corde. On rappelle que pour une onde mécanique, on peut décrire la vibration de la corde se propageant par l’écart de la position d’un point de la corde à sa position d’équilibre (la corde tendue au repos est supposée être horizontale): <span class="math notranslate nohighlight">\(y(x,t)\)</span>.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Montrer que l’onde résultante est stationnaire.</p></li>
 <li><p>Montrer que la corde ne peut vibrer d’elle même qu’à des fréquences particulières qu’on déterminera : les <strong>modes propres</strong>.</p></li>
 </ol>
 </div>
-<div class="sidebar">
+<aside class="sidebar">
 <p class="sidebar-title">Soultions harmoniques</p>
 <ul class="simple">
 <li><p>On ne cherche pas à déterminer une solution quelconque. On va chercher une solution <strong>harmonique</strong>  c’est-à-dire résultant de la superposition de deux ondes progressives harmoniques (l’une dans le sens de x positifs et l’autre dans le sens des x négatifs).</p>
@@ -498,9 +420,9 @@ Les noeuds sont tels que <span class="math notranslate nohighlight">\(y(x,t) = 0
 </li>
 <li><p>On pourra noter que la structure de l’onde progressive impose la structure de l’onde régressive. C’est obligatoire pour assurer les conditions aux limites à tout instant.</p></li>
 </ul>
-</div>
-<div class="topic">
-<p class="topic-title">Correction Q1.</p>
+</aside>
+<aside class="topic">
+<p class="topic-title"><strong>Correction Q1. Approche par le calcul.</strong></p>
 <blockquote>
 <div><p><strong>Paramétrage.</strong></p>
 <p>Quand l’onde se propage, elle arrive au bout de la corde. Elle est alors réfléchie et se propage dans l’autre sens pour être à nouveau réfléchie et ainsi de suite. Cette série d’onde réfléchies se superpose. On peut «regrouper» l’ensemble des ondes obtenues en deux ondes:</p>
@@ -509,48 +431,48 @@ Les noeuds sont tels que <span class="math notranslate nohighlight">\(y(x,t) = 0
 <li><p>une onde mécanique se propageant suivant les x décroissants: <span class="math notranslate nohighlight">\(y_{-}(x,t)=y_{-}(t+ \frac{x}{v_{onde}})\)</span>
 L’onde résultante totale donne la position instantanée de chaque point de la corde:</p></li>
 </ul>
-<div class="amsmath math notranslate nohighlight" id="equation-bb0789f4-005d-44b5-8d91-1174c4633496">
-<span class="eqno">(3)<a class="headerlink" href="#equation-bb0789f4-005d-44b5-8d91-1174c4633496" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-613c452b-e0d6-4cd7-b5c8-b2a1c6146635">
+<span class="eqno">(3.2)<a class="headerlink" href="#equation-613c452b-e0d6-4cd7-b5c8-b2a1c6146635" title="Permalink to this equation">#</a></span>\[\begin{equation}
 y(x,t)=y_{+}(t- \frac{x}{v_{onde}}) + y_{-}(t+ \frac{x}{v_{onde}})
 \end{equation}\]</div>
 <p><strong>Conditions aux limites</strong><br />
 On ne peut choisir arbitrairement la forme de l’onde car on impose <strong>des conditions aux limites: l’amplitude aux points extrêmes x=0 et x= L doit nécessairement être nulle (corde fixée).</strong>
 L’onde résultante a donc la forme:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-79fb6b0b-8217-4e13-9188-dea4a2c07bb1">
-<span class="eqno">(4)<a class="headerlink" href="#equation-79fb6b0b-8217-4e13-9188-dea4a2c07bb1" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-4552d169-014f-43ee-a4b2-369ba919cdd5">
+<span class="eqno">(3.3)<a class="headerlink" href="#equation-4552d169-014f-43ee-a4b2-369ba919cdd5" title="Permalink to this equation">#</a></span>\[\begin{equation}
 y(x,t)=y_{+m}\sin(\omega t- kx) + y_{-m}\sin(\omega t+ kx +\varphi)
 \end{equation}\]</div>
 <p><strong>Q1.</strong> Cf. la question précédente __en utilisant la condition aux limites en <span class="math notranslate nohighlight">\(x=0\)</span>. L’onde résultante aura donc pour expression:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-934cd0c9-b5d0-4868-90e6-1c50a0e23d26">
-<span class="eqno">(5)<a class="headerlink" href="#equation-934cd0c9-b5d0-4868-90e6-1c50a0e23d26" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-e6f014a7-89cd-4589-8dff-3863f18ca595">
+<span class="eqno">(3.4)<a class="headerlink" href="#equation-e6f014a7-89cd-4589-8dff-3863f18ca595" title="Permalink to this equation">#</a></span>\[\begin{equation}
 y(x,t)=Y_m \cos(\omega t)\sin(k x) = Y \cos(\omega t)\sin(\frac{2 \pi}{\lambda} x)
 \end{equation}\]</div>
 </div></blockquote>
-</div>
-<div class="topic">
+</aside>
+<aside class="topic">
 <p class="topic-title">Correction Q2 - Méthode mathématique.</p>
 <blockquote>
 <div><p><strong>Q2.</strong> Nous allons maintenant utiliser la deuxième condition aux limites. Celle-ci est fondamental puisqu’elle conduit à la <strong>quantification des modes propres</strong> . Utilisons la deuxième condition aux limites <span class="math notranslate nohighlight">\(y(L,t)=0\)</span>: <span class="math notranslate nohighlight">\(y(L,t)=Y_m \cos(\omega t)\sin(k L) = 0\)</span>.</p>
 </div></blockquote>
 <p>A nouveau, cette relation doit être vérifiée pour tout t, donc <span class="math notranslate nohighlight">\(\sin(kL) =0\)</span> soit: <span class="math notranslate nohighlight">\(kL = n \pi\)</span> avec <span class="math notranslate nohighlight">\(n \in \mathbb{N}\)</span> soit:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8c445336-9bec-4de1-902d-f74e058df1f0">
-<span class="eqno">(6)<a class="headerlink" href="#equation-8c445336-9bec-4de1-902d-f74e058df1f0" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-53f5a2fe-7e23-4d03-89e3-ad6695d2f6ad">
+<span class="eqno">(3.5)<a class="headerlink" href="#equation-53f5a2fe-7e23-4d03-89e3-ad6695d2f6ad" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \begin{cases}
 k &amp;= \frac{n \pi}{L}\\
 \lambda &amp;= \frac{2L}{n}\\
 f &amp;= \frac{n v_{onde}}{2L}
 \end{cases}
 \end{equation}\]</div>
-</div>
-<div class="topic">
-<p class="topic-title">Correction Q2 - Méthode graphique.</p>
+</aside>
+<aside class="topic">
+<p class="topic-title"><strong>Correction Q2 - Méthode graphique.</strong></p>
 <p>On connait que l’onde est stationnaire. La forme spatiale de l’onde est alors un sinusoïde. Sauf qu’on impose deux noeuds en x=0 et x=L. On peut ainsi chercher à tracer les formes sinusoïdales qui coïncident avec ces conditions aux limites.</p>
-<div class="figure align-center" id="fig-312">
-<img alt="../_images/Vibration_corde_trois_modes_petit.gif" src="../_images/Vibration_corde_trois_modes_petit.gif" />
-</div>
+<figure class="align-center" id="fig-312">
+<img alt="../_images/Vibration_corde_trois_modes_petit.png" src="../_images/Vibration_corde_trois_modes_petit.png" />
+</figure>
 <p>La représentation précédente (ANIMATION) montre les trois premiers modes propres possibles. Dans le premier, on dessine une demi longueur d’onde sur une longueur de corde, dans le second une longueur d’onde et dans le troisième une longueur d’onde est demie.</p>
 <p>On peut généraliser cette observation en remarquant que les conditions aux limites imposent que la longueur de corde soit égale à un nombre entier ou demi-entier de longueur d’onde soit <span class="math notranslate nohighlight">\(L = \frac{m\lambda}{2}\)</span> avec m un entier. On pourra retrouver la quantification des fréquences.</p>
-</div>
+</aside>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>A retenir</strong>
@@ -561,15 +483,15 @@ Pour qu’une onde sinusoïdale de fréquence f puisse exister dans une corde de
 y(x,t)=Y_n \cos(\omega_n t)\sin(k_n x) = Y_n \cos(\omega_n t)\sin(\frac{2 \pi}{\lambda_n} x)
 \]</div>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Interprétation</p>
 <p>L’étude précédente permet de mettre en avant les vibrations pouvant exister pour la corde (supposée parfaite puisqu’on néglige toute perte).</p>
 <p>Elle a l’avantage d’être simple. Néanmoins, pour qu’une vibration sinusoïdale se produise dans la corde à une fréquence <span class="math notranslate nohighlight">\(f_n\)</span>, il faut des conditions particulières: une excitation initiale sinusoïdale (cf. TP corde de Melde). Si l’on s’intéresse au principe des instruments de musique, une telle excitation n’est pas réalisée. L’observation du spectre créé par la corde est alors plus complexe: il s’agit d’une superposition des ondes sinusoïdales pures. Dans le langage acoustique, on distingue alors la fréquence la plus faible, correspondant à la hauteur du son (<span class="math notranslate nohighlight">\(f_1\)</span> normalement), c’est le <strong>fondamental</strong> . Et les fréquences suivantes (<span class="math notranslate nohighlight">\(f_n\)</span> avec n&gt;1), toutes des multiples du fondamental qui enrichissent le son pour former son timbre: ce sont les <strong>harmoniques</strong> .</p>
 <p><strong>Conditions initiales et harmoniques</strong><br />
 Les conditions initiales permettent de déterminer l’amplitude du fondamental et des harmonique. Néanmoins, cette étude dépasse de loin le cadre du programme de classe préparatoire.</p>
 <p>On peut par contre, à notre niveau, déjà avoir quelques idées qualitative sur les harmoniques qu’on va pouvoir observer. En effet, celle-ci impose l’existence de deux noeuds en certains points. Ainsi si l’on excite fortement la corde au milieu, on peut attendre que toutes les harmoniques paires soient nulles (ou opposés) puisqu’elles ont toutes un noeud au milieu. A l’inverse, la présence d’un limitateur de vibration (un doigt humain par exemple) peut empêcher un ventre et par la même occasion annuler un mode.</p>
-</div>
-<div class="topic">
+</aside>
+<aside class="topic">
 <p class="topic-title">Généralisation</p>
 <p><strong>Types d’ondes différentes</strong><br />
 La présence d’onde stationnaire est un phénomène qui ne se limite pas à la corde vibrante.</p>
@@ -584,12 +506,12 @@ L’étude précédente montre que la corde ne peut vibrer qu’aux fréquences 
 <li><p>les vibrations de la corde finissent par s’atténuer si on arrête d’exciter la corde.</p></li>
 <li><p>une corde vibrante est utilisée pour créer un son. Un son est une onde se propageant dans le milieu environnant et comme toute onde progressive, il transporte sur son chemin de l’énergie. Cette énergie est nécessairement fournie par la source, ici la corde vibrante. Autrement dit, l’excitation de l’air ambiant par la corde provoque un échange d’énergie: la corde fournit de l’énergie à l’onde sonore, il y a donc phénomène de dissipation pour le système {corde vibrante}.</p></li>
 </ul>
-<div class="figure align-center" id="fig-313">
+<figure class="align-center" id="fig-313">
 <img alt="../_images/Signaux_Sol_Flute.png" src="../_images/Signaux_Sol_Flute.png" />
-</div>
-</div>
-</div>
-</div>
+</figure>
+</aside>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -603,7 +525,7 @@ L’étude précédente montre que la corde ne peut vibrer qu’aux fréquences 
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./notebook"
         },
         predefinedOutput: true
@@ -611,50 +533,102 @@ L’étude précédente montre que la corde ne peut vibrer qu’aux fréquences 
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="ondes_stat_contxt.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Comprendre le contexte</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="ondes_stat_ex.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Application et entrainement</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
-</div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
-  
-    By C. Lacpatia<br/>
-  
-      &copy; Copyright 2021.<br/>
-</p>
-        </footer>
-    </div>
-    
-</div>
 
-
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="ondes_stat_contxt.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">3.1. </span>Comprendre le contexte</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="ondes_stat_ex.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">3.3. </span>Application et entrainement</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflexion-parfaite-sur-une-corde">3.2.1. Réflexion parfaite sur une corde</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modes-propres">3.2.2. Modes propres</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By C. Lacpatia
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2021.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

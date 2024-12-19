@@ -36,7 +36,8 @@ On considère une corde tendue par une tension T horizontale de masse linéique 
 
 Mais on ne peut le faire qu'une seule fois (on fixe la "référence des phases", c'est pourquoi on écrit pas que la phase à l'origine pour l'onde réfléchie est nulle, il faut aussi le prouver (et ça peut être faux si la réflexion n'a pas lieu en $x=0$.
 ```
-````{topic} Correction
+````{topic} __Correction__
+
 >__Existence d'une onde réfléchie__  
 >Une onde transporte de l'énergie. Or au point A, il n'y a pas de mouvement, donc par d'énergie transmise vers les x positifs. Il vient que cette énergie est nécessairement réfléchie d'où l'existence d'une onde réfléchie:
 >\begin{equation}
@@ -64,7 +65,7 @@ y(x,t) &= A \cos \left(\omega t - kx\right) - A \cos \left(\omega t + kx\right)\
 >
 >Les ventres sont tels que l'amplitude de $y(x,t)$ est maximale soit $\sin kx = 1$ soit $x = \frac{m\pi}{k} + \frac{\pi}{2 k}= \frac{m\lambda}{2} + \frac{\lambda}{4}$. A nouveau les ventres sont espacés d'une demi longueur d'onde. On retrouve l'allure observée précédemment.
 >
-```{figure} ./images/Standing_wave.gif
+```{figure} ./images/Standing_wave.png
 :name: fig_311
 :align: center
 ```
@@ -85,7 +86,8 @@ On considère une corde de longueur L fixée aux deux points extrêmes A et B so
     * Le choix d'étudier les ondes harmoniques s'explique par la linéarité du système (cf. deuxième année) et le principe de décomposition en série de Fourier (cf. début d'année).
 * On pourra noter que la structure de l'onde progressive impose la structure de l'onde régressive. C'est obligatoire pour assurer les conditions aux limites à tout instant.
 ````
-````{topic} Correction Q1.
+````{topic} __Correction Q1. Approche par le calcul.__
+
 >__Paramétrage.__
 >
 >Quand l'onde se propage, elle arrive au bout de la corde. Elle est alors réfléchie et se propage dans l'autre sens pour être à nouveau réfléchie et ainsi de suite. Cette série d'onde réfléchies se superpose. On peut «regrouper» l'ensemble des ondes obtenues en deux ondes:
@@ -121,10 +123,11 @@ f &= \frac{n v_{onde}}{2L}
 \end{equation}
 ````
 
-````{topic} Correction Q2 - Méthode graphique.
+````{topic} __Correction Q2 - Méthode graphique.__
+
 On connait que l'onde est stationnaire. La forme spatiale de l'onde est alors un sinusoïde. Sauf qu'on impose deux noeuds en x=0 et x=L. On peut ainsi chercher à tracer les formes sinusoïdales qui coïncident avec ces conditions aux limites.
 
-```{figure} ./images/Vibration_corde_trois_modes_petit.gif
+```{figure} ./images/Vibration_corde_trois_modes_petit.png
 :name: fig_312
 :align: center
 ```
